@@ -208,12 +208,14 @@
     },
     {
       "audit_exempt_rules": [],
-      "bytes": 13882,
+      "bytes": 14060,
       "category": "root",
       "path": "README.md",
-      "sanitize_rules": [],
-      "sanitized": false,
-      "sha256": "5d6f449056f908df06cc003085549904752c85712ade3775d893e7173e91cc23"
+      "sanitize_rules": [
+        "longmemeval_source"
+      ],
+      "sanitized": true,
+      "sha256": "b9576464ab6b2f19e277338db0b0333c0ae3ea7788e185c09e59559bafba0a58"
     },
     {
       "audit_exempt_rules": [],
@@ -448,8 +450,10 @@
       "bytes": 6948,
       "category": "docs",
       "path": "docs/OBTAINING_DATASETS.md",
-      "sanitize_rules": [],
-      "sanitized": false,
+      "sanitize_rules": [
+        "memora_source"
+      ],
+      "sanitized": true,
       "sha256": "3de0f64b010f63a8f9120f6f692aad9f35b9b41ec5c0c16ec24a8b541b3dcc31"
     },
     {
@@ -1610,6 +1614,7 @@
       "category": "results_other",
       "path": "results/formal_300_subgroup_v1/FORMAL_300_SUBGROUP_REPORT.md",
       "sanitize_rules": [
+        "formal_block_fingerprint",
         "formal_block_fingerprint_abbrev"
       ],
       "sanitized": true,
@@ -1629,10 +1634,8 @@
       "bytes": 5416,
       "category": "results_other",
       "path": "results/formal_300_subgroup_v1/bootstrap_comparison.json",
-      "sanitize_rules": [
-        "formal_block_fingerprint"
-      ],
-      "sanitized": true,
+      "sanitize_rules": [],
+      "sanitized": false,
       "sha256": "462a3873381d7ed2fe82055f3218cad9bfb9119c6f28b8f76354c78ad78239cc"
     },
     {
@@ -1668,7 +1671,8 @@
       "category": "formal_300",
       "path": "results/formal_300_validation_v1/FORMAL_300_VALIDATION_PROTOCOL.md",
       "sanitize_rules": [
-        "formal_block_fingerprint"
+        "formal_block_fingerprint",
+        "formal_block_fingerprint_abbrev"
       ],
       "sanitized": true,
       "sha256": "0334c5c4e50d9e75036cc2e0fda8b448e3ca8972a9bc0c907150f3e8b92449f5"
@@ -1696,10 +1700,8 @@
       "bytes": 5389,
       "category": "formal_300",
       "path": "results/formal_300_validation_v1/analysis/formal_validation_summary.json",
-      "sanitize_rules": [
-        "formal_block_fingerprint"
-      ],
-      "sanitized": true,
+      "sanitize_rules": [],
+      "sanitized": false,
       "sha256": "9d939a4e98a3f0739e444285d50aefafb7e42cf182a75941382aab2623d93d42"
     },
     {
@@ -1716,10 +1718,8 @@
       "bytes": 5124,
       "category": "formal_300",
       "path": "results/formal_300_validation_v1/analysis_gemini_stage/formal_validation_summary.json",
-      "sanitize_rules": [
-        "formal_block_fingerprint"
-      ],
-      "sanitized": true,
+      "sanitize_rules": [],
+      "sanitized": false,
       "sha256": "f319ff99f1c47da771c466895765cd9752b541b4ecb5a0cb04417174df49407b"
     },
     {
@@ -1763,10 +1763,8 @@
       "bytes": 2444,
       "category": "formal_300",
       "path": "results/formal_300_validation_v1/sampling_lock.json",
-      "sanitize_rules": [
-        "formal_block_fingerprint"
-      ],
-      "sanitized": true,
+      "sanitize_rules": [],
+      "sanitized": false,
       "sha256": "8d59658dd394fc2fb7768b731ee900731c9ebc5274c4815cd117d0a2ffdbbe34"
     },
     {
@@ -4169,9 +4167,9 @@
       "sha256": "ef482fa753a3cbb8838ee75daa8f59791f3baa194cbcb1a76ae9a9c8ec1f9fb1"
     }
   ],
-  "redacted_field_count": 4,
-  "redacted_field_file_count": 4,
+  "redacted_field_count": 0,
+  "redacted_field_file_count": 0,
   "release_name": "govmem-aggregate-only-v3",
-  "sanitized_file_count": 25,
-  "total_bytes": 4960054
+  "sanitized_file_count": 23,
+  "total_bytes": 4960232
 }

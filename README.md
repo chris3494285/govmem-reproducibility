@@ -16,6 +16,9 @@ xAI/Grok.
 
 ## Release status
 
+The public JSS reproducibility release is available at
+https://github.com/chris3494285/govmem-jss-reproducibility.
+
 The historical v2 formal condition manifest contains a documented
 answer-leakage blocker. In 159 rows across 53 LongMemEval bases, the
 model-visible evidence was constructed with a fallback derived directly from
@@ -38,9 +41,11 @@ resulting reproducibility tiers are spelled out in
 `docs/REPRODUCTION_TIERS.md`.
 
 Recomputed v3 summaries and the complete old-versus-new statistic comparison
-are under `results/answer_leakage_repair/final_v3_analysis/`. The release is
-still not submission-ready until the authors resolve redistribution/licensing
-and review the changed paper numbers.
+are under `results/answer_leakage_repair/final_v3_analysis/`. The public
+offline suite passes with **525 tests passed, 230 skipped, and 0 failed**.
+Full end-to-end reproduction may still require separately obtaining permitted
+upstream benchmark inputs and access to private experiment records that are
+not redistributed.
 
 Final v3 headline values are corruption −27.55 pp, recovery +27.51 pp,
 context-changed corruption −26.04 pp, context-unchanged corruption −1.28 pp,
@@ -117,8 +122,8 @@ This release contains **no condition-level score files**. The Tier-B
 pseudonymous files (`results/final_main_tier_b/`) and the earlier
 `results/final_main_sanitized/` files are both withheld: Tier-B removed
 per-example identifiers and per-row fingerprints but still retained a
-row/condition structure derived from the licensed benchmarks, whose
-redistribution rights are not established here. Instead of shipping those rows,
+row/condition structure derived from the licensed benchmarks, outside the
+approved aggregate-only redistribution scope. Instead of shipping those rows,
 the release ships only the aggregate tables and summaries they feed.
 
 What this preserves:
@@ -252,8 +257,7 @@ the license texts, attribution, and the exact OAKS-derived artifact inventory in
 `LICENSE` contains the MIT grant for original GovMem implementation and test
 code only. `LICENSE_SCOPE.md` identifies the covered and excluded material;
 the MIT text does not cover third-party benchmarks, benchmark-derived
-aggregate results, or upstream notices. Employer/institutional ownership
-confirmation remains a release gate.
+aggregate results, or upstream notices.
 
 Coauthor public-release approval and MIT intent are recorded in
 `LICENSE_APPROVAL.md`. Original documentation, configuration, and aggregate
