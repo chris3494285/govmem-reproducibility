@@ -1,0 +1,223 @@
+{
+  "all_identities_pass": true,
+  "historical_manifest_sha256": "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8",
+  "prompt_template_hash": "38bdae8477e2392a2805f9ae882c1126676dfd81515a2a8f38fa595e43b536ca",
+  "providers": {
+    "anthropic": {
+      "api_endpoint": "https://api.anthropic.com/v1",
+      "historical_model_id": [
+        "claude-sonnet-5"
+      ],
+      "historical_model_parameters": [
+        "{\"temperature\":0,\"thinking\":\"disabled\",\"tools\":null}"
+      ],
+      "historical_provider_values": [
+        "anthropic"
+      ],
+      "model_match_exact": true,
+      "model_parameters_match": true,
+      "original_manifest_sha256": [
+        "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8"
+      ],
+      "prompt_template_hash": "38bdae8477e2392a2805f9ae882c1126676dfd81515a2a8f38fa595e43b536ca",
+      "proposed_model_id": "claude-sonnet-5",
+      "proposed_model_parameters": {
+        "temperature": 0,
+        "thinking": "disabled",
+        "tools": null
+      },
+      "provider": "anthropic",
+      "provider_match_exact": true,
+      "retry_policy": "shared runner, up to 3 attempts, retryable failures only",
+      "scoring_version": [
+        "None",
+        "final-main-source-aware-v1"
+      ],
+      "selective_result_merge_valid": true,
+      "system_instruction_hash": null,
+      "token_budget_policy": "provider-specific versioned configuration; LongMemEval repair ceiling is recorded in rerun_cost_estimate.json",
+      "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    },
+    "deepseek": {
+      "api_endpoint": "https://api.deepseek.com",
+      "historical_model_id": [
+        "deepseek-v4-pro"
+      ],
+      "historical_model_parameters": [
+        "{\"temperature\":0,\"thinking\":\"disabled\",\"tools\":null}"
+      ],
+      "historical_provider_values": [
+        "deepseek"
+      ],
+      "model_match_exact": true,
+      "model_parameters_match": true,
+      "original_manifest_sha256": [
+        "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8"
+      ],
+      "prompt_template_hash": "38bdae8477e2392a2805f9ae882c1126676dfd81515a2a8f38fa595e43b536ca",
+      "proposed_model_id": "deepseek-v4-pro",
+      "proposed_model_parameters": {
+        "temperature": 0,
+        "thinking": "disabled",
+        "tools": null
+      },
+      "provider": "deepseek",
+      "provider_match_exact": true,
+      "retry_policy": "shared runner, up to 3 attempts, retryable failures only",
+      "scoring_version": [
+        "final-main-source-aware-v1"
+      ],
+      "selective_result_merge_valid": true,
+      "system_instruction_hash": null,
+      "token_budget_policy": "provider-specific versioned configuration; LongMemEval repair ceiling is recorded in rerun_cost_estimate.json",
+      "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    },
+    "gemini": {
+      "api_endpoint": "https://generativelanguage.googleapis.com",
+      "historical_model_id": [
+        "gemini-3-flash-preview"
+      ],
+      "historical_model_parameters": [
+        "{\"temperature\":0,\"thinking\":\"low\",\"thinking_level\":\"LOW\",\"tools\":null}"
+      ],
+      "historical_provider_values": [
+        "gemini"
+      ],
+      "model_match_exact": true,
+      "model_parameters_match": true,
+      "original_manifest_sha256": [
+        "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8"
+      ],
+      "prompt_template_hash": "38bdae8477e2392a2805f9ae882c1126676dfd81515a2a8f38fa595e43b536ca",
+      "proposed_model_id": "gemini-3-flash-preview",
+      "proposed_model_parameters": {
+        "temperature": 0,
+        "thinking": "low",
+        "thinking_level": "LOW",
+        "tools": null
+      },
+      "provider": "gemini",
+      "provider_match_exact": true,
+      "retry_policy": "shared runner, up to 3 attempts, retryable failures only",
+      "scoring_version": [
+        "final-main-source-aware-v1"
+      ],
+      "selective_result_merge_valid": true,
+      "system_instruction_hash": null,
+      "token_budget_policy": "provider-specific versioned configuration; LongMemEval repair ceiling is recorded in rerun_cost_estimate.json",
+      "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    },
+    "grok": {
+      "api_endpoint": "https://api.x.ai/v1",
+      "historical_model_id": [
+        "grok-4.3"
+      ],
+      "historical_model_parameters": [
+        "{\"base_url\":\"https://api.x.ai/v1\",\"reasoning_effort\":\"none\",\"temperature\":null,\"thinking\":\"disabled\",\"tools\":null,\"top_p\":null}"
+      ],
+      "historical_provider_values": [
+        "xai"
+      ],
+      "model_match_exact": true,
+      "model_parameters_match": true,
+      "original_manifest_sha256": [
+        "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8"
+      ],
+      "prompt_template_hash": "38bdae8477e2392a2805f9ae882c1126676dfd81515a2a8f38fa595e43b536ca",
+      "proposed_model_id": "grok-4.3",
+      "proposed_model_parameters": {
+        "base_url": "https://api.x.ai/v1",
+        "reasoning_effort": "none",
+        "temperature": null,
+        "thinking": "disabled",
+        "tools": null,
+        "top_p": null
+      },
+      "provider": "xai",
+      "provider_match_exact": true,
+      "retry_policy": "shared runner, up to 3 attempts, retryable failures only",
+      "scoring_version": [
+        "final-main-source-aware-v1"
+      ],
+      "selective_result_merge_valid": true,
+      "system_instruction_hash": null,
+      "token_budget_policy": "provider-specific versioned configuration; LongMemEval repair ceiling is recorded in rerun_cost_estimate.json",
+      "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    },
+    "kimi": {
+      "api_endpoint": "https://api.moonshot.cn/v1",
+      "historical_model_id": [
+        "kimi-k2.6"
+      ],
+      "historical_model_parameters": [
+        "{\"base_url\":\"https://api.moonshot.cn/v1\",\"temperature\":0.6,\"thinking\":\"disabled\",\"tools\":null,\"top_p\":0.95}"
+      ],
+      "historical_provider_values": [
+        "kimi"
+      ],
+      "model_match_exact": true,
+      "model_parameters_match": true,
+      "original_manifest_sha256": [
+        "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8"
+      ],
+      "prompt_template_hash": "38bdae8477e2392a2805f9ae882c1126676dfd81515a2a8f38fa595e43b536ca",
+      "proposed_model_id": "kimi-k2.6",
+      "proposed_model_parameters": {
+        "base_url": "https://api.moonshot.cn/v1",
+        "temperature": 0.6,
+        "thinking": "disabled",
+        "tools": null,
+        "top_p": 0.95
+      },
+      "provider": "kimi",
+      "provider_match_exact": true,
+      "retry_policy": "shared runner, up to 3 attempts, retryable failures only",
+      "scoring_version": [
+        "final-main-source-aware-v1"
+      ],
+      "selective_result_merge_valid": true,
+      "system_instruction_hash": null,
+      "token_budget_policy": "provider-specific versioned configuration; LongMemEval repair ceiling is recorded in rerun_cost_estimate.json",
+      "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    },
+    "openai": {
+      "api_endpoint": "https://api.openai.com/v1",
+      "historical_model_id": [
+        "gpt-5.6-sol"
+      ],
+      "historical_model_parameters": [
+        "{\"temperature\":0,\"thinking\":\"disabled\",\"tools\":null}"
+      ],
+      "historical_provider_values": [
+        "openai"
+      ],
+      "model_match_exact": true,
+      "model_parameters_match": true,
+      "original_manifest_sha256": [
+        "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8"
+      ],
+      "prompt_template_hash": "38bdae8477e2392a2805f9ae882c1126676dfd81515a2a8f38fa595e43b536ca",
+      "proposed_model_id": "gpt-5.6-sol",
+      "proposed_model_parameters": {
+        "temperature": 0,
+        "thinking": "disabled",
+        "tools": null
+      },
+      "provider": "openai",
+      "provider_match_exact": true,
+      "retry_policy": "shared runner, up to 3 attempts, retryable failures only",
+      "scoring_version": [
+        "None",
+        "final-main-source-aware-v1"
+      ],
+      "selective_result_merge_valid": true,
+      "system_instruction_hash": null,
+      "token_budget_policy": "provider-specific versioned configuration; LongMemEval repair ceiling is recorded in rerun_cost_estimate.json",
+      "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    }
+  },
+  "schema_version": "final-main-rerun-identity-audit-v1",
+  "scoring_version": "final-main-source-aware-v1",
+  "system_instruction_hash": null,
+  "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+}

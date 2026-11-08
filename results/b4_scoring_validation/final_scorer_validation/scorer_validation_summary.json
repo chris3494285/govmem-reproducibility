@@ -1,0 +1,493 @@
+{
+  "by_adjudication_resolution_method": {
+    "human_adjudication": {
+      "agreement_n": 1,
+      "agreement_rate": 1.0,
+      "cohen_kappa": null,
+      "cohen_kappa_status": "not_estimable",
+      "confusion_matrix": {
+        "false_negative": 0,
+        "false_positive": 0,
+        "independent_correct": {
+          "scorer_correct": 0,
+          "scorer_incorrect": 0
+        },
+        "independent_incorrect": {
+          "scorer_correct": 0,
+          "scorer_incorrect": 1
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 1,
+        "true_positive": 0
+      },
+      "disagreement_n": 0,
+      "false_negative_n": 0,
+      "false_positive_n": 0,
+      "n": 1
+    },
+    "primary_binary_agreement_raw_subtype_disagreement": {
+      "agreement_n": 4,
+      "agreement_rate": 0.6666666666666666,
+      "cohen_kappa": null,
+      "cohen_kappa_status": "not_estimable",
+      "confusion_matrix": {
+        "false_negative": 0,
+        "false_positive": 2,
+        "independent_correct": {
+          "scorer_correct": 0,
+          "scorer_incorrect": 0
+        },
+        "independent_incorrect": {
+          "scorer_correct": 2,
+          "scorer_incorrect": 4
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 4,
+        "true_positive": 0
+      },
+      "disagreement_n": 2,
+      "false_negative_n": 0,
+      "false_positive_n": 2,
+      "n": 6
+    },
+    "primary_exact_agreement": {
+      "agreement_n": 264,
+      "agreement_rate": 0.45517241379310347,
+      "cohen_kappa": 0.12094236819891031,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 300,
+        "false_positive": 16,
+        "independent_correct": {
+          "scorer_correct": 136,
+          "scorer_incorrect": 300
+        },
+        "independent_incorrect": {
+          "scorer_correct": 16,
+          "scorer_incorrect": 128
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 128,
+        "true_positive": 136
+      },
+      "disagreement_n": 316,
+      "false_negative_n": 300,
+      "false_positive_n": 16,
+      "n": 580
+    },
+    "third_judge_majority": {
+      "agreement_n": 5,
+      "agreement_rate": 0.29411764705882354,
+      "cohen_kappa": -0.051546391752577275,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 11,
+        "false_positive": 1,
+        "independent_correct": {
+          "scorer_correct": 3,
+          "scorer_incorrect": 11
+        },
+        "independent_incorrect": {
+          "scorer_correct": 1,
+          "scorer_incorrect": 2
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 2,
+        "true_positive": 3
+      },
+      "disagreement_n": 12,
+      "false_negative_n": 11,
+      "false_positive_n": 1,
+      "n": 17
+    }
+  },
+  "by_experimental_condition": {
+    "clean": {
+      "agreement_n": 83,
+      "agreement_rate": 0.5,
+      "cohen_kappa": 0.08621833134367952,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 79,
+        "false_positive": 4,
+        "independent_correct": {
+          "scorer_correct": 69,
+          "scorer_incorrect": 79
+        },
+        "independent_incorrect": {
+          "scorer_correct": 4,
+          "scorer_incorrect": 14
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 14,
+        "true_positive": 69
+      },
+      "disagreement_n": 83,
+      "false_negative_n": 79,
+      "false_positive_n": 4,
+      "n": 166
+    },
+    "corrupted": {
+      "agreement_n": 108,
+      "agreement_rate": 0.43724696356275305,
+      "cohen_kappa": 0.006079379324320448,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 129,
+        "false_positive": 10,
+        "independent_correct": {
+          "scorer_correct": 15,
+          "scorer_incorrect": 129
+        },
+        "independent_incorrect": {
+          "scorer_correct": 10,
+          "scorer_incorrect": 93
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 93,
+        "true_positive": 15
+      },
+      "disagreement_n": 139,
+      "false_negative_n": 129,
+      "false_positive_n": 10,
+      "n": 247
+    },
+    "enforced": {
+      "agreement_n": 83,
+      "agreement_rate": 0.43455497382198954,
+      "cohen_kappa": 0.09039597848134756,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 103,
+        "false_positive": 5,
+        "independent_correct": {
+          "scorer_correct": 55,
+          "scorer_incorrect": 103
+        },
+        "independent_incorrect": {
+          "scorer_correct": 5,
+          "scorer_incorrect": 28
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 28,
+        "true_positive": 55
+      },
+      "disagreement_n": 108,
+      "false_negative_n": 103,
+      "false_positive_n": 5,
+      "n": 191
+    }
+  },
+  "by_generating_provider": {
+    "anthropic": {
+      "agreement_n": 47,
+      "agreement_rate": 0.30718954248366015,
+      "cohen_kappa": -0.055721911209477906,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 96,
+        "false_positive": 10,
+        "independent_correct": {
+          "scorer_correct": 28,
+          "scorer_incorrect": 96
+        },
+        "independent_incorrect": {
+          "scorer_correct": 10,
+          "scorer_incorrect": 19
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 19,
+        "true_positive": 28
+      },
+      "disagreement_n": 106,
+      "false_negative_n": 96,
+      "false_positive_n": 10,
+      "n": 153
+    },
+    "deepseek": {
+      "agreement_n": 0,
+      "agreement_rate": null,
+      "cohen_kappa": null,
+      "cohen_kappa_status": "not_estimable",
+      "confusion_matrix": {
+        "false_negative": 0,
+        "false_positive": 0,
+        "independent_correct": {
+          "scorer_correct": 0,
+          "scorer_incorrect": 0
+        },
+        "independent_incorrect": {
+          "scorer_correct": 0,
+          "scorer_incorrect": 0
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 0,
+        "true_positive": 0
+      },
+      "disagreement_n": 0,
+      "false_negative_n": 0,
+      "false_positive_n": 0,
+      "n": 0
+    },
+    "gemini": {
+      "agreement_n": 35,
+      "agreement_rate": 0.5303030303030303,
+      "cohen_kappa": 0.17433414043583534,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 28,
+        "false_positive": 3,
+        "independent_correct": {
+          "scorer_correct": 20,
+          "scorer_incorrect": 28
+        },
+        "independent_incorrect": {
+          "scorer_correct": 3,
+          "scorer_incorrect": 15
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 15,
+        "true_positive": 20
+      },
+      "disagreement_n": 31,
+      "false_negative_n": 28,
+      "false_positive_n": 3,
+      "n": 66
+    },
+    "kimi": {
+      "agreement_n": 87,
+      "agreement_rate": 0.5304878048780488,
+      "cohen_kappa": 0.17377649829887465,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 74,
+        "false_positive": 3,
+        "independent_correct": {
+          "scorer_correct": 62,
+          "scorer_incorrect": 74
+        },
+        "independent_incorrect": {
+          "scorer_correct": 3,
+          "scorer_incorrect": 25
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 25,
+        "true_positive": 62
+      },
+      "disagreement_n": 77,
+      "false_negative_n": 74,
+      "false_positive_n": 3,
+      "n": 164
+    },
+    "openai": {
+      "agreement_n": 32,
+      "agreement_rate": 0.24242424242424243,
+      "cohen_kappa": -0.015228426395939073,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 97,
+        "false_positive": 3,
+        "independent_correct": {
+          "scorer_correct": 8,
+          "scorer_incorrect": 97
+        },
+        "independent_incorrect": {
+          "scorer_correct": 3,
+          "scorer_incorrect": 24
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 24,
+        "true_positive": 8
+      },
+      "disagreement_n": 100,
+      "false_negative_n": 97,
+      "false_positive_n": 3,
+      "n": 132
+    },
+    "xai": {
+      "agreement_n": 73,
+      "agreement_rate": 0.8202247191011236,
+      "cohen_kappa": 0.6053215077605322,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 16,
+        "false_positive": 0,
+        "independent_correct": {
+          "scorer_correct": 21,
+          "scorer_incorrect": 16
+        },
+        "independent_incorrect": {
+          "scorer_correct": 0,
+          "scorer_incorrect": 52
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 52,
+        "true_positive": 21
+      },
+      "disagreement_n": 16,
+      "false_negative_n": 16,
+      "false_positive_n": 0,
+      "n": 89
+    }
+  },
+  "by_memora_subtype": {
+    "content_email_writeup": {
+      "agreement_n": 36,
+      "agreement_rate": 0.45569620253164556,
+      "cohen_kappa": 0.12651067112368206,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 42,
+        "false_positive": 1,
+        "independent_correct": {
+          "scorer_correct": 12,
+          "scorer_incorrect": 42
+        },
+        "independent_incorrect": {
+          "scorer_correct": 1,
+          "scorer_incorrect": 24
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 24,
+        "true_positive": 12
+      },
+      "disagreement_n": 43,
+      "false_negative_n": 42,
+      "false_positive_n": 1,
+      "n": 79
+    },
+    "content_project_proposal": {
+      "agreement_n": 178,
+      "agreement_rate": 0.4149184149184149,
+      "cohen_kappa": 0.10520280208411235,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 245,
+        "false_positive": 6,
+        "independent_correct": {
+          "scorer_correct": 100,
+          "scorer_incorrect": 245
+        },
+        "independent_incorrect": {
+          "scorer_correct": 6,
+          "scorer_incorrect": 78
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 78,
+        "true_positive": 100
+      },
+      "disagreement_n": 251,
+      "false_negative_n": 245,
+      "false_positive_n": 6,
+      "n": 429
+    }
+  },
+  "by_task": {
+    "longmemeval": {
+      "agreement_n": 60,
+      "agreement_rate": 0.625,
+      "agreement_rate_wilson_95ci": {
+        "confidence": 0.95,
+        "lower": 0.5251071844189874,
+        "upper": 0.7152739186165937
+      },
+      "cohen_kappa": 0.25868725868725867,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 24,
+        "false_positive": 12,
+        "independent_correct": {
+          "scorer_correct": 27,
+          "scorer_incorrect": 24
+        },
+        "independent_incorrect": {
+          "scorer_correct": 12,
+          "scorer_incorrect": 33
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 33,
+        "true_positive": 27
+      },
+      "disagreement_n": 36,
+      "false_negative_n": 24,
+      "false_positive_n": 12,
+      "n": 96
+    },
+    "memora": {
+      "agreement_n": 214,
+      "agreement_rate": 0.421259842519685,
+      "agreement_rate_wilson_95ci": {
+        "confidence": 0.95,
+        "lower": 0.3790710117114795,
+        "upper": 0.46463059037381527
+      },
+      "cohen_kappa": 0.11196204112211762,
+      "cohen_kappa_status": "estimated",
+      "confusion_matrix": {
+        "false_negative": 287,
+        "false_positive": 7,
+        "independent_correct": {
+          "scorer_correct": 112,
+          "scorer_incorrect": 287
+        },
+        "independent_incorrect": {
+          "scorer_correct": 7,
+          "scorer_incorrect": 102
+        },
+        "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+        "true_negative": 102,
+        "true_positive": 112
+      },
+      "disagreement_n": 294,
+      "false_negative_n": 287,
+      "false_positive_n": 7,
+      "n": 508
+    }
+  },
+  "deterministic_binary_mapping": {
+    "other status/value": "fail_closed_unscored",
+    "scoring_status=scored and correctness=false": "incorrect",
+    "scoring_status=scored and correctness=true": "correct"
+  },
+  "orientation": {
+    "false_negative": "scorer incorrect, independent correct",
+    "false_positive": "scorer correct, independent incorrect",
+    "reference_positive": "independent correct/pass",
+    "scorer_prediction_positive": "deterministic scorer correct"
+  },
+  "overall": {
+    "agreement_n": 274,
+    "agreement_rate": 0.45364238410596025,
+    "agreement_rate_wilson_95ci": {
+      "confidence": 0.95,
+      "lower": 0.4143567826273841,
+      "upper": 0.49351393071841404
+    },
+    "cohen_kappa": 0.11425930534324004,
+    "cohen_kappa_status": "estimated",
+    "confusion_matrix": {
+      "false_negative": 311,
+      "false_positive": 19,
+      "independent_correct": {
+        "scorer_correct": 139,
+        "scorer_incorrect": 311
+      },
+      "independent_incorrect": {
+        "scorer_correct": 19,
+        "scorer_incorrect": 135
+      },
+      "orientation": "rows=independent reference; columns=deterministic scorer; positive=correct",
+      "true_negative": 135,
+      "true_positive": 139
+    },
+    "disagreement_n": 330,
+    "false_negative_n": 311,
+    "false_positive_n": 19,
+    "n": 604
+  },
+  "schema_version": "b4-scorer-validation-v1",
+  "unit_alignment": {
+    "longmemeval": "answer-level deterministic score versus answer-level independent reference",
+    "memora": "answer-level deterministic score versus each deduplicated atomic-criterion independent reference; the frozen answer-level score is repeated for criteria sharing that answer"
+  }
+}

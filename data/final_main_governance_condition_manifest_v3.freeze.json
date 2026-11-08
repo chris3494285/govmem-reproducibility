@@ -1,0 +1,11 @@
+{
+  "manifest_filename": "final_main_governance_condition_manifest_v3.jsonl",
+  "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+  "official_source_locator": "longmemeval-cleaned/longmemeval_oracle.json",
+  "official_source_sha256": "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c",
+  "rerun_status": "pending",
+  "schema_version": "main-governance-condition-v3",
+  "statement": "Only official native LongMemEval user-message content was used for the 53 corrected bases; no provider APIs were called and expected_answer was not used to construct context.",
+  "superseded_manifest_sha256": "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8",
+  "supersedes_manifest": "final_main_governance_condition_manifest_v2.jsonl"
+}

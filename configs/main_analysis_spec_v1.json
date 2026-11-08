@@ -1,0 +1,26 @@
+{
+  "schema_version": "main-analysis-spec-v1",
+  "status": "FROZEN",
+  "frozen_base_manifest_filename": "data/final_main_governance_base_manifest_v2.jsonl",
+  "frozen_base_manifest_sha256": "a2601a7ecb46034faf5dcc7ad00b5a851e19ae01561876fa681fd18af168ca79",
+  "deterministic_seed": 42,
+  "primary_aggregate_definition": "event-macro mean across deletion, temporal, and update; each event has equal weight",
+  "secondary_aggregate_definition": "micro mean across all eligible evaluated base-condition observations",
+  "per_event_reporting": ["deletion", "temporal", "update"],
+  "uncertainty": {
+    "confidence_level": 0.95,
+    "bootstrap": "paired/base-level deterministic bootstrap",
+    "seed": 42
+  },
+  "balanced_event_robustness": {
+    "counts": {"deletion": 169, "temporal": 169, "update": 169},
+    "total": 507,
+    "rule": "temporal uses all 169; deletion/update use source-aware deterministic hash ranking with seed 42 and no model outputs"
+  },
+  "oaks_cluster_robustness": {
+    "cluster_field": "document_id",
+    "resampling": "document-cluster bootstrap",
+    "sensitivity": "leave-one-document-out"
+  },
+  "analysis_policy_statement": "Primary aggregation, secondary aggregation, balanced-event robustness, and OAKS cluster-robustness rules were frozen before model inference on the final main cohort."
+}

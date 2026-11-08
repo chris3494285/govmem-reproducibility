@@ -1,0 +1,8 @@
+{
+  "attempt4_smoke_available": 1,
+  "evaluator_methodology": "final-native-evaluation-v2",
+  "paid_calls_performed": 0,
+  "protocol_version": "formal-300-validation-v1",
+  "recovery_manifest_hash": "265cbe2ba35af1f4b607870d982bf4ea9969031fc31aea64506bc60fbeefed45",
+  "recovery_protocol_version": "formal-300-validation-v1-gemini-attempt4-schema-compatibility-recovery-1"
+}

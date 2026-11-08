@@ -1,0 +1,286 @@
+{
+  "admission_projection": {
+    "spec_changed": {
+      "n": 1832,
+      "rate": 0.8807692307692307
+    },
+    "spec_restored": {
+      "n": 2080,
+      "rate": 1.0
+    }
+  },
+  "by_fault": {
+    "conflicting": {
+      "admission_changed": 540,
+      "admission_restored": 618,
+      "context_changed": 540,
+      "context_restored": 618,
+      "surgical_violations": 0,
+      "triplets": 618
+    },
+    "flipped": {
+      "admission_changed": 345,
+      "admission_restored": 380,
+      "context_changed": 380,
+      "context_restored": 380,
+      "surgical_violations": 0,
+      "triplets": 380
+    },
+    "missing": {
+      "admission_changed": 731,
+      "admission_restored": 731,
+      "context_changed": 731,
+      "context_restored": 731,
+      "surgical_violations": 0,
+      "triplets": 731
+    },
+    "stale": {
+      "admission_changed": 216,
+      "admission_restored": 351,
+      "context_changed": 351,
+      "context_restored": 351,
+      "surgical_violations": 0,
+      "triplets": 351
+    }
+  },
+  "by_source": {
+    "longmemeval": {
+      "admission_changed": 382,
+      "admission_restored": 460,
+      "context_changed": 382,
+      "context_restored": 460,
+      "surgical_violations": 0,
+      "triplets": 460
+    },
+    "memora": {
+      "admission_changed": 1105,
+      "admission_restored": 1140,
+      "context_changed": 1140,
+      "context_restored": 1140,
+      "surgical_violations": 0,
+      "triplets": 1140
+    },
+    "oaks_novel": {
+      "admission_changed": 345,
+      "admission_restored": 480,
+      "context_changed": 480,
+      "context_restored": 480,
+      "surgical_violations": 0,
+      "triplets": 480
+    }
+  },
+  "governance_state": {
+    "corruption_declares_oracle_fields": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "enforcement_oracle_reference_matches_enforced_state": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "internal_state_unchanged_by_corruption": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "oracle_state_invariant": {
+      "passed": 2080,
+      "rate": 1.0
+    }
+  },
+  "input_summary": {
+    "clean_rows": 731,
+    "complete_triplets": 2080,
+    "condition_schema_versions": {
+      "main-governance-condition-v2": 4626,
+      "main-governance-condition-v3": 265
+    },
+    "duplicate_clean_rows": 0,
+    "duplicate_or_unpaired_members": 0,
+    "manifest_name": "final_main_governance_condition_manifest_v3.jsonl",
+    "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+    "orphan_pair_groups": 0,
+    "pair_rows": 2080,
+    "schema_versions": {
+      "main-governance-condition-v1": 4891
+    }
+  },
+  "model_visible_context": {
+    "memory_items_changed": {
+      "n": 2002,
+      "rate": 0.9625
+    },
+    "memory_items_restored": {
+      "n": 2080,
+      "rate": 1.0
+    },
+    "text_changed": {
+      "n": 2002,
+      "rate": 0.9625
+    },
+    "text_policy": "text compared in memory only; no text, hash, or locator is emitted",
+    "text_restored": {
+      "n": 2080,
+      "rate": 1.0
+    }
+  },
+  "provider_frozen_proxy_labels": {
+    "missing_files": [],
+    "providers": {
+      "anthropic": {
+        "coverage_rate": 0.9988782051282051,
+        "expected_labels": 6240,
+        "labelled": 6233,
+        "missing_rows": 0,
+        "unlabelled": 7
+      },
+      "deepseek": {
+        "coverage_rate": 1.0,
+        "expected_labels": 6240,
+        "labelled": 6240,
+        "missing_rows": 0,
+        "unlabelled": 0
+      },
+      "gemini": {
+        "coverage_rate": 1.0,
+        "expected_labels": 6240,
+        "labelled": 6240,
+        "missing_rows": 0,
+        "unlabelled": 0
+      },
+      "grok": {
+        "coverage_rate": 1.0,
+        "expected_labels": 6240,
+        "labelled": 6240,
+        "missing_rows": 0,
+        "unlabelled": 0
+      },
+      "kimi": {
+        "coverage_rate": 1.0,
+        "expected_labels": 6240,
+        "labelled": 6240,
+        "missing_rows": 0,
+        "unlabelled": 0
+      },
+      "openai": {
+        "coverage_rate": 1.0,
+        "expected_labels": 6240,
+        "labelled": 6240,
+        "missing_rows": 0,
+        "unlabelled": 0
+      }
+    },
+    "scores_dir": "final_main_sanitized"
+  },
+  "schema_version": "govmem-condition-trace-validation-v1",
+  "surgical_invariance": {
+    "allowed_variation_fields": [
+      "condition_id",
+      "condition_type",
+      "corruption_specification",
+      "enforcement_specification",
+      "fault_operator",
+      "model_visible_context_spec",
+      "model_visible_context_text",
+      "model_visible_memory_items",
+      "pair_id"
+    ],
+    "observed_changed_fields_clean_vs_corrupted": [
+      {
+        "field": "condition_id",
+        "triplets": 2080
+      },
+      {
+        "field": "condition_type",
+        "triplets": 2080
+      },
+      {
+        "field": "corruption_specification",
+        "triplets": 2080
+      },
+      {
+        "field": "fault_operator",
+        "triplets": 2080
+      },
+      {
+        "field": "model_visible_context_spec",
+        "triplets": 1832
+      },
+      {
+        "field": "model_visible_context_text",
+        "triplets": 2002
+      },
+      {
+        "field": "model_visible_memory_items",
+        "triplets": 2002
+      },
+      {
+        "field": "pair_id",
+        "triplets": 2080
+      }
+    ],
+    "observed_changed_fields_clean_vs_enforced": [
+      {
+        "field": "condition_id",
+        "triplets": 2080
+      },
+      {
+        "field": "condition_type",
+        "triplets": 2080
+      },
+      {
+        "field": "corruption_specification",
+        "triplets": 2080
+      },
+      {
+        "field": "enforcement_specification",
+        "triplets": 2080
+      },
+      {
+        "field": "fault_operator",
+        "triplets": 2080
+      },
+      {
+        "field": "pair_id",
+        "triplets": 2080
+      }
+    ],
+    "violating_triplets": 0,
+    "violations_clean_vs_corrupted": [],
+    "violations_clean_vs_enforced": []
+  },
+  "triplet_count": 2080,
+  "triplet_integrity": {
+    "base_consistent": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "corrupted_and_enforced_share_pair": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "distinct_condition_ids": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "enforcement_targets_fault": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "event_consistent": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "fault_declared_on_corrupted": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "pair_id_shape": {
+      "passed": 2080,
+      "rate": 1.0
+    },
+    "source_consistent": {
+      "passed": 2080,
+      "rate": 1.0
+    }
+  }
+}

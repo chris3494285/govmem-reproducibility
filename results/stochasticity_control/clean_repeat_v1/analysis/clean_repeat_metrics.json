@@ -1,0 +1,867 @@
+{
+  "api_calls_performed": 0,
+  "blocks": [
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::longmemeval::01",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::longmemeval::02",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::longmemeval::03",
+      "selected_fault": "stale",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::longmemeval::04",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::longmemeval::05",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.5,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::memora::06",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::memora::07",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::memora::08",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::memora::09",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "openai",
+      "repeat_block_id": "clean-repeat-v1::openai::memora::10",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::longmemeval::11",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::longmemeval::12",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::longmemeval::13",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::longmemeval::14",
+      "selected_fault": "stale",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::longmemeval::15",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::memora::16",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.5,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.5,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::memora::17",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::memora::18",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::memora::19",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "anthropic",
+      "repeat_block_id": "clean-repeat-v1::anthropic::memora::20",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::longmemeval::21",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "gemini_binary_majority",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::longmemeval::22",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::longmemeval::23",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::longmemeval::24",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::longmemeval::25",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.16666666666666669,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.5,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::memora::26",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::memora::27",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::memora::28",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::memora::29",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "gemini",
+      "repeat_block_id": "clean-repeat-v1::gemini::memora::30",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::longmemeval::31",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::longmemeval::32",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::longmemeval::33",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::longmemeval::34",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::longmemeval::35",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.3108448928121059,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.8846153846153846,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::memora::36",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.9090909090909091,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.9090909090909091,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::memora::37",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::memora::38",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::memora::39",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "kimi",
+      "repeat_block_id": "clean-repeat-v1::kimi::memora::40",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::longmemeval::41",
+      "selected_fault": "stale",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::longmemeval::42",
+      "selected_fault": "stale",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "deterministic_abstention",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "native_deterministic",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::longmemeval::43",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::longmemeval::44",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::longmemeval::45",
+      "selected_fault": "stale",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::memora::46",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::memora::47",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::memora::48",
+      "selected_fault": "conflicting",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.6666666666666666,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::memora::49",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "xai",
+      "repeat_block_id": "clean-repeat-v1::xai::memora::50",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::longmemeval::51",
+      "selected_fault": "stale",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::longmemeval::52",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "gemini_binary_majority",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::longmemeval::53",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::longmemeval::54",
+      "selected_fault": "conflicting",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "dual_primary_binary_agreement",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::longmemeval::55",
+      "selected_fault": "missing",
+      "source": "longmemeval"
+    },
+    {
+      "clean_A_correctness": 0.55,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.6,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::memora::56",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::memora::57",
+      "selected_fault": "flipped",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::memora::58",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 0.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 0.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::memora::59",
+      "selected_fault": "missing",
+      "source": "memora"
+    },
+    {
+      "clean_A_correctness": 1.0,
+      "clean_A_route": "semantic_judge_required",
+      "clean_B_correctness": 1.0,
+      "clean_B_resolution_method": "memora_gemini_primary",
+      "generating_provider": "deepseek",
+      "repeat_block_id": "clean-repeat-v1::deepseek::memora::60",
+      "selected_fault": "missing",
+      "source": "memora"
+    }
+  ],
+  "bootstrap": {
+    "iterations": 10000,
+    "method": "percentile",
+    "seed": 20261010,
+    "unit": "paired block"
+  },
+  "by_generating_provider": {
+    "anthropic": {
+      "absolute_gap_pp": 9.999999999999998,
+      "agreement_rate": 0.9,
+      "binary_outcomes": false,
+      "disagreement_count": 1,
+      "disagreement_rate": 0.1,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 1.0,
+      "mean_abs_delta": 0.1,
+      "mean_clean_A": 0.95,
+      "mean_clean_B": 0.85,
+      "n": 10,
+      "paired_difference_ci95_pp": [
+        0.0,
+        30.0
+      ],
+      "paired_difference_pp": 9.999999999999998,
+      "transitions": null
+    },
+    "deepseek": {
+      "absolute_gap_pp": 0.5000000000000004,
+      "agreement_rate": 0.9,
+      "binary_outcomes": false,
+      "disagreement_count": 1,
+      "disagreement_rate": 0.1,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 0.04999999999999993,
+      "mean_abs_delta": 0.004999999999999993,
+      "mean_clean_A": 0.655,
+      "mean_clean_B": 0.66,
+      "n": 10,
+      "paired_difference_ci95_pp": [
+        -1.499999999999998,
+        0.0
+      ],
+      "paired_difference_pp": -0.5000000000000004,
+      "transitions": null
+    },
+    "gemini": {
+      "absolute_gap_pp": 3.3333333333333326,
+      "agreement_rate": 0.5,
+      "binary_outcomes": false,
+      "disagreement_count": 5,
+      "disagreement_rate": 0.5,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 1.0,
+      "mean_abs_delta": 0.43333333333333335,
+      "mean_clean_A": 0.6166666666666667,
+      "mean_clean_B": 0.65,
+      "n": 10,
+      "paired_difference_ci95_pp": [
+        -43.333333333333336,
+        36.66666666666667
+      ],
+      "paired_difference_pp": -3.3333333333333326,
+      "transitions": null
+    },
+    "kimi": {
+      "absolute_gap_pp": 15.73770491803279,
+      "agreement_rate": 0.8,
+      "binary_outcomes": false,
+      "disagreement_count": 2,
+      "disagreement_rate": 0.2,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 1.0,
+      "mean_abs_delta": 0.15737704918032785,
+      "mean_clean_A": 0.6219935801903015,
+      "mean_clean_B": 0.7793706293706294,
+      "n": 10,
+      "paired_difference_ci95_pp": [
+        -37.213114754098356,
+        0.0
+      ],
+      "paired_difference_pp": -15.73770491803279,
+      "transitions": null
+    },
+    "openai": {
+      "absolute_gap_pp": 5.000000000000004,
+      "agreement_rate": 0.8,
+      "binary_outcomes": false,
+      "disagreement_count": 2,
+      "disagreement_rate": 0.2,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 1.0,
+      "mean_abs_delta": 0.15,
+      "mean_clean_A": 0.9,
+      "mean_clean_B": 0.85,
+      "n": 10,
+      "paired_difference_ci95_pp": [
+        -15.0,
+        30.0
+      ],
+      "paired_difference_pp": 5.000000000000004,
+      "transitions": null
+    },
+    "xai": {
+      "absolute_gap_pp": 3.3333333333333384,
+      "agreement_rate": 0.6,
+      "binary_outcomes": false,
+      "disagreement_count": 4,
+      "disagreement_rate": 0.4,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 1.0,
+      "mean_abs_delta": 0.36666666666666664,
+      "mean_clean_A": 0.4,
+      "mean_clean_B": 0.36666666666666664,
+      "n": 10,
+      "paired_difference_ci95_pp": [
+        -33.33333333333333,
+        40.0
+      ],
+      "paired_difference_pp": 3.3333333333333384,
+      "transitions": null
+    }
+  },
+  "by_source": {
+    "longmemeval": {
+      "absolute_gap_pp": 3.3333333333333326,
+      "agreement_rate": 0.7,
+      "binary_outcomes": true,
+      "disagreement_count": 9,
+      "disagreement_rate": 0.3,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 1.0,
+      "mean_abs_delta": 0.3,
+      "mean_clean_A": 0.7333333333333333,
+      "mean_clean_B": 0.7,
+      "n": 30,
+      "paired_difference_ci95_pp": [
+        -16.666666666666664,
+        23.333333333333332
+      ],
+      "paired_difference_pp": 3.3333333333333326,
+      "transitions": {
+        "correct_correct": 17,
+        "correct_incorrect": 5,
+        "incorrect_correct": 4,
+        "incorrect_incorrect": 4
+      }
+    },
+    "memora": {
+      "absolute_gap_pp": 3.7459016393442623,
+      "agreement_rate": 0.8,
+      "binary_outcomes": false,
+      "disagreement_count": 6,
+      "disagreement_rate": 0.2,
+      "excluded_unresolved": 0,
+      "max_abs_delta": 1.0,
+      "mean_abs_delta": 0.10412568306010929,
+      "mean_clean_A": 0.6478867489523227,
+      "mean_clean_B": 0.6853457653457653,
+      "n": 30,
+      "paired_difference_ci95_pp": [
+        -12.714025500910747,
+        6.254098360655738
+      ],
+      "paired_difference_pp": -3.7459016393442623,
+      "transitions": null
+    }
+  },
+  "evaluator": "final-native-evaluation-v2",
+  "formal_300_comparator": {
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 20261010,
+    "corruption_effect_ci95_pp": [
+      29.78457785625372,
+      41.11590945899807
+    ],
+    "corruption_effect_pp": 35.536290041409735,
+    "protocol": "formal-300-validation-v1",
+    "recovery_effect_ci95_pp": [
+      26.935454755810795,
+      38.363827287715324
+    ],
+    "recovery_effect_pp": 32.67353221505277
+  },
+  "longmemeval": {
+    "absolute_gap_pp": 3.3333333333333326,
+    "agreement_rate": 0.7,
+    "binary_outcomes": true,
+    "disagreement_count": 9,
+    "disagreement_rate": 0.3,
+    "excluded_unresolved": 0,
+    "max_abs_delta": 1.0,
+    "mean_abs_delta": 0.3,
+    "mean_clean_A": 0.7333333333333333,
+    "mean_clean_B": 0.7,
+    "n": 30,
+    "paired_difference_ci95_pp": [
+      -16.666666666666664,
+      23.333333333333332
+    ],
+    "paired_difference_pp": 3.3333333333333326,
+    "transitions": {
+      "correct_correct": 17,
+      "correct_incorrect": 5,
+      "incorrect_correct": 4,
+      "incorrect_incorrect": 4
+    }
+  },
+  "memora": {
+    "absolute_gap_pp": 3.7459016393442623,
+    "agreement_rate": 0.8,
+    "binary_outcomes": false,
+    "disagreement_count": 6,
+    "disagreement_rate": 0.2,
+    "excluded_unresolved": 0,
+    "max_abs_delta": 1.0,
+    "mean_abs_delta": 0.10412568306010929,
+    "mean_clean_A": 0.6478867489523227,
+    "mean_clean_B": 0.6853457653457653,
+    "n": 30,
+    "paired_difference_ci95_pp": [
+      -12.714025500910747,
+      6.254098360655738
+    ],
+    "paired_difference_pp": -3.7459016393442623,
+    "transitions": null
+  },
+  "n_blocks": 60,
+  "overall": {
+    "absolute_gap_pp": 0.20628415300546488,
+    "agreement_rate": 0.75,
+    "binary_outcomes": false,
+    "disagreement_count": 15,
+    "disagreement_rate": 0.25,
+    "excluded_unresolved": 0,
+    "max_abs_delta": 1.0,
+    "mean_abs_delta": 0.20206284153005463,
+    "mean_clean_A": 0.690610041142828,
+    "mean_clean_B": 0.6926728826728826,
+    "n": 60,
+    "paired_difference_ci95_pp": [
+      -11.162568306010929,
+      10.75
+    ],
+    "paired_difference_pp": -0.20628415300546488,
+    "transitions": null
+  },
+  "protocol": "clean-repeat-v1",
+  "resolution": {
+    "evaluator_counts": {
+      "deterministic": 1,
+      "lme_escalation_completed": 2,
+      "lme_primary_agreement": 27,
+      "lme_primary_disagreement": 2,
+      "lme_primary_judged": 29,
+      "memora_gemini_primary": 30,
+      "memora_observations": 30
+    },
+    "n_blocks": 60,
+    "n_resolved_clean_b": 60
+  },
+  "scoring_protocol": "LongMemEval dual primaries (OpenAI gpt-5.6-sol + Anthropic claude-sonnet-5) with Gemini escalation on disagreement/non-binary; Memora Gemini criterion primary with native FAMA; frozen native-deterministic route for the single deterministic block. No obsolete unified deterministic scorer.",
+  "unit": "paired CLEAN-A / CLEAN-B block"
+}

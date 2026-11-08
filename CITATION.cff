@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its aggregate results, please cite it using the metadata below."
+title: "Stress-Testing the Control Plane of Agent Memory"
+type: software
+version: 0.1.0
+date-released: 2026-11-08
+authors:
+  - family-names: Liu
+    given-names: Bowen
+  - family-names: Wang
+    given-names: Youting
+  - family-names: Shen
+    given-names: Bonan
+  - family-names: Shang
+    given-names: Dingyan
+abstract: >-
+  Reproducibility materials for a study of governance-state corruption,
+  context projection, enforcement recovery, and behavioral sensitivity in
+  long-term agent memory.
+keywords:
+  - agent memory
+  - governance
+  - long-term memory
+  - fault injection
+  - reproducibility

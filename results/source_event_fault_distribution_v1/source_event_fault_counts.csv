@@ -1,0 +1,15 @@
+source,event,fault,distinct_base_count,fault_pair_count,corrupted_condition_count,enforced_condition_count
+longmemeval,temporal,missing,113,113,113,113
+longmemeval,temporal,stale,113,113,113,113
+longmemeval,update,missing,78,78,78,78
+longmemeval,update,stale,78,78,78,78
+longmemeval,update,conflicting,78,78,78,78
+memora,deletion,missing,380,380,380,380
+memora,deletion,flipped,380,380,380,380
+memora,deletion,conflicting,380,380,380,380
+oaks_novel,temporal,missing,56,56,56,56
+oaks_novel,temporal,stale,56,56,56,56
+oaks_novel,temporal,conflicting,56,56,56,56
+oaks_novel,update,missing,104,104,104,104
+oaks_novel,update,stale,104,104,104,104
+oaks_novel,update,conflicting,104,104,104,104

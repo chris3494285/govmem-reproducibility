@@ -1,0 +1,15 @@
+{
+  "schema_version": "final-main-token-budget-kimi-repair-v1",
+  "provider": "kimi",
+  "model": "kimi-k2.6",
+  "purpose": "selective repair measurement ceilings; not formal main-run defaults",
+  "budgets": {
+    "longmemeval": 3072,
+    "memora_email_writeup": 8192,
+    "memora_meeting_notes": 4096,
+    "memora_preference": 6144,
+    "memora_project_proposal": 12288,
+    "memora_todos": 3072,
+    "oaks_novel": 8192
+  }
+}

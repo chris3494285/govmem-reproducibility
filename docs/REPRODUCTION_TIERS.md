@@ -1,0 +1,95 @@
+# Reproduction tiers for the aggregate-only GovMem release
+
+This is the **aggregate-only** GovMem v3 release. It ships public experiment
+code, offline tests, non-secret configurations, documentation, and **aggregate**
+tables and summaries. It does **not** ship any row-level result file: the
+per-example score files, per-instance tables, cohort/judge-request/validation
+dumps, execution plans, and generation/judging ledgers are all excluded, and so
+are all source-derived benchmark identifiers and per-row content fingerprints.
+
+Because of that, reproducibility is not uniform. Three distinct tiers apply.
+
+## Tier 1 — Directly verifiable from this release
+
+These results are recomputable *from the aggregate files in this release alone*,
+with no provider API call and no licensed data:
+
+- The headline final-v3 control-plane effects: corruption −27.55 pp, recovery
+  +27.51 pp, context-changed corruption −26.04 pp, context-unchanged corruption
+  −1.28 pp, control-plane change 96.25%, restoration 100%.
+- The six-provider cross-provider table and per-provider summary statistics
+  (`results/final_main_cross_provider_summary_v3/`,
+  `results/answer_leakage_repair/final_v3_analysis/`).
+- Per-event / per-fault / per-provider / by-source breakdowns, the control-plane
+  propagation diagnostic, matched-fault support and overlap counts, and the
+  governance-evidence audit.
+- The v2→v3 statistic comparison (`old_vs_new_statistics.{json,csv,md}`).
+- B4 validation aggregates that are counts and distributions:
+  judge-request plans, OAKS input parity, scorer-validation summary and
+  manifest, unit-alignment distributions, and the paper-impact audit.
+- Formal-300 validation aggregates: resolved matched triplets, `by_fault_type`,
+  `by_source`, `by_generating_provider`, evaluator counts, and the
+  `formal_signal` verdict.
+- Clean-repeat stochasticity aggregates: overall / by-source / by-provider
+  metrics, the block-level table, and the generated paper table.
+- All public code, offline tests, frozen non-secret configs, and freeze metadata
+  (`data/*.freeze.json`).
+
+The published numbers are read directly from the retained aggregate JSON/CSV;
+they are internally consistent with `MANIFEST.sha256` and the content audit.
+
+## Tier 2 — Reproducible only after independently obtaining licensed datasets and local experiment outputs
+
+These are reproducible by a reader who (a) obtains LongMemEval, Memora, and
+OAKS Novel under their own licences and (b) holds the original local experiment
+outputs, and who then reruns the shipped offline code:
+
+- Rebuilding the frozen base and condition manifests, and checking their
+  SHA-256 hashes against `data/*.freeze.json` (see `docs/OBTAINING_DATASETS.md`).
+- Recomputing the six-provider aggregates from row-level scores. The code and
+  the analysis specs are shipped, but the **row-level score files are not**, so
+  the reader must regenerate them locally (or supply equivalent licensed
+  inputs).
+- B4 native/semantic validation counts, which require licensed benchmark inputs
+  (the scripts emit an explicit blocker report when those are absent).
+- Formal-300 observation resolution, which additionally needs the local
+  `results/cheap_judge_pilot_v1/` inputs.
+- Clean-repeat generation and judging ledgers, which are local/private.
+
+Nothing in this tier can be executed with only what is inside this release.
+
+## Tier 3 — Not fully reproducible from this release alone
+
+These cannot be reproduced or verified from this release under any inputs:
+
+- Any **per-example** analysis: row-level joins, per-row context/prompt
+  fingerprint checks, and reconstruction of individual benchmark examples. The
+  row-level files that would support them are deliberately excluded.
+- The **formal-300 test module** (`tests/test_formal_300_validation.py`): its
+  tests read the excluded `results/formal_300_validation_v1/execution_plan.jsonl`
+  at import time, so the module is collected and run only in a developer tree
+  that still contains that row-level file, never inside this snapshot.
+- Manuscript-dependent tests: `test_paper_revision_source` needs the external
+  manuscript, and `test_main_dataset_audit` needs the legacy MemConflict
+  manifest; neither is shipped.
+- Any claim that depends on redistribution rights that this repository does not
+  establish. Removing row-level files and identifiers does **not** by itself
+  grant permission to redistribute derived structural facts; confirm each
+  benchmark's terms before treating this release as licence-clean.
+
+## What "aggregate-only" means for the numbers
+
+Every published statistic in this release is a group-level aggregate: an
+overall value, or a value keyed by provider, model, source dataset name, event
+type, fault operator, or condition type. The clean-repeat block table is keyed
+by release-synthetic labels of the form
+`clean-repeat-v1::<provider>::<source>::NN`; those labels are generated by the
+release protocol and do not identify any benchmark example, and the mapping
+from a block to its examples is not shipped. No retained file contains a
+benchmark per-example identifier, a per-row content fingerprint, or benchmark
+question/answer/context text (the one exception is the author-created synthetic
+`tests/fixtures/memora-mini/` fixture, which contains no benchmark-derived
+content).
+
+See `AGGREGATE_ONLY_RELEASE_READINESS.md` for the exact candidate directory,
+file counts, verification commands, and remaining blockers.

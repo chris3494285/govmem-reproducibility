@@ -1,0 +1,25 @@
+base_n,ci_high,ci_low,coverage_rate,effect,event_count,event_values,group,mean,mean_delta,pair_n,paired_coverage_rate,paired_scored_n,paired_unscored_n,run,scope,total_pair_n
+380,-0.19385964912280698,-0.2719298245614035,,corruption,,,deletion,,-0.2324561403508772,,1.0,1140,0,primary,event,1140
+380,0.2649122807017544,0.18857456140350876,,recovery,,,deletion,,0.22631578947368422,,1.0,1140,0,primary,event,1140
+169,-0.17948717948717946,-0.31560650887573954,,corruption,,,temporal,,-0.2893401015228426,,1.0,394,0,primary,event,394
+169,0.3165680473372781,0.1844181459566075,,recovery,,,temporal,,0.29441624365482233,,1.0,394,0,primary,event,394
+182,-0.30586080586080583,-0.4175824175824175,,corruption,,,update,,-0.3626373626373626,,1.0,546,0,primary,event,546
+182,0.4212454212454212,0.31135531135531136,,recovery,,,update,,0.3663003663003663,,1.0,546,0,primary,event,546
+618,,,,corruption,,,conflicting,,-0.05501618122977346,,1.0,618,0,primary,fault,618
+618,,,,recovery,,,conflicting,,0.045307443365695796,,1.0,618,0,primary,fault,618
+380,,,,corruption,,,flipped,,-0.3736842105263158,,1.0,380,0,primary,fault,380
+380,,,,recovery,,,flipped,,0.3763157894736842,,1.0,380,0,primary,fault,380
+731,,,,corruption,,,missing,,-0.33105335157318744,,1.0,731,0,primary,fault,731
+731,,,,recovery,,,missing,,0.3337893296853625,,1.0,731,0,primary,fault,731
+351,,,,corruption,,,stale,,-0.452991452991453,,1.0,351,0,primary,fault,351
+351,,,,recovery,,,stale,,0.452991452991453,,1.0,351,0,primary,fault,351
+191,,,,corruption,,,longmemeval,,-0.13260869565217392,,1.0,460,0,primary,source,460
+191,,,,recovery,,,longmemeval,,0.11956521739130435,,1.0,460,0,primary,source,460
+380,,,,corruption,,,memora,,-0.2324561403508772,,1.0,1140,0,primary,source,1140
+380,,,,recovery,,,memora,,0.22631578947368422,,1.0,1140,0,primary,source,1140
+160,,,,corruption,,,oaks_novel,,-0.5229166666666667,,1.0,480,0,primary,source,480
+160,,,,recovery,,,oaks_novel,,0.54375,,1.0,480,0,primary,source,480
+,-0.24819668129890798,-0.3129926702851804,,corruption,3,"{'deletion': -0.2324561403508772, 'temporal': -0.24654832347140038, 'update': -0.3626373626373626}",all,-0.28054727548654673,,,,,,primary,event_macro,
+,0.31209275654619784,0.2497487740554542,,recovery,3,"{'deletion': 0.2263157894736842, 'temporal': 0.2504930966469428, 'update': 0.3663003663003663}",all,0.2810364174736644,,,,,,primary,event_macro,
+,-0.2387140902872777,-0.2970816233470132,1.0,corruption,,,all,-0.27740384615384617,,2080,,,,primary,micro,2080
+,0.2952576379388965,0.23803009575923392,1.0,recovery,,,all,0.2759615384615385,,2080,,,,primary,micro,2080

@@ -1,0 +1,38 @@
+{
+  "answer_generation_calls": 0,
+  "base_paid_calls": 896,
+  "blocks": 300,
+  "calls_by_provider": {
+    "anthropic": 220,
+    "gemini": 450,
+    "openai": 226
+  },
+  "estimated_input_tokens": 17370963,
+  "estimated_input_tokens_by_provider": {
+    "anthropic": 7487332,
+    "gemini": 2347012,
+    "openai": 7536619
+  },
+  "estimated_output_token_budget": 335528,
+  "estimated_output_token_budget_by_provider": {
+    "anthropic": 35200,
+    "gemini": 258840,
+    "openai": 41488
+  },
+  "evaluator": "final-native-evaluation-v2",
+  "lme_anthropic_primary_calls": 220,
+  "lme_deterministic_observations": 230,
+  "lme_gemini_escalation_baseline": 0,
+  "lme_openai_primary_calls": 220,
+  "lme_semantic_observations": 220,
+  "lme_total_observations": 450,
+  "memora_dynamic_secondary_baseline": 0,
+  "memora_frozen_secondary_calls": 6,
+  "memora_gemini_primary_calls": 450,
+  "memora_total_observations": 450,
+  "observations": 900,
+  "paid_calls_performed": 0,
+  "protocol": "formal-300-validation-v1",
+  "usd_cost": null,
+  "usd_cost_reason": "no authoritative repository-local pricing table covers all exact formal judge models"
+}

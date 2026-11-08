@@ -1,0 +1,17 @@
+{
+  "schema_version": "main-failure-handling-spec-v1",
+  "status": "FROZEN_PRE_SCORING",
+  "scope": "final main model inference",
+  "primary_failure_policy": "final provider/parse failure after the frozen retry policy is scored as downstream incorrect (score=0)",
+  "primary_denominator_policy": "retain all attempted frozen condition rows in the denominator; do not drop final parse failures",
+  "paired_analysis_policy": "for clean/corrupted/enforced paired effects, a final parse failure contributes score=0 for that condition rather than causing the pair to be removed",
+  "sensitivity_analysis": "repeat all principal aggregates using complete-case parse-success observations only",
+  "failure_reporting": "report final parse-failure rate overall and by source, analysis event, condition type, fault operator, and task subtype when available",
+  "rationale": [
+    "all frozen condition rows were actually attempted",
+    "failure to produce a parseable contract-compliant response after the frozen retry policy is a downstream task failure",
+    "dropping parse failures could introduce selective complete-case bias because failures may cluster by source or task type",
+    "complete-case analysis is retained as a sensitivity analysis"
+  ],
+  "timing_statement": "This failure-handling policy was frozen after inference completion but before inspection of downstream task accuracy, corruption effects, recovery effects, confidence intervals, or model-comparison results."
+}

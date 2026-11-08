@@ -1,0 +1,15 @@
+{
+  "schema_version": "final-main-token-budget-kimi-v4",
+  "provider": "kimi",
+  "model": "kimi-k2.6",
+  "purpose": "provider/model-specific measurement ceilings; not global scientific defaults",
+  "budgets": {
+    "longmemeval": 3072,
+    "memora_email_writeup": 8192,
+    "memora_meeting_notes": 4096,
+    "memora_preference": 3072,
+    "memora_project_proposal": 12288,
+    "memora_todos": 3072,
+    "oaks_novel": 8192
+  }
+}

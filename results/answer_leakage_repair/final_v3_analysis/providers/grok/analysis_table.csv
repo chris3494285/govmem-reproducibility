@@ -1,0 +1,25 @@
+base_n,ci_high,ci_low,coverage_rate,effect,event_count,event_values,group,mean,mean_delta,pair_n,paired_coverage_rate,paired_scored_n,paired_unscored_n,run,scope,total_pair_n
+380,-0.09385964912280702,-0.16929824561403511,,corruption,,,deletion,,-0.13157894736842105,,1.0,1140,0,primary,event,1140
+380,0.14649122807017542,0.08771929824561402,,recovery,,,deletion,,0.11666666666666667,,1.0,1140,0,primary,event,1140
+169,-0.1390532544378698,-0.26232741617356997,,corruption,,,temporal,,-0.23857868020304568,,1.0,394,0,primary,event,394
+169,0.23964497041420119,0.1351084812623274,,recovery,,,temporal,,0.2233502538071066,,1.0,394,0,primary,event,394
+182,-0.15567765567765565,-0.29304029304029305,,corruption,,,update,,-0.22344322344322345,,1.0,546,0,primary,event,546
+182,0.28937728937728935,0.16117216117216115,,recovery,,,update,,0.22527472527472528,,1.0,546,0,primary,event,546
+618,,,,corruption,,,conflicting,,-0.05825242718446602,,1.0,618,0,primary,fault,618
+618,,,,recovery,,,conflicting,,0.05501618122977346,,1.0,618,0,primary,fault,618
+380,,,,corruption,,,flipped,,-0.19736842105263158,,1.0,380,0,primary,fault,380
+380,,,,recovery,,,flipped,,0.15526315789473685,,1.0,380,0,primary,fault,380
+731,,,,corruption,,,missing,,-0.19425444596443228,,1.0,731,0,primary,fault,731
+731,,,,recovery,,,missing,,0.18878248974008208,,1.0,731,0,primary,fault,731
+351,,,,corruption,,,stale,,-0.32193732193732194,,1.0,351,0,primary,fault,351
+351,,,,recovery,,,stale,,0.32193732193732194,,1.0,351,0,primary,fault,351
+191,,,,corruption,,,longmemeval,,0.03695652173913044,,1.0,460,0,primary,source,460
+191,,,,recovery,,,longmemeval,,-0.043478260869565216,,1.0,460,0,primary,source,460
+380,,,,corruption,,,memora,,-0.13157894736842105,,1.0,1140,0,primary,source,1140
+380,,,,recovery,,,memora,,0.11666666666666667,,1.0,1140,0,primary,source,1140
+160,,,,corruption,,,oaks_novel,,-0.48541666666666666,,1.0,480,0,primary,source,480
+160,,,,recovery,,,oaks_novel,,0.48125,,1.0,480,0,primary,source,480
+,-0.15140586303035697,-0.21822366567305837,,corruption,3,"{'deletion': -0.13157894736842105, 'temporal': -0.1992110453648915, 'update': -0.22344322344322343}",all,-0.18474440539217865,,,,,,primary,event_macro,
+,0.2053749202888879,0.14645927565461975,,recovery,3,"{'deletion': 0.11666666666666667, 'temporal': 0.1854043392504931, 'update': 0.22527472527472528}",all,0.17578191039729502,,,,,,primary,event_macro,
+,-0.14067487460100317,-0.20041039671682626,1.0,corruption,,,all,-0.17596153846153847,,2080,,,,primary,micro,2080
+,0.1853625170998632,0.1342909256725946,1.0,recovery,,,all,0.16538461538461538,,2080,,,,primary,micro,2080

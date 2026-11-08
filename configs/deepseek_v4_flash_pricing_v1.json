@@ -1,0 +1,16 @@
+{
+  "schema_version": "deepseek-pricing-v1",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "currency": "USD",
+  "unit": "per_million_tokens",
+  "peak": {
+    "input": null,
+    "output": null
+  },
+  "off_peak": {
+    "input": null,
+    "output": null
+  },
+  "notes": "Pricing is intentionally unset until the provider's applicable billing schedule is confirmed. Prefer provider-returned billing when available; this metadata is not part of scoring."
+}

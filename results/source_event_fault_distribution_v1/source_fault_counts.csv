@@ -1,0 +1,10 @@
+source,fault,unique_base_count,total_fault_pairs
+longmemeval,missing,191,191
+longmemeval,stale,191,191
+longmemeval,conflicting,78,78
+memora,missing,380,380
+memora,flipped,380,380
+memora,conflicting,380,380
+oaks_novel,missing,160,160
+oaks_novel,stale,160,160
+oaks_novel,conflicting,160,160

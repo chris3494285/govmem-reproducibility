@@ -1,0 +1,5 @@
+fault_operator,pair_count,admission_change,admission_restoration,context_change,context_restoration,mean_corruption_delta,mean_recovery_delta
+conflicting,3708,"{'n': 3240, 'denominator': 3708, 'rate': 0.8737864077669902}","{'n': 3708, 'denominator': 3708, 'rate': 1.0}","{'n': 3240, 'denominator': 3708, 'rate': 0.8737864077669902}","{'n': 3708, 'denominator': 3708, 'rate': 1.0}",-0.06121898597626753,0.06014023732470335
+flipped,2280,"{'n': 2280, 'denominator': 2280, 'rate': 1.0}","{'n': 2280, 'denominator': 2280, 'rate': 1.0}","{'n': 2280, 'denominator': 2280, 'rate': 1.0}","{'n': 2280, 'denominator': 2280, 'rate': 1.0}",-0.2614035087719298,0.2574561403508772
+missing,4386,"{'n': 4386, 'denominator': 4386, 'rate': 1.0}","{'n': 4386, 'denominator': 4386, 'rate': 1.0}","{'n': 4386, 'denominator': 4386, 'rate': 1.0}","{'n': 4386, 'denominator': 4386, 'rate': 1.0}",-0.29343365253077974,0.2950296397628819
+stale,2106,"{'n': 2106, 'denominator': 2106, 'rate': 1.0}","{'n': 2106, 'denominator': 2106, 'rate': 1.0}","{'n': 2106, 'denominator': 2106, 'rate': 1.0}","{'n': 2106, 'denominator': 2106, 'rate': 1.0}",-0.4862298195631529,0.4852801519468186

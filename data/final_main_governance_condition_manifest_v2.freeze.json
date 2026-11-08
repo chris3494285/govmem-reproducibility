@@ -1,0 +1,15 @@
+{
+  "condition_counts": {
+    "clean": 731,
+    "corrupted": 2080,
+    "enforced": 2080
+  },
+  "manifest_filename": "final_main_governance_condition_manifest_v2.jsonl",
+  "manifest_sha256": "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8",
+  "parent_base_manifest_filename": "final_main_governance_base_manifest_v2.jsonl",
+  "parent_base_manifest_sha256": "a2601a7ecb46034faf5dcc7ad00b5a851e19ae01561876fa681fd18af168ca79",
+  "parent_condition_manifest_filename": "final_main_governance_condition_manifest_v1.jsonl",
+  "parent_condition_manifest_sha256": "3aea17d92a2116400116a5e9082ddb2f2efa585cff550c40925eab9e5162af70",
+  "schema_version": "main-governance-condition-v2",
+  "statement": "Task payloads were reconstructed only from frozen base fields and deterministic benchmark audit artifacts; no model outputs or APIs were used."
+}

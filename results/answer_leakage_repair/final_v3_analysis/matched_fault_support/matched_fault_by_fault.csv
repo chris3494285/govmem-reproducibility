@@ -1,0 +1,19 @@
+provider,fault_pair,matched_base_count,mean_difference_pp,median_difference_pp,stale_worse_n,stale_worse_fraction,tied_n,tied_fraction,comparator_worse_n,comparator_worse_fraction,bootstrap_ci_low_pp,bootstrap_ci_high_pp,bootstrap_seed,bootstrap_replicates,interpretation
+openai,stale_vs_missing,351,-13.105413105413104,0,61,0.1737891737891738,275,0.7834757834757835,15,0.042735042735042736,-17.94871794871795,-8.547008547008547,42,10000,negative means stale causes greater degradation on the same base
+openai,stale_vs_flipped,0,,,0,,0,,0,,,,42,10000,negative means stale causes greater degradation on the same base
+openai,stale_vs_conflicting,238,-62.60504201680672,-100.0,150,0.6302521008403361,87,0.36554621848739494,1,0.004201680672268907,-68.90756302521008,-56.30252100840336,42,10000,negative means stale causes greater degradation on the same base
+anthropic,stale_vs_missing,351,-12.250712250712251,0,61,0.1737891737891738,272,0.7749287749287749,18,0.05128205128205128,-17.094017094017094,-7.4074074074074066,42,10000,negative means stale causes greater degradation on the same base
+anthropic,stale_vs_flipped,0,,,0,,0,,0,,,,42,10000,negative means stale causes greater degradation on the same base
+anthropic,stale_vs_conflicting,238,-50.42016806722689,-100.0,123,0.5168067226890757,112,0.47058823529411764,3,0.012605042016806723,-56.72268907563025,-43.69747899159664,42,10000,negative means stale causes greater degradation on the same base
+deepseek,stale_vs_missing,351,-13.675213675213676,0,65,0.18518518518518517,269,0.7663817663817664,17,0.04843304843304843,-18.51851851851852,-8.831908831908832,42,10000,negative means stale causes greater degradation on the same base
+deepseek,stale_vs_flipped,0,,,0,,0,,0,,,,42,10000,negative means stale causes greater degradation on the same base
+deepseek,stale_vs_conflicting,238,-44.537815126050425,0.0,108,0.453781512605042,128,0.5378151260504201,2,0.008403361344537815,-51.26050420168067,-37.81512605042017,42,10000,negative means stale causes greater degradation on the same base
+gemini,stale_vs_missing,351,-13.105413105413104,0,59,0.16809116809116809,279,0.7948717948717948,13,0.037037037037037035,-17.663817663817664,-8.547008547008547,42,10000,negative means stale causes greater degradation on the same base
+gemini,stale_vs_flipped,0,,,0,,0,,0,,,,42,10000,negative means stale causes greater degradation on the same base
+gemini,stale_vs_conflicting,238,-56.72268907563025,-100.0,136,0.5714285714285714,101,0.42436974789915966,1,0.004201680672268907,-63.02521008403361,-50.42016806722689,42,10000,negative means stale causes greater degradation on the same base
+kimi,stale_vs_missing,351,-12.82051282051282,0,61,0.1737891737891738,274,0.7806267806267806,16,0.045584045584045586,-17.37891737891738,-8.262108262108262,42,10000,negative means stale causes greater degradation on the same base
+kimi,stale_vs_flipped,0,,,0,,0,,0,,,,42,10000,negative means stale causes greater degradation on the same base
+kimi,stale_vs_conflicting,238,-51.68067226890757,-100.0,123,0.5168067226890757,115,0.4831932773109244,0,0.0,-57.98319327731093,-45.378151260504204,42,10000,negative means stale causes greater degradation on the same base
+grok,stale_vs_missing,351,-12.535612535612536,0,55,0.15669515669515668,285,0.811965811965812,11,0.03133903133903134,-16.80911680911681,-8.262108262108262,42,10000,negative means stale causes greater degradation on the same base
+grok,stale_vs_flipped,0,,,0,,0,,0,,,,42,10000,negative means stale causes greater degradation on the same base
+grok,stale_vs_conflicting,238,-31.092436974789916,0.0,78,0.3277310924369748,156,0.6554621848739496,4,0.01680672268907563,-37.39495798319328,-24.789915966386555,42,10000,negative means stale causes greater degradation on the same base

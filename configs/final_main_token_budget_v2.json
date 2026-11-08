@@ -1,0 +1,24 @@
+{
+  "schema_version": "final-main-token-budget-v2",
+  "status": "VERSIONED_PRE_INFERENCE",
+  "scope": "final main Memora project-proposal validation slice",
+  "budgets": {
+    "longmemeval": 256,
+    "memora_email_writeup": 512,
+    "memora_preference": 256,
+    "memora_project_proposal": 1536,
+    "memora_meeting_notes": 256,
+    "memora_todos": 256,
+    "oaks_novel": 128
+  },
+  "parent_frozen_budgets": {
+    "longmemeval": 256,
+    "memora_email_writeup": 512,
+    "memora_preference": 256,
+    "memora_project_proposal": 768,
+    "memora_meeting_notes": 256,
+    "memora_todos": 256,
+    "oaks_novel": 128
+  },
+  "statement": "Only the Memora content_project_proposal budget changes from 768 to 1536; all other budgets are unchanged."
+}

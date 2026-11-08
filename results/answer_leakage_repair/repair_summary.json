@@ -1,0 +1,55 @@
+{
+  "affected_paper_results": [
+    "clean/corrupted/enforced accuracy",
+    "corruption effect",
+    "recovery effect",
+    "LongMemEval source analysis",
+    "missing/stale fault analysis",
+    "event-level macro results",
+    "six-provider aggregate",
+    "control-plane propagation diagnostic",
+    "matched-fault robustness",
+    "all affected tables and figures"
+  ],
+  "api_calls_made": false,
+  "changed_condition_row_count": 265,
+  "changed_counts_by_condition_type": {
+    "clean": 53,
+    "corrupted": 106,
+    "enforced": 106
+  },
+  "changed_counts_by_event_type": {
+    "temporal": 265
+  },
+  "changed_counts_by_fault_operator": {
+    "None": 53,
+    "missing": 106,
+    "stale": 106
+  },
+  "changed_counts_by_source": {
+    "longmemeval": 265
+  },
+  "changed_prompt_count": 265,
+  "corrected_base_count": 53,
+  "leakage_gate_status": "PASS_FOR_V3_MANIFEST",
+  "official_source_locator": "longmemeval-cleaned/longmemeval_oracle.json",
+  "official_source_sha256": "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c",
+  "provider_rerun_manifest_dir": "results/answer_leakage_repair/provider_rerun_manifests",
+  "provider_rerun_required": true,
+  "providers": [
+    "openai",
+    "anthropic",
+    "deepseek",
+    "gemini",
+    "kimi",
+    "grok"
+  ],
+  "required_reruns_per_provider": 265,
+  "status": "NATIVE_EVIDENCE_REPAIR_PENDING_PROVIDER_RERUN",
+  "submission_ready": false,
+  "total_required_requests_across_six_providers": 1590,
+  "v2_manifest": "data/final_main_governance_condition_manifest_v2.jsonl",
+  "v2_manifest_sha256": "58cf32242254b64ad7f5e3e56818bcc5c006625321f5ed2a86024cca4d7492f8",
+  "v3_manifest": "data/final_main_governance_condition_manifest_v3.jsonl",
+  "v3_manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+}

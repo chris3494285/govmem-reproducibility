@@ -1,0 +1,25 @@
+base_n,ci_high,ci_low,coverage_rate,effect,event_count,event_values,group,mean,mean_delta,pair_n,paired_coverage_rate,paired_scored_n,paired_unscored_n,run,scope,total_pair_n
+380,-0.1324561403508772,-0.2175438596491228,,corruption,,,deletion,,-0.1736842105263158,,1.0,1140,0,primary,event,1140
+380,0.2070175438596491,0.13421052631578947,,recovery,,,deletion,,0.17017543859649123,,1.0,1140,0,primary,event,1140
+169,-0.2001972386587771,-0.3303747534516765,,corruption,,,temporal,,-0.29949238578680204,,1.0,394,0,primary,event,394
+169,0.33136094674556216,0.21400394477317553,,recovery,,,temporal,,0.30456852791878175,,1.0,394,0,primary,event,394
+182,-0.35347985347985345,-0.46153846153846156,,corruption,,,update,,-0.4065934065934066,,1.0,546,0,primary,event,546
+182,0.45970695970695963,0.358974358974359,,recovery,,,update,,0.4084249084249084,,1.0,546,0,primary,event,546
+618,,,,corruption,,,conflicting,,-0.061488673139158574,,1.0,618,0,primary,fault,618
+618,,,,recovery,,,conflicting,,0.05825242718446602,,1.0,618,0,primary,fault,618
+380,,,,corruption,,,flipped,,-0.2710526315789474,,1.0,380,0,primary,fault,380
+380,,,,recovery,,,flipped,,0.26842105263157895,,1.0,380,0,primary,fault,380
+731,,,,corruption,,,missing,,-0.3064295485636115,,1.0,731,0,primary,fault,731
+731,,,,recovery,,,missing,,0.3091655266757866,,1.0,731,0,primary,fault,731
+351,,,,corruption,,,stale,,-0.4928774928774929,,1.0,351,0,primary,fault,351
+351,,,,recovery,,,stale,,0.4928774928774929,,1.0,351,0,primary,fault,351
+191,,,,corruption,,,longmemeval,,-0.2108695652173913,,1.0,460,0,primary,source,460
+191,,,,recovery,,,longmemeval,,0.2108695652173913,,1.0,460,0,primary,source,460
+380,,,,corruption,,,memora,,-0.1736842105263158,,1.0,1140,0,primary,source,1140
+380,,,,recovery,,,memora,,0.17017543859649123,,1.0,1140,0,primary,source,1140
+160,,,,corruption,,,oaks_novel,,-0.50625,,1.0,480,0,primary,source,480
+160,,,,recovery,,,oaks_novel,,0.5125,,1.0,480,0,primary,source,480
+,-0.2501607692802025,-0.31304327139347377,,corruption,3,"{'deletion': -0.17368421052631577, 'temporal': -0.26528599605522685, 'update': -0.4065934065934066}",all,-0.2818545377249831,,,,,,primary,event_macro,
+,0.31232739145694605,0.255124509992931,,recovery,3,"{'deletion': 0.17017543859649123, 'temporal': 0.27218934911242604, 'update': 0.4084249084249084}",all,0.28359656537794187,,,,,,primary,event_macro,
+,-0.22229822161422708,-0.2831794345645235,1.0,corruption,,,all,-0.2586538461538462,,2080,,,,primary,micro,2080
+,0.280437756497948,0.22594619243046055,1.0,recovery,,,all,0.25817307692307695,,2080,,,,primary,micro,2080

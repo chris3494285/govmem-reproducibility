@@ -1,0 +1,1 @@
+{"session_id":1,"session_type":"memory_introduction","operation":"add","operation_details":{"memory":"The weekly report is due Friday."},"date":"2025-06-01","persona":"software_engineer","conversation":[{"turn":1,"speaker":"user","message":"The weekly report is due Friday.","share_memory":true},{"turn":2,"speaker":"ai_agent","message":"Understood."}]}

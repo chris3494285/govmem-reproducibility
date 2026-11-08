@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "govmem-demo"
+version = "0.1.0"
+description = "Stress-testing the control plane of agent memory"
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.40.0",
+  "anthropic>=0.125,<1",
+  "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+plot = ["matplotlib>=3.7"]
+repro = ["pytest>=7", "matplotlib>=3.7", "numpy>=1.23"]
+
+[tool.setuptools.packages.find]
+include = ["govmem*", "eval*", "baselines*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+  "requires_private_artifacts: test needs private/local artifacts that are excluded from the public release (opt in with --include-private)",
+  "requires_licensed_data: test needs a locally obtained licensed benchmark dataset (LongMemEval/Memora/OAKS Novel); opt in with --include-private",
+  "requires_source_checkout: test needs the developer Git checkout, unavailable inside a bare release snapshot (opt in with --include-private)",
+]

@@ -1,0 +1,91 @@
+{
+  "options": {
+    "A": {
+      "affected_outputs_or_cases": "At least 6 affected table/figure families and all final-main correctness claims; retain 12,480 control-plane state comparisons.",
+      "api_cost_required": false,
+      "cons": [
+        "Removes the central downstream answer-quality and correctness-recovery conclusions",
+        "Requires substantial paper reframing"
+      ],
+      "main_experiment_rerun": false,
+      "name": "Remove or qualify scorer-dependent claims",
+      "pros": [
+        "No fabricated metric",
+        "Preserves verified cohort/governance/control-plane evidence"
+      ],
+      "sections": [
+        "abstract",
+        "introduction",
+        "methods/scoring",
+        "final-main results",
+        "robustness",
+        "conclusion",
+        "limitations"
+      ]
+    },
+    "B": {
+      "affected_outputs_or_cases": "604 semantic cases, but only LongMemEval N=96 is currently same-unit; Memora remains unaligned.",
+      "api_cost_required": false,
+      "cons": [
+        "Cannot repair the 29,346-row main accuracy analysis",
+        "Cannot produce a valid Memora accuracy estimate"
+      ],
+      "main_experiment_rerun": false,
+      "name": "Use the existing semantic validation cohort only",
+      "pros": [
+        "Uses frozen independent judgments",
+        "No new answer generation"
+      ],
+      "sections": [
+        "methods/scoring",
+        "B4 validity",
+        "limitations"
+      ]
+    },
+    "C": {
+      "affected_outputs_or_cases": "22,626 LongMemEval+Memora condition answers across six providers; OAKS 6,720 rows need not change",
+      "api_cost_required": "Potentially no, only if a defensible deterministic scorer can be specified",
+      "cons": [
+        "A defensible deterministic Memora criterion mapping is currently absent",
+        "Must be frozen and independently validated before seeing full results"
+      ],
+      "main_experiment_rerun": "Scoring/analysis only; existing answers can be reused",
+      "name": "Design/freeze scorer v3 and rerun affected scoring",
+      "pros": [
+        "Could preserve paired full-cohort design",
+        "No answer-generation rerun"
+      ],
+      "sections": [
+        "methods",
+        "all final-main correctness results",
+        "robustness",
+        "conclusion"
+      ]
+    },
+    "D": {
+      "affected_outputs_or_cases": "22,626 existing LongMemEval+Memora answers (6\u00d7[1,111+2,660]); retain OAKS native parity",
+      "api_cost_required": "Likely for semantic LongMemEval/Memora judging unless human/native tooling is used",
+      "cons": [
+        "Substantial evaluation cost and adjudication workload",
+        "Requires frozen aggregation and quality-control protocol"
+      ],
+      "main_experiment_rerun": "Evaluation/analysis only; no answer-generation rerun",
+      "name": "Use benchmark-native/native-style evaluation for affected datasets",
+      "pros": [
+        "Strongest construct validity",
+        "Directly addresses paraphrase, abstention, and Memora native criteria"
+      ],
+      "sections": [
+        "methods",
+        "all final-main correctness results",
+        "robustness",
+        "conclusion",
+        "B4"
+      ]
+    }
+  },
+  "recommended_to_preserve_current_thesis": "D",
+  "schema_version": "b4-paper-scorer-impact-v1",
+  "smallest_note": "Option A is the smallest operational remedy but narrows the paper to control-plane/state evidence and removes central downstream-correctness conclusions. To preserve the current downstream-quality thesis, Option D is recommended.",
+  "smallest_scientifically_defensible": "A"
+}

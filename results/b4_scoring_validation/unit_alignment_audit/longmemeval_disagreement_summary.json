@@ -1,0 +1,43 @@
+{
+  "by_root_cause_category": {
+    "abstention_handling_difference": {
+      "false_negative_n": 8,
+      "false_positive_n": 10,
+      "n": 18
+    },
+    "deterministic_false_positive": {
+      "false_negative_n": 0,
+      "false_positive_n": 2,
+      "n": 2
+    },
+    "normalization_or_native_alternative_gap": {
+      "false_negative_n": 2,
+      "false_positive_n": 0,
+      "n": 2
+    },
+    "semantic_paraphrase_missed_by_deterministic": {
+      "false_negative_n": 14,
+      "false_positive_n": 0,
+      "n": 14
+    }
+  },
+  "classification_policy": "Frozen labels are never changed. Abstention categories use frozen raw judge subtypes; normalization diagnostics use exact deterministic normalization only; semantic acceptance comes exclusively from the frozen independent reference.",
+  "condition_distribution": {
+    "clean": 16,
+    "corrupted": 6,
+    "enforced": 14
+  },
+  "disagreement_n": 36,
+  "false_negative_n": 24,
+  "false_positive_n": 12,
+  "longmemeval_total_n": 96,
+  "private_text_policy": "Question, reference-answer, and model-answer text were inspected locally but are represented in this public-safe audit only by hashes and locators.",
+  "provider_distribution": {
+    "anthropic": 12,
+    "gemini": 6,
+    "kimi": 7,
+    "openai": 7,
+    "xai": 4
+  },
+  "schema_version": "b4-scorer-unit-alignment-audit-v1"
+}

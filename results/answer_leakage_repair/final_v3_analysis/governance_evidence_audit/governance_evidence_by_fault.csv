@@ -1,0 +1,5 @@
+fault,bases,fully_supported,source_native_evidence_present,clean_state_supported,assigned_faults_supported,oracle_linked,provenance_locator_present,heuristic_only,ambiguous
+missing,731,731,731,731,731,731,731,0,0
+stale,351,351,351,351,351,351,351,0,0
+flipped,380,380,380,380,380,380,380,0,0
+conflicting,618,618,618,618,618,618,618,0,0

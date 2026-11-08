@@ -1,0 +1,7 @@
+provider,valid_triplets,base_clusters,longmemeval_triplets,memora_triplets,clean_mean,corrupted_mean,enforced_mean,corruption_effect_pp,block_ci_corruption_low_pp,block_ci_corruption_high_pp,cluster_ci_corruption_low_pp,cluster_ci_corruption_high_pp,recovery_effect_pp,block_ci_recovery_low_pp,block_ci_recovery_high_pp,cluster_ci_recovery_low_pp,cluster_ci_recovery_high_pp,stability
+openai,50,50,25,25,0.862134,0.350841,0.851182,51.1293,37.9136,64.1784,38.0227,64.0678,50.0341,36.4070,63.6188,36.5164,63.3186,estimated
+anthropic,50,50,25,25,0.822222,0.316192,0.720000,50.6030,36.5456,64.2969,36.9625,64.0669,40.3808,26.2776,54.6985,26.4790,54.5181,estimated
+deepseek,49,49,24,25,0.580839,0.406236,0.605669,17.4603,5.4656,29.9320,6.2471,29.2285,19.9433,7.7737,32.6036,8.8732,31.6786,estimated
+gemini,49,49,24,25,0.812847,0.372486,0.787729,44.0361,29.3601,58.0951,29.6777,58.0863,41.5243,25.8067,56.2460,26.0625,56.1878,estimated
+kimi,50,50,25,25,0.645273,0.329994,0.591110,31.5279,19.0109,44.3778,18.7817,44.3662,26.1116,13.7705,39.1118,13.9614,38.6394,estimated
+xai,50,50,25,25,0.418667,0.235971,0.415667,18.2696,3.7820,32.1535,3.7751,32.5492,17.9696,5.0582,30.6180,5.3440,31.0481,estimated

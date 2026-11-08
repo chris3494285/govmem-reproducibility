@@ -1,0 +1,804 @@
+{
+  "analysis_spec": "main-analysis-spec-v1",
+  "base_manifest_sha256": "a2601a7ecb46034faf5dcc7ad00b5a851e19ae01561876fa681fd18af168ca79",
+  "bootstrap_replicates": 10000,
+  "complete_case_sensitivity": {
+    "balanced_robustness": {
+      "base_count": 507,
+      "base_counts": {
+        "deletion": 169,
+        "temporal": 169,
+        "update": 169
+      },
+      "event_macro": {
+        "corruption": {
+          "ci_high": -0.24917817225509534,
+          "ci_low": -0.3198635765943458,
+          "event_count": 3,
+          "event_values": {
+            "deletion": -0.24063116370808676,
+            "temporal": -0.24654832347140038,
+            "update": -0.3668639053254438
+          },
+          "mean": -0.284681130834977
+        },
+        "recovery": {
+          "ci_high": 0.3175542406311637,
+          "ci_low": 0.2481919789612097,
+          "event_count": 3,
+          "event_values": {
+            "deletion": 0.22682445759368836,
+            "temporal": 0.2504930966469428,
+            "update": 0.3708086785009862
+          },
+          "mean": 0.28270874424720577
+        }
+      }
+    },
+    "base_count": 731,
+    "condition_accuracy": {
+      "clean": {
+        "accuracy": 0.45964432284541723,
+        "coverage_rate": 1.0,
+        "scored_n": 731,
+        "total_n": 731,
+        "unscored_n": 0
+      },
+      "corrupted": {
+        "accuracy": 0.19489894128970164,
+        "coverage_rate": 0.9990384615384615,
+        "scored_n": 2078,
+        "total_n": 2080,
+        "unscored_n": 2
+      },
+      "enforced": {
+        "accuracy": 0.4706730769230769,
+        "coverage_rate": 1.0,
+        "scored_n": 2080,
+        "total_n": 2080,
+        "unscored_n": 0
+      }
+    },
+    "event_macro": {
+      "corruption": {
+        "ci_high": -0.24819668129890798,
+        "ci_low": -0.3129926702851804,
+        "event_count": 3,
+        "event_values": {
+          "deletion": -0.2324561403508772,
+          "temporal": -0.24654832347140038,
+          "update": -0.3626373626373626
+        },
+        "mean": -0.28054727548654673
+      },
+      "recovery": {
+        "ci_high": 0.31209275654619784,
+        "ci_low": 0.2497487740554542,
+        "event_count": 3,
+        "event_values": {
+          "deletion": 0.2263157894736842,
+          "temporal": 0.2504930966469428,
+          "update": 0.3663003663003663
+        },
+        "mean": 0.2810364174736644
+      }
+    },
+    "micro": {
+      "corruption": {
+        "ci_high": -0.2387140902872777,
+        "ci_low": -0.2970816233470132,
+        "coverage_rate": 0.9990384615384615,
+        "mean": -0.2776708373435996,
+        "pair_n": 2078,
+        "total_pair_n": 2080
+      },
+      "recovery": {
+        "ci_high": 0.2952576379388965,
+        "ci_low": 0.23803009575923392,
+        "coverage_rate": 0.9990384615384615,
+        "mean": 0.2762271414821944,
+        "pair_n": 2078,
+        "total_pair_n": 2080
+      }
+    },
+    "oaks_cluster_robustness": {
+      "corruption": {
+        "base_n": 160,
+        "ci_high": -0.45248538011695905,
+        "ci_low": -0.5903996101364523,
+        "cluster_n": 19,
+        "leave_one_document_out": {
+          "max": -0.5054012345679012,
+          "min": -0.5455246913580247,
+          "n": 19,
+          "values": [
+            -0.5249485596707819,
+            -0.5262345679012346,
+            -0.5249485596707819,
+            -0.5208333333333334,
+            -0.5054012345679012,
+            -0.5146604938271605,
+            -0.5146604938271605,
+            -0.5216049382716049,
+            -0.5455246913580247,
+            -0.5216049382716049,
+            -0.5126028806584362,
+            -0.5216049382716049,
+            -0.5228909465020576,
+            -0.5308641975308642,
+            -0.5285493827160493,
+            -0.533179012345679,
+            -0.5126028806584362,
+            -0.5239197530864197,
+            -0.5239197530864197
+          ]
+        },
+        "mean": -0.5229166666666667
+      },
+      "recovery": {
+        "base_n": 160,
+        "ci_high": 0.6120857699805067,
+        "ci_low": 0.4712475633528264,
+        "cluster_n": 19,
+        "leave_one_document_out": {
+          "max": 0.5671296296296297,
+          "min": 0.5270061728395061,
+          "n": 19,
+          "values": [
+            0.5465534979423868,
+            0.5455246913580247,
+            0.5465534979423868,
+            0.540380658436214,
+            0.5270061728395061,
+            0.5362654320987654,
+            0.5362654320987654,
+            0.5432098765432098,
+            0.5671296296296297,
+            0.5432098765432098,
+            0.5300925925925926,
+            0.5432098765432098,
+            0.540380658436214,
+            0.5524691358024691,
+            0.5501543209876543,
+            0.5501543209876543,
+            0.5321502057613169,
+            0.5455246913580247,
+            0.5432098765432098
+          ]
+        },
+        "mean": 0.54375
+      }
+    },
+    "pair_count": 2080,
+    "per_event": {
+      "deletion": {
+        "corruption": {
+          "base_n": 380,
+          "ci_high": -0.19385964912280698,
+          "ci_low": -0.2719298245614035,
+          "mean_delta": -0.23286467486818982,
+          "paired_coverage_rate": 0.9982456140350877,
+          "paired_scored_n": 1138,
+          "paired_unscored_n": 2,
+          "total_pair_n": 1140
+        },
+        "recovery": {
+          "base_n": 380,
+          "ci_high": 0.2649122807017544,
+          "ci_low": 0.18857456140350876,
+          "mean_delta": 0.22671353251318102,
+          "paired_coverage_rate": 0.9982456140350877,
+          "paired_scored_n": 1138,
+          "paired_unscored_n": 2,
+          "total_pair_n": 1140
+        }
+      },
+      "temporal": {
+        "corruption": {
+          "base_n": 169,
+          "ci_high": -0.17948717948717946,
+          "ci_low": -0.31560650887573954,
+          "mean_delta": -0.2893401015228426,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 394,
+          "paired_unscored_n": 0,
+          "total_pair_n": 394
+        },
+        "recovery": {
+          "base_n": 169,
+          "ci_high": 0.3165680473372781,
+          "ci_low": 0.1844181459566075,
+          "mean_delta": 0.29441624365482233,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 394,
+          "paired_unscored_n": 0,
+          "total_pair_n": 394
+        }
+      },
+      "update": {
+        "corruption": {
+          "base_n": 182,
+          "ci_high": -0.30586080586080583,
+          "ci_low": -0.4175824175824175,
+          "mean_delta": -0.3626373626373626,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 546,
+          "paired_unscored_n": 0,
+          "total_pair_n": 546
+        },
+        "recovery": {
+          "base_n": 182,
+          "ci_high": 0.4212454212454212,
+          "ci_low": 0.31135531135531136,
+          "mean_delta": 0.3663003663003663,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 546,
+          "paired_unscored_n": 0,
+          "total_pair_n": 546
+        }
+      }
+    },
+    "per_fault": {
+      "conflicting": {
+        "corruption": {
+          "base_n": 617,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.055105348460291734,
+          "paired_coverage_rate": 0.9983818770226537,
+          "paired_scored_n": 617,
+          "paired_unscored_n": 1,
+          "total_pair_n": 618
+        },
+        "recovery": {
+          "base_n": 617,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.04538087520259319,
+          "paired_coverage_rate": 0.9983818770226537,
+          "paired_scored_n": 617,
+          "paired_unscored_n": 1,
+          "total_pair_n": 618
+        }
+      },
+      "flipped": {
+        "corruption": {
+          "base_n": 379,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.37467018469656993,
+          "paired_coverage_rate": 0.9973684210526316,
+          "paired_scored_n": 379,
+          "paired_unscored_n": 1,
+          "total_pair_n": 380
+        },
+        "recovery": {
+          "base_n": 379,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.37730870712401055,
+          "paired_coverage_rate": 0.9973684210526316,
+          "paired_scored_n": 379,
+          "paired_unscored_n": 1,
+          "total_pair_n": 380
+        }
+      },
+      "missing": {
+        "corruption": {
+          "base_n": 731,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.33105335157318744,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 731,
+          "paired_unscored_n": 0,
+          "total_pair_n": 731
+        },
+        "recovery": {
+          "base_n": 731,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.3337893296853625,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 731,
+          "paired_unscored_n": 0,
+          "total_pair_n": 731
+        }
+      },
+      "stale": {
+        "corruption": {
+          "base_n": 351,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.452991452991453,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 351,
+          "paired_unscored_n": 0,
+          "total_pair_n": 351
+        },
+        "recovery": {
+          "base_n": 351,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.452991452991453,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 351,
+          "paired_unscored_n": 0,
+          "total_pair_n": 351
+        }
+      }
+    },
+    "per_source": {
+      "longmemeval": {
+        "corruption": {
+          "base_n": 191,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.13260869565217392,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 460,
+          "paired_unscored_n": 0,
+          "total_pair_n": 460
+        },
+        "recovery": {
+          "base_n": 191,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.11956521739130435,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 460,
+          "paired_unscored_n": 0,
+          "total_pair_n": 460
+        }
+      },
+      "memora": {
+        "corruption": {
+          "base_n": 380,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.23286467486818982,
+          "paired_coverage_rate": 0.9982456140350877,
+          "paired_scored_n": 1138,
+          "paired_unscored_n": 2,
+          "total_pair_n": 1140
+        },
+        "recovery": {
+          "base_n": 380,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.22671353251318102,
+          "paired_coverage_rate": 0.9982456140350877,
+          "paired_scored_n": 1138,
+          "paired_unscored_n": 2,
+          "total_pair_n": 1140
+        }
+      },
+      "oaks_novel": {
+        "corruption": {
+          "base_n": 160,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.5229166666666667,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 480,
+          "paired_unscored_n": 0,
+          "total_pair_n": 480
+        },
+        "recovery": {
+          "base_n": 160,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.54375,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 480,
+          "paired_unscored_n": 0,
+          "total_pair_n": 480
+        }
+      }
+    },
+    "row_count": 4891
+  },
+  "failure_policy": "final provider/parse failure scored as 0; all attempted rows retained",
+  "failure_spec": "main-failure-handling-spec-v1",
+  "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+  "primary": {
+    "balanced_robustness": {
+      "base_count": 507,
+      "base_counts": {
+        "deletion": 169,
+        "temporal": 169,
+        "update": 169
+      },
+      "event_macro": {
+        "corruption": {
+          "ci_high": -0.24917817225509534,
+          "ci_low": -0.3198635765943458,
+          "event_count": 3,
+          "event_values": {
+            "deletion": -0.24063116370808676,
+            "temporal": -0.24654832347140038,
+            "update": -0.3668639053254438
+          },
+          "mean": -0.284681130834977
+        },
+        "recovery": {
+          "ci_high": 0.3175542406311637,
+          "ci_low": 0.2481919789612097,
+          "event_count": 3,
+          "event_values": {
+            "deletion": 0.22682445759368836,
+            "temporal": 0.2504930966469428,
+            "update": 0.3708086785009862
+          },
+          "mean": 0.28270874424720577
+        }
+      }
+    },
+    "base_count": 731,
+    "condition_accuracy": {
+      "clean": {
+        "accuracy": 0.45964432284541723,
+        "coverage_rate": 1.0,
+        "scored_n": 731,
+        "total_n": 731,
+        "unscored_n": 0
+      },
+      "corrupted": {
+        "accuracy": 0.19471153846153846,
+        "coverage_rate": 1.0,
+        "scored_n": 2080,
+        "total_n": 2080,
+        "unscored_n": 0
+      },
+      "enforced": {
+        "accuracy": 0.4706730769230769,
+        "coverage_rate": 1.0,
+        "scored_n": 2080,
+        "total_n": 2080,
+        "unscored_n": 0
+      }
+    },
+    "event_macro": {
+      "corruption": {
+        "ci_high": -0.24819668129890798,
+        "ci_low": -0.3129926702851804,
+        "event_count": 3,
+        "event_values": {
+          "deletion": -0.2324561403508772,
+          "temporal": -0.24654832347140038,
+          "update": -0.3626373626373626
+        },
+        "mean": -0.28054727548654673
+      },
+      "recovery": {
+        "ci_high": 0.31209275654619784,
+        "ci_low": 0.2497487740554542,
+        "event_count": 3,
+        "event_values": {
+          "deletion": 0.2263157894736842,
+          "temporal": 0.2504930966469428,
+          "update": 0.3663003663003663
+        },
+        "mean": 0.2810364174736644
+      }
+    },
+    "micro": {
+      "corruption": {
+        "ci_high": -0.2387140902872777,
+        "ci_low": -0.2970816233470132,
+        "coverage_rate": 1.0,
+        "mean": -0.27740384615384617,
+        "pair_n": 2080,
+        "total_pair_n": 2080
+      },
+      "recovery": {
+        "ci_high": 0.2952576379388965,
+        "ci_low": 0.23803009575923392,
+        "coverage_rate": 1.0,
+        "mean": 0.2759615384615385,
+        "pair_n": 2080,
+        "total_pair_n": 2080
+      }
+    },
+    "oaks_cluster_robustness": {
+      "corruption": {
+        "base_n": 160,
+        "ci_high": -0.45248538011695905,
+        "ci_low": -0.5903996101364523,
+        "cluster_n": 19,
+        "leave_one_document_out": {
+          "max": -0.5054012345679012,
+          "min": -0.5455246913580247,
+          "n": 19,
+          "values": [
+            -0.5249485596707819,
+            -0.5262345679012346,
+            -0.5249485596707819,
+            -0.5208333333333334,
+            -0.5054012345679012,
+            -0.5146604938271605,
+            -0.5146604938271605,
+            -0.5216049382716049,
+            -0.5455246913580247,
+            -0.5216049382716049,
+            -0.5126028806584362,
+            -0.5216049382716049,
+            -0.5228909465020576,
+            -0.5308641975308642,
+            -0.5285493827160493,
+            -0.533179012345679,
+            -0.5126028806584362,
+            -0.5239197530864197,
+            -0.5239197530864197
+          ]
+        },
+        "mean": -0.5229166666666667
+      },
+      "recovery": {
+        "base_n": 160,
+        "ci_high": 0.6120857699805067,
+        "ci_low": 0.4712475633528264,
+        "cluster_n": 19,
+        "leave_one_document_out": {
+          "max": 0.5671296296296297,
+          "min": 0.5270061728395061,
+          "n": 19,
+          "values": [
+            0.5465534979423868,
+            0.5455246913580247,
+            0.5465534979423868,
+            0.540380658436214,
+            0.5270061728395061,
+            0.5362654320987654,
+            0.5362654320987654,
+            0.5432098765432098,
+            0.5671296296296297,
+            0.5432098765432098,
+            0.5300925925925926,
+            0.5432098765432098,
+            0.540380658436214,
+            0.5524691358024691,
+            0.5501543209876543,
+            0.5501543209876543,
+            0.5321502057613169,
+            0.5455246913580247,
+            0.5432098765432098
+          ]
+        },
+        "mean": 0.54375
+      }
+    },
+    "pair_count": 2080,
+    "per_event": {
+      "deletion": {
+        "corruption": {
+          "base_n": 380,
+          "ci_high": -0.19385964912280698,
+          "ci_low": -0.2719298245614035,
+          "mean_delta": -0.2324561403508772,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 1140,
+          "paired_unscored_n": 0,
+          "total_pair_n": 1140
+        },
+        "recovery": {
+          "base_n": 380,
+          "ci_high": 0.2649122807017544,
+          "ci_low": 0.18857456140350876,
+          "mean_delta": 0.22631578947368422,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 1140,
+          "paired_unscored_n": 0,
+          "total_pair_n": 1140
+        }
+      },
+      "temporal": {
+        "corruption": {
+          "base_n": 169,
+          "ci_high": -0.17948717948717946,
+          "ci_low": -0.31560650887573954,
+          "mean_delta": -0.2893401015228426,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 394,
+          "paired_unscored_n": 0,
+          "total_pair_n": 394
+        },
+        "recovery": {
+          "base_n": 169,
+          "ci_high": 0.3165680473372781,
+          "ci_low": 0.1844181459566075,
+          "mean_delta": 0.29441624365482233,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 394,
+          "paired_unscored_n": 0,
+          "total_pair_n": 394
+        }
+      },
+      "update": {
+        "corruption": {
+          "base_n": 182,
+          "ci_high": -0.30586080586080583,
+          "ci_low": -0.4175824175824175,
+          "mean_delta": -0.3626373626373626,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 546,
+          "paired_unscored_n": 0,
+          "total_pair_n": 546
+        },
+        "recovery": {
+          "base_n": 182,
+          "ci_high": 0.4212454212454212,
+          "ci_low": 0.31135531135531136,
+          "mean_delta": 0.3663003663003663,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 546,
+          "paired_unscored_n": 0,
+          "total_pair_n": 546
+        }
+      }
+    },
+    "per_fault": {
+      "conflicting": {
+        "corruption": {
+          "base_n": 618,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.05501618122977346,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 618,
+          "paired_unscored_n": 0,
+          "total_pair_n": 618
+        },
+        "recovery": {
+          "base_n": 618,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.045307443365695796,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 618,
+          "paired_unscored_n": 0,
+          "total_pair_n": 618
+        }
+      },
+      "flipped": {
+        "corruption": {
+          "base_n": 380,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.3736842105263158,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 380,
+          "paired_unscored_n": 0,
+          "total_pair_n": 380
+        },
+        "recovery": {
+          "base_n": 380,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.3763157894736842,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 380,
+          "paired_unscored_n": 0,
+          "total_pair_n": 380
+        }
+      },
+      "missing": {
+        "corruption": {
+          "base_n": 731,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.33105335157318744,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 731,
+          "paired_unscored_n": 0,
+          "total_pair_n": 731
+        },
+        "recovery": {
+          "base_n": 731,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.3337893296853625,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 731,
+          "paired_unscored_n": 0,
+          "total_pair_n": 731
+        }
+      },
+      "stale": {
+        "corruption": {
+          "base_n": 351,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.452991452991453,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 351,
+          "paired_unscored_n": 0,
+          "total_pair_n": 351
+        },
+        "recovery": {
+          "base_n": 351,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.452991452991453,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 351,
+          "paired_unscored_n": 0,
+          "total_pair_n": 351
+        }
+      }
+    },
+    "per_source": {
+      "longmemeval": {
+        "corruption": {
+          "base_n": 191,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.13260869565217392,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 460,
+          "paired_unscored_n": 0,
+          "total_pair_n": 460
+        },
+        "recovery": {
+          "base_n": 191,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.11956521739130435,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 460,
+          "paired_unscored_n": 0,
+          "total_pair_n": 460
+        }
+      },
+      "memora": {
+        "corruption": {
+          "base_n": 380,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.2324561403508772,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 1140,
+          "paired_unscored_n": 0,
+          "total_pair_n": 1140
+        },
+        "recovery": {
+          "base_n": 380,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.22631578947368422,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 1140,
+          "paired_unscored_n": 0,
+          "total_pair_n": 1140
+        }
+      },
+      "oaks_novel": {
+        "corruption": {
+          "base_n": 160,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": -0.5229166666666667,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 480,
+          "paired_unscored_n": 0,
+          "total_pair_n": 480
+        },
+        "recovery": {
+          "base_n": 160,
+          "ci_high": null,
+          "ci_low": null,
+          "mean_delta": 0.54375,
+          "paired_coverage_rate": 1.0,
+          "paired_scored_n": 480,
+          "paired_unscored_n": 0,
+          "total_pair_n": 480
+        }
+      }
+    },
+    "row_count": 4891
+  },
+  "replication": null,
+  "result_path": "<PRIVATE_REPO_ROOT>/results/final_main_sanitized/deepseek.jsonl",
+  "seed": 42,
+  "status": "FROZEN / FORMAL / SINGLE PROVIDER ANALYZED"
+}

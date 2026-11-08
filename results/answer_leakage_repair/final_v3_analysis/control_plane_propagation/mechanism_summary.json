@@ -1,0 +1,675 @@
+{
+  "base_count": 731,
+  "by_event": [
+    {
+      "admission_change": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "admission_restoration": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "analysis_event_type": "deletion",
+      "context_change": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "context_restoration": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "mean_corruption_delta": -0.16535087719298244,
+      "mean_recovery_delta": 0.16461988304093567,
+      "pair_count": 6840
+    },
+    {
+      "admission_change": {
+        "denominator": 2364,
+        "n": 2364,
+        "rate": 1.0
+      },
+      "admission_restoration": {
+        "denominator": 2364,
+        "n": 2364,
+        "rate": 1.0
+      },
+      "analysis_event_type": "temporal",
+      "context_change": {
+        "denominator": 2364,
+        "n": 2364,
+        "rate": 1.0
+      },
+      "context_restoration": {
+        "denominator": 2364,
+        "n": 2364,
+        "rate": 1.0
+      },
+      "mean_corruption_delta": -0.3176818950930626,
+      "mean_recovery_delta": 0.31852791878172587,
+      "pair_count": 2364
+    },
+    {
+      "admission_change": {
+        "denominator": 3276,
+        "n": 2808,
+        "rate": 0.8571428571428571
+      },
+      "admission_restoration": {
+        "denominator": 3276,
+        "n": 3276,
+        "rate": 1.0
+      },
+      "analysis_event_type": "update",
+      "context_change": {
+        "denominator": 3276,
+        "n": 2808,
+        "rate": 0.8571428571428571
+      },
+      "context_restoration": {
+        "denominator": 3276,
+        "n": 3276,
+        "rate": 1.0
+      },
+      "mean_corruption_delta": -0.38217338217338215,
+      "mean_recovery_delta": 0.3806471306471306,
+      "pair_count": 3276
+    }
+  ],
+  "by_fault": [
+    {
+      "admission_change": {
+        "denominator": 3708,
+        "n": 3240,
+        "rate": 0.8737864077669902
+      },
+      "admission_restoration": {
+        "denominator": 3708,
+        "n": 3708,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 3708,
+        "n": 3240,
+        "rate": 0.8737864077669902
+      },
+      "context_restoration": {
+        "denominator": 3708,
+        "n": 3708,
+        "rate": 1.0
+      },
+      "fault_operator": "conflicting",
+      "mean_corruption_delta": -0.06121898597626753,
+      "mean_recovery_delta": 0.06014023732470335,
+      "pair_count": 3708
+    },
+    {
+      "admission_change": {
+        "denominator": 2280,
+        "n": 2280,
+        "rate": 1.0
+      },
+      "admission_restoration": {
+        "denominator": 2280,
+        "n": 2280,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 2280,
+        "n": 2280,
+        "rate": 1.0
+      },
+      "context_restoration": {
+        "denominator": 2280,
+        "n": 2280,
+        "rate": 1.0
+      },
+      "fault_operator": "flipped",
+      "mean_corruption_delta": -0.2614035087719298,
+      "mean_recovery_delta": 0.2574561403508772,
+      "pair_count": 2280
+    },
+    {
+      "admission_change": {
+        "denominator": 4386,
+        "n": 4386,
+        "rate": 1.0
+      },
+      "admission_restoration": {
+        "denominator": 4386,
+        "n": 4386,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 4386,
+        "n": 4386,
+        "rate": 1.0
+      },
+      "context_restoration": {
+        "denominator": 4386,
+        "n": 4386,
+        "rate": 1.0
+      },
+      "fault_operator": "missing",
+      "mean_corruption_delta": -0.29343365253077974,
+      "mean_recovery_delta": 0.2950296397628819,
+      "pair_count": 4386
+    },
+    {
+      "admission_change": {
+        "denominator": 2106,
+        "n": 2106,
+        "rate": 1.0
+      },
+      "admission_restoration": {
+        "denominator": 2106,
+        "n": 2106,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 2106,
+        "n": 2106,
+        "rate": 1.0
+      },
+      "context_restoration": {
+        "denominator": 2106,
+        "n": 2106,
+        "rate": 1.0
+      },
+      "fault_operator": "stale",
+      "mean_corruption_delta": -0.4862298195631529,
+      "mean_recovery_delta": 0.4852801519468186,
+      "pair_count": 2106
+    }
+  ],
+  "by_provider": {
+    "anthropic": {
+      "clean_correct_failure": {
+        "clean_correct_n": 913,
+        "context_changed_n": 855,
+        "corrupted_wrong_given_context_changed": {
+          "denominator": 855,
+          "n": 612,
+          "probability": 0.7157894736842105
+        },
+        "enforced_correct_given_induced_failure": {
+          "denominator": 612,
+          "n": 523,
+          "probability": 0.8545751633986928
+        }
+      },
+      "corruption_effect_by_context_change": {
+        "changed": {
+          "mean_delta": -0.26673326673326675,
+          "n": 2002
+        },
+        "unchanged": {
+          "mean_delta": -0.05128205128205128,
+          "n": 78
+        }
+      },
+      "mechanism": {
+        "admission_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "admission_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "context_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        }
+      },
+      "pair_count": 2080,
+      "propagation_recovery_diagnostic": {
+        "denominator": 2080,
+        "n": 523,
+        "rate": 0.2514423076923077
+      }
+    },
+    "deepseek": {
+      "clean_correct_failure": {
+        "clean_correct_n": 982,
+        "context_changed_n": 939,
+        "corrupted_wrong_given_context_changed": {
+          "denominator": 939,
+          "n": 643,
+          "probability": 0.6847710330138446
+        },
+        "enforced_correct_given_induced_failure": {
+          "denominator": 643,
+          "n": 624,
+          "probability": 0.9704510108864697
+        }
+      },
+      "corruption_effect_by_context_change": {
+        "changed": {
+          "mean_delta": -0.2872127872127872,
+          "n": 2002
+        },
+        "unchanged": {
+          "mean_delta": -0.02564102564102564,
+          "n": 78
+        }
+      },
+      "mechanism": {
+        "admission_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "admission_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "context_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        }
+      },
+      "pair_count": 2080,
+      "propagation_recovery_diagnostic": {
+        "denominator": 2080,
+        "n": 624,
+        "rate": 0.3
+      }
+    },
+    "gemini": {
+      "clean_correct_failure": {
+        "clean_correct_n": 926,
+        "context_changed_n": 877,
+        "corrupted_wrong_given_context_changed": {
+          "denominator": 877,
+          "n": 644,
+          "probability": 0.734321550741163
+        },
+        "enforced_correct_given_induced_failure": {
+          "denominator": 644,
+          "n": 613,
+          "probability": 0.9518633540372671
+        }
+      },
+      "corruption_effect_by_context_change": {
+        "changed": {
+          "mean_delta": -0.2932067932067932,
+          "n": 2002
+        },
+        "unchanged": {
+          "mean_delta": 0.01282051282051282,
+          "n": 78
+        }
+      },
+      "mechanism": {
+        "admission_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "admission_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "context_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        }
+      },
+      "pair_count": 2080,
+      "propagation_recovery_diagnostic": {
+        "denominator": 2080,
+        "n": 613,
+        "rate": 0.29471153846153847
+      }
+    },
+    "grok": {
+      "clean_correct_failure": {
+        "clean_correct_n": 616,
+        "context_changed_n": 606,
+        "corrupted_wrong_given_context_changed": {
+          "denominator": 606,
+          "n": 466,
+          "probability": 0.768976897689769
+        },
+        "enforced_correct_given_induced_failure": {
+          "denominator": 466,
+          "n": 335,
+          "probability": 0.7188841201716738
+        }
+      },
+      "corruption_effect_by_context_change": {
+        "changed": {
+          "mean_delta": -0.1838161838161838,
+          "n": 2002
+        },
+        "unchanged": {
+          "mean_delta": 0.02564102564102564,
+          "n": 78
+        }
+      },
+      "mechanism": {
+        "admission_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "admission_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "context_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        }
+      },
+      "pair_count": 2080,
+      "propagation_recovery_diagnostic": {
+        "denominator": 2080,
+        "n": 335,
+        "rate": 0.16105769230769232
+      }
+    },
+    "kimi": {
+      "clean_correct_failure": {
+        "clean_correct_n": 915,
+        "context_changed_n": 864,
+        "corrupted_wrong_given_context_changed": {
+          "denominator": 864,
+          "n": 604,
+          "probability": 0.6990740740740741
+        },
+        "enforced_correct_given_induced_failure": {
+          "denominator": 604,
+          "n": 538,
+          "probability": 0.890728476821192
+        }
+      },
+      "corruption_effect_by_context_change": {
+        "changed": {
+          "mean_delta": -0.25574425574425574,
+          "n": 2002
+        },
+        "unchanged": {
+          "mean_delta": -0.038461538461538464,
+          "n": 78
+        }
+      },
+      "mechanism": {
+        "admission_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "admission_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "context_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        }
+      },
+      "pair_count": 2080,
+      "propagation_recovery_diagnostic": {
+        "denominator": 2080,
+        "n": 538,
+        "rate": 0.2586538461538462
+      }
+    },
+    "openai": {
+      "clean_correct_failure": {
+        "clean_correct_n": 906,
+        "context_changed_n": 848,
+        "corrupted_wrong_given_context_changed": {
+          "denominator": 848,
+          "n": 590,
+          "probability": 0.6957547169811321
+        },
+        "enforced_correct_given_induced_failure": {
+          "denominator": 590,
+          "n": 579,
+          "probability": 0.9813559322033898
+        }
+      },
+      "corruption_effect_by_context_change": {
+        "changed": {
+          "mean_delta": -0.2757242757242757,
+          "n": 2002
+        },
+        "unchanged": {
+          "mean_delta": 0,
+          "n": 78
+        }
+      },
+      "mechanism": {
+        "admission_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "admission_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2080,
+          "n": 2002,
+          "rate": 0.9625
+        },
+        "context_restoration": {
+          "denominator": 2080,
+          "n": 2080,
+          "rate": 1.0
+        }
+      },
+      "pair_count": 2080,
+      "propagation_recovery_diagnostic": {
+        "denominator": 2080,
+        "n": 579,
+        "rate": 0.2783653846153846
+      }
+    }
+  },
+  "by_source": [
+    {
+      "admission_change": {
+        "denominator": 2760,
+        "n": 2292,
+        "rate": 0.8304347826086956
+      },
+      "admission_restoration": {
+        "denominator": 2760,
+        "n": 2760,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 2760,
+        "n": 2292,
+        "rate": 0.8304347826086956
+      },
+      "context_restoration": {
+        "denominator": 2760,
+        "n": 2760,
+        "rate": 1.0
+      },
+      "mean_corruption_delta": -0.15471014492753624,
+      "mean_recovery_delta": 0.14891304347826087,
+      "pair_count": 2760,
+      "source_dataset": "longmemeval"
+    },
+    {
+      "admission_change": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "admission_restoration": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "context_restoration": {
+        "denominator": 6840,
+        "n": 6840,
+        "rate": 1.0
+      },
+      "mean_corruption_delta": -0.16535087719298244,
+      "mean_recovery_delta": 0.16461988304093567,
+      "pair_count": 6840,
+      "source_dataset": "memora"
+    },
+    {
+      "admission_change": {
+        "denominator": 2880,
+        "n": 2880,
+        "rate": 1.0
+      },
+      "admission_restoration": {
+        "denominator": 2880,
+        "n": 2880,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 2880,
+        "n": 2880,
+        "rate": 1.0
+      },
+      "context_restoration": {
+        "denominator": 2880,
+        "n": 2880,
+        "rate": 1.0
+      },
+      "mean_corruption_delta": -0.5472222222222223,
+      "mean_recovery_delta": 0.5517361111111111,
+      "pair_count": 2880,
+      "source_dataset": "oaks_novel"
+    }
+  ],
+  "fault_pair_count": 2080,
+  "full_diagnostic": {
+    "anthropic": {
+      "denominator": 2080,
+      "n": 523,
+      "rate": 0.2514423076923077
+    },
+    "deepseek": {
+      "denominator": 2080,
+      "n": 624,
+      "rate": 0.3
+    },
+    "gemini": {
+      "denominator": 2080,
+      "n": 613,
+      "rate": 0.29471153846153847
+    },
+    "grok": {
+      "denominator": 2080,
+      "n": 335,
+      "rate": 0.16105769230769232
+    },
+    "kimi": {
+      "denominator": 2080,
+      "n": 538,
+      "rate": 0.2586538461538462
+    },
+    "openai": {
+      "denominator": 2080,
+      "n": 579,
+      "rate": 0.2783653846153846
+    }
+  },
+  "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+  "overall": {
+    "admission_change": {
+      "denominator": 12480,
+      "n": 12012,
+      "rate": 0.9625
+    },
+    "admission_restoration": {
+      "denominator": 12480,
+      "n": 12480,
+      "rate": 1.0
+    },
+    "context_change": {
+      "denominator": 12480,
+      "n": 12012,
+      "rate": 0.9625
+    },
+    "context_restoration": {
+      "denominator": 12480,
+      "n": 12480,
+      "rate": 1.0
+    }
+  },
+  "provider_count": 6,
+  "provider_result_paths": {
+    "anthropic": "results/final_main_sanitized/anthropic.jsonl",
+    "deepseek": "results/final_main_sanitized/deepseek.jsonl",
+    "gemini": "results/final_main_sanitized/gemini.jsonl",
+    "grok": "results/final_main_sanitized/grok.jsonl",
+    "kimi": "results/final_main_sanitized/kimi.jsonl",
+    "openai": "results/final_main_sanitized/openai.jsonl"
+  },
+  "provider_rows": 12480,
+  "providers": [
+    "anthropic",
+    "deepseek",
+    "gemini",
+    "grok",
+    "kimi",
+    "openai"
+  ],
+  "representations": {
+    "A": "reconstructed from persisted model_visible_memory_items (ordered admitted-item projection); no separate admission decision field is persisted",
+    "C": "persisted model_visible_memory_items canonicalized by Unicode-preserving whitespace collapse per item; text fallback normalizes whitespace",
+    "Y": "existing scored correctness; final provider/parse failures are scored 0"
+  },
+  "status": "OFFLINE CONTROL-PLANE PROPAGATION DIAGNOSTIC"
+}

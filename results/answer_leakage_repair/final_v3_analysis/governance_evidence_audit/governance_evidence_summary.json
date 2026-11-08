@@ -1,0 +1,147 @@
+{
+  "api_calls_made": 0,
+  "base_manifest_sha256": "a2601a7ecb46034faf5dcc7ad00b5a851e19ae01561876fa681fd18af168ca79",
+  "by_event": [
+    {
+      "ambiguous": 0,
+      "analysis_event": "deletion",
+      "assigned_faults_supported": 380,
+      "bases": 380,
+      "clean_state_supported": 380,
+      "fully_supported": 380,
+      "heuristic_only": 0,
+      "oracle_linked": 380,
+      "provenance_locator_present": 380,
+      "source_native_evidence_present": 380
+    },
+    {
+      "ambiguous": 0,
+      "analysis_event": "temporal",
+      "assigned_faults_supported": 169,
+      "bases": 169,
+      "clean_state_supported": 169,
+      "fully_supported": 169,
+      "heuristic_only": 0,
+      "oracle_linked": 169,
+      "provenance_locator_present": 169,
+      "source_native_evidence_present": 169
+    },
+    {
+      "ambiguous": 0,
+      "analysis_event": "update",
+      "assigned_faults_supported": 182,
+      "bases": 182,
+      "clean_state_supported": 182,
+      "fully_supported": 182,
+      "heuristic_only": 0,
+      "oracle_linked": 182,
+      "provenance_locator_present": 182,
+      "source_native_evidence_present": 182
+    }
+  ],
+  "by_fault": [
+    {
+      "ambiguous": 0,
+      "assigned_faults_supported": 731,
+      "bases": 731,
+      "clean_state_supported": 731,
+      "fault": "missing",
+      "fully_supported": 731,
+      "heuristic_only": 0,
+      "oracle_linked": 731,
+      "provenance_locator_present": 731,
+      "source_native_evidence_present": 731
+    },
+    {
+      "ambiguous": 0,
+      "assigned_faults_supported": 351,
+      "bases": 351,
+      "clean_state_supported": 351,
+      "fault": "stale",
+      "fully_supported": 351,
+      "heuristic_only": 0,
+      "oracle_linked": 351,
+      "provenance_locator_present": 351,
+      "source_native_evidence_present": 351
+    },
+    {
+      "ambiguous": 0,
+      "assigned_faults_supported": 380,
+      "bases": 380,
+      "clean_state_supported": 380,
+      "fault": "flipped",
+      "fully_supported": 380,
+      "heuristic_only": 0,
+      "oracle_linked": 380,
+      "provenance_locator_present": 380,
+      "source_native_evidence_present": 380
+    },
+    {
+      "ambiguous": 0,
+      "assigned_faults_supported": 618,
+      "bases": 618,
+      "clean_state_supported": 618,
+      "fault": "conflicting",
+      "fully_supported": 618,
+      "heuristic_only": 0,
+      "oracle_linked": 618,
+      "provenance_locator_present": 618,
+      "source_native_evidence_present": 618
+    }
+  ],
+  "by_source": [
+    {
+      "ambiguous": 0,
+      "assigned_faults_supported": 191,
+      "bases": 191,
+      "clean_state_supported": 191,
+      "fully_supported": 191,
+      "heuristic_only": 0,
+      "oracle_linked": 191,
+      "provenance_locator_present": 191,
+      "source": "longmemeval",
+      "source_native_evidence_present": 191
+    },
+    {
+      "ambiguous": 0,
+      "assigned_faults_supported": 380,
+      "bases": 380,
+      "clean_state_supported": 380,
+      "fully_supported": 380,
+      "heuristic_only": 0,
+      "oracle_linked": 380,
+      "provenance_locator_present": 380,
+      "source": "memora",
+      "source_native_evidence_present": 380
+    },
+    {
+      "ambiguous": 0,
+      "assigned_faults_supported": 160,
+      "bases": 160,
+      "clean_state_supported": 160,
+      "fully_supported": 160,
+      "heuristic_only": 0,
+      "oracle_linked": 160,
+      "provenance_locator_present": 160,
+      "source": "oaks_novel",
+      "source_native_evidence_present": 160
+    }
+  ],
+  "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+  "overall": {
+    "ambiguous_bases": 0,
+    "every_assigned_fault_source_supported": true,
+    "fully_supported_bases": 731,
+    "heuristic_only_bases": 0,
+    "missing_provenance_locator_bases": 0,
+    "total_bases": 731,
+    "unsupported_bases": 0
+  },
+  "provenance": "All evidence and interpretations are read from the frozen base/condition manifests; no provider result is used.",
+  "schema_version": "governance-evidence-audit-v1",
+  "source_logic": {
+    "longmemeval": "source_evidence answer_session_ids/evidence_session_ids and oracle_state ordered_evidence, relevant_session_ids, current_status, temporal_relation; source_example_id/question/expected_answer.",
+    "memora": "source_evidence memory_evidence, forgetting_evidence, relevant_source_session_ids, governance_capabilities and oracle_state obsolete_item/replacement_item/current_status; source_example_id/question/expected_answer.",
+    "oaks_novel": "source_evidence document_id, chunk_to_answer, ordered_answer_states, transition_chunks and oracle_state ordered_answer_states/relevant_chunk_ids/transitions/current_status; source_example_id/question/expected_answer."
+  }
+}

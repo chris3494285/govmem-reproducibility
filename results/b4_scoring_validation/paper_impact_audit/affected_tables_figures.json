@@ -1,0 +1,60 @@
+{
+  "affected_table_figure_n": 6,
+  "rows": [
+    {
+      "action": "Withdraw/recompute accuracy columns.",
+      "affected": true,
+      "artifact": "Final-main cross-provider accuracy table",
+      "category": "scorer_dependent_primary"
+    },
+    {
+      "action": "Recompute all correctness deltas.",
+      "affected": true,
+      "artifact": "Final-main source/event/fault effect tables",
+      "category": "scorer_dependent_primary"
+    },
+    {
+      "action": "Separate state restoration from correctness recovery.",
+      "affected": true,
+      "artifact": "Enforcement recovery table",
+      "category": "scorer_dependent_primary"
+    },
+    {
+      "action": "Retain admission/context columns; remove/recompute Y and correctness-delta columns.",
+      "affected": true,
+      "artifact": "Control-plane propagation table",
+      "category": "mixed"
+    },
+    {
+      "action": "Retain overlap Ns only; remove/recompute score-based severity.",
+      "affected": true,
+      "artifact": "Matched-fault robustness table",
+      "category": "mixed"
+    },
+    {
+      "action": "External manuscript audit required; no generator/source is present.",
+      "affected": true,
+      "artifact": "External final-main correctness figures",
+      "category": "unclear"
+    },
+    {
+      "action": "Retain.",
+      "affected": false,
+      "artifact": "Governance evidence table",
+      "category": "scorer_independent"
+    },
+    {
+      "action": "Retain with separate-evaluator provenance.",
+      "affected": false,
+      "artifact": "RQ1/RQ2/RQ3/RQ4 pilot tables",
+      "category": "scorer_independent"
+    },
+    {
+      "action": "Retain; separate evaluator and experiment.",
+      "affected": false,
+      "artifact": "Cross-system validation figure",
+      "category": "scorer_independent"
+    }
+  ],
+  "schema_version": "b4-paper-scorer-impact-v1"
+}

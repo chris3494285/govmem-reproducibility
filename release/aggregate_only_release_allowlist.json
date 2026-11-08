@@ -1,0 +1,462 @@
+{
+  "schema_version": "govmem-aggregate-only-release-allowlist-v1",
+  "release_name": "govmem-aggregate-only-v3",
+  "description": [
+    "Explicit allowlist for the conservative, AGGREGATE-ONLY public release of the",
+    "GovMem v3 experiment. This is stricter than the earlier Tier-B allowlist: no",
+    "row-level score file is shipped at all. The builder",
+    "(scripts/build_public_release_candidate.py) copies ONLY the files matched by",
+    "`include`, subtracts `exclude`, applies the documented `sanitize_rules` text",
+    "substitutions, then runs the public-data audit (`forbidden_patterns`). If any",
+    "copied file still contains a forbidden pattern the build fails closed and",
+    "writes nothing.",
+    "",
+    "Anything not matched by `include` is excluded by construction. This is a",
+    "deny-by-default selection: the candidate is never produced by copying the",
+    "repository.",
+    "",
+    "Excluded by design (present in the developer tree, absent here): the row-level",
+    "Tier-B score files (results/final_main_tier_b/**), every per-example cohort /",
+    "judge-request / validation / observation / ledger / manifest JSONL, every",
+    "per-instance and per-base CSV, and every content-fingerprint or source-derived",
+    "identifier token. Only aggregate tables, aggregate summaries, protocol and",
+    "readiness documentation, code, offline tests, and non-secret configs remain."
+  ],
+  "include": [
+    ".gitignore",
+    "LICENSE",
+    "LICENSE_SCOPE.md",
+    "LICENSE_APPROVAL.md",
+    "MATERIALS_REDISTRIBUTION_NOTICE.md",
+    "CITATION.cff",
+    "OAKS_DERIVED_ARTIFACTS.md",
+    "README.md",
+    "ARTIFACTS.md",
+    "pyproject.toml",
+    "PUBLIC_BRANCH_REPORT.md",
+    "FINALIZATION_REPORT.md",
+    "B4_CODEX_AUDIT.md",
+    "CLEAN_REPEAT_FINAL_RESULTS.md",
+    "CLEAN_REPEAT_PAPER_TABLE.tex",
+    "CLEAN_REPEAT_GEMINI_TOKEN_AUDIT.md",
+    "CLEAN_REPEAT_JUDGE_RECOVERY_AUDIT.md",
+    "REPOSITORY_TEST_BASELINE_AUDIT.md",
+    "AGGREGATE_ONLY_RELEASE_READINESS.md",
+    "FINAL_GITHUB_RELEASE_AUDIT.md",
+    "JSS_PUBLIC_RELEASE_BUILD_REPORT.md",
+    "JSS_PUBLIC_RELEASE_REMEDIATION_REPORT.md",
+    "JSS_PUBLIC_RELEASE_FINAL_SIGNOFF.md",
+    "THIRD_PARTY_DATASETS.md",
+    "FINAL_LICENSE_AND_RELEASE_REPORT.md",
+    "B4_FINAL_EVIDENCE_GAP_AUDIT.md",
+    "third_party/**",
+    "docs/**",
+    "release/aggregate_only_release_allowlist.json",
+
+    "govmem/**/*.py",
+    "eval/**/*.py",
+    "baselines/**/*.py",
+    "scripts/**/*.py",
+
+    "configs/**/*.json",
+
+    "data/*.freeze.json",
+
+    "results/final_main_cross_provider_summary_v3/cross_provider_summary.csv",
+    "results/final_main_cross_provider_summary_v3/cross_provider_summary.json",
+    "results/final_main_cross_provider_summary_v3/cross_provider_summary.md",
+    "results/jss_rq1_observability_v2/observability_by_event.csv",
+    "results/jss_rq1_observability_v2/observability_by_fault.csv",
+    "results/jss_rq1_observability_v2/observability_by_provider.csv",
+    "results/jss_rq1_observability_v2/observability_by_source.csv",
+    "results/jss_rq1_observability_v2/observability_limitations.md",
+    "results/jss_rq1_observability_v2/observability_overlap.csv",
+    "results/jss_public_aggregate_v1/**",
+
+    "results/answer_leakage_repair/answer_leakage_audit_v3.json",
+    "results/answer_leakage_repair/repair_summary.json",
+    "results/answer_leakage_repair/rerun_cost_estimate.json",
+    "results/answer_leakage_repair/rerun_identity_audit.json",
+    "results/answer_leakage_repair/final_live_commands.md",
+    "results/answer_leakage_repair/rerun_execution_plan.md",
+
+    "results/answer_leakage_repair/final_v3_analysis/FINALIZATION_REPORT.md",
+    "results/answer_leakage_repair/final_v3_analysis/cross_provider_summary.json",
+    "results/answer_leakage_repair/final_v3_analysis/provider_summaries.json",
+    "results/answer_leakage_repair/final_v3_analysis/old_vs_new_statistics.csv",
+    "results/answer_leakage_repair/final_v3_analysis/old_vs_new_statistics.json",
+    "results/answer_leakage_repair/final_v3_analysis/old_vs_new_statistics.md",
+    "results/answer_leakage_repair/final_v3_analysis/paper_update_checklist.md",
+    "results/answer_leakage_repair/final_v3_analysis/licensing_blocker_report.json",
+    "results/answer_leakage_repair/final_v3_analysis/licensing_blocker_report.md",
+    "results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_event.csv",
+    "results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_fault.csv",
+    "results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_provider.csv",
+    "results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_source.csv",
+    "results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_summary.json",
+    "results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_by_event.csv",
+    "results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_by_fault.csv",
+    "results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_by_source.csv",
+    "results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_schema_notes.md",
+    "results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_summary.json",
+    "results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_event.csv",
+    "results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_fault.csv",
+    "results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_provider.csv",
+    "results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_source.csv",
+    "results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_overlap_counts.csv",
+    "results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_summary.json",
+    "results/answer_leakage_repair/final_v3_analysis/providers/**/analysis_summary.json",
+    "results/answer_leakage_repair/final_v3_analysis/providers/**/analysis_table.csv",
+
+    "results/stochasticity_control/clean_repeat_v1/analysis/clean_repeat_metrics.json",
+    "results/stochasticity_control/clean_repeat_v1/analysis/clean_repeat_block_level.csv",
+    "results/stochasticity_control/clean_repeat_v1/analysis/clean_repeat_paper_table.tex",
+    "results/stochasticity_control/clean_repeat_v1/analysis_plan.md",
+    "results/stochasticity_control/clean_repeat_v1/expected_calls_and_cost.json",
+    "results/stochasticity_control/clean_repeat_v1/manifest_summary.json",
+    "results/stochasticity_control/clean_repeat_v1/preflight_report.md",
+
+    "results/formal_300_validation_v1/FORMAL_300_VALIDATION_PROTOCOL.md",
+    "results/formal_300_validation_v1/GEMINI_REMAINING_FAILURE_AUDIT.md",
+    "results/formal_300_validation_v1/analysis/FORMAL_300_VALIDATION_REPORT.md",
+    "results/formal_300_validation_v1/analysis/formal_validation_summary.json",
+    "results/formal_300_validation_v1/analysis_gemini_stage/FORMAL_300_VALIDATION_REPORT.md",
+    "results/formal_300_validation_v1/analysis_gemini_stage/formal_validation_summary.json",
+    "results/formal_300_validation_v1/dry_run_summary.json",
+    "results/formal_300_validation_v1/gemini_remaining_failure_audit.json",
+    "results/formal_300_validation_v1/sampling_lock.json",
+    "results/formal_300_validation_v1/recovery_attempt3/attempt3_recovery_summary.json",
+    "results/formal_300_validation_v1/recovery_attempt4/attempt4_recovery_summary.json",
+
+    "results/b4_scoring_validation/B4_CALIBRATION_PROTOCOL.md",
+    "results/b4_scoring_validation/JUDGE_PROTOCOL_AUDIT.md",
+    "results/b4_scoring_validation/b4_validation_summary.md",
+    "results/b4_scoring_validation/longmemeval_judge_request_summary.json",
+    "results/b4_scoring_validation/memora_judge_request_summary.json",
+    "results/b4_scoring_validation/oaks_input_summary.json",
+    "results/b4_scoring_validation/final_scorer_validation/SCORER_VALIDATION_REPORT.md",
+    "results/b4_scoring_validation/final_scorer_validation/scorer_validation_manifest.json",
+    "results/b4_scoring_validation/final_scorer_validation/scorer_validation_summary.json",
+    "results/b4_scoring_validation/paper_impact_audit/PAPER_SCORER_IMPACT_AUDIT.md",
+    "results/b4_scoring_validation/paper_impact_audit/affected_rqs.json",
+    "results/b4_scoring_validation/paper_impact_audit/affected_tables_figures.json",
+    "results/b4_scoring_validation/paper_impact_audit/paper_impact_summary.json",
+    "results/b4_scoring_validation/paper_impact_audit/remediation_options.json",
+    "results/b4_scoring_validation/unit_alignment_audit/MEMORA_UNIT_ALIGNMENT_REPORT.md",
+    "results/b4_scoring_validation/unit_alignment_audit/longmemeval_disagreement_summary.json",
+    "results/b4_scoring_validation/unit_alignment_audit/memora_unit_alignment_audit.json",
+    "results/b4_scoring_validation/unit_alignment_audit/unit_alignment_audit_summary.json",
+
+    "results/source_event_fault_distribution_v1/source_event_fault_counts.csv",
+    "results/source_event_fault_distribution_v1/source_event_counts.csv",
+    "results/source_event_fault_distribution_v1/source_fault_counts.csv",
+    "results/source_event_fault_distribution_v1/distribution_summary.json",
+    "results/source_event_fault_distribution_v1/SOURCE_EVENT_FAULT_DISTRIBUTION_REPORT.md",
+    "results/source_event_fault_distribution_v1/SOURCE_EVENT_FAULT_PAPER_TABLE.tex",
+
+    "results/paper_evidence_audit/event_macro_reconciliation.json",
+    "results/paper_evidence_audit/event_macro_reconciliation.md",
+    "results/paper_evidence_audit/condition_trace_validation.json",
+    "results/paper_evidence_audit/condition_trace_validation.md",
+
+    "results/formal_300_subgroup_v1/source_summary.csv",
+    "results/formal_300_subgroup_v1/provider_summary.csv",
+    "results/formal_300_subgroup_v1/provider_source_summary.csv",
+    "results/formal_300_subgroup_v1/bootstrap_comparison.json",
+    "results/formal_300_subgroup_v1/FORMAL_300_SUBGROUP_REPORT.md",
+    "results/formal_300_subgroup_v1/FORMAL_300_SUBGROUP_TABLES.tex",
+
+    "tests/**/*.py",
+    "tests/fixtures/**",
+    "tests/public_release_test_scope.json"
+  ],
+  "exclude": [
+    "results/final_main_tier_b/**",
+    "results/final_main_sanitized/**",
+    "results/jss_rq1_observability_v2/observability_summary.json",
+
+    "CLEAN_REPEAT_FINAL_AUDIT.md",
+    "JSS_BOOTSTRAP_FINAL_AUDIT.md",
+    "JSS_FINAL_SCORING_CONSISTENCY_AUDIT.md",
+    "JSS_RQ1_OBSERVABILITY_AUDIT.md",
+    "JSS_RQ1_OBSERVABILITY_V2_CHANGELOG.md",
+    "JSS_RQ1_OBSERVABILITY_V2_EXECUTION.md",
+    "JSS_RQ1_PRE_EXECUTION_RECONCILIATION.md",
+    "JSS_RQ1_RESULTS_RECONCILIATION.md",
+    "data/system_validation_frozen_v1_metadata.json",
+    "scripts/audit_b4_full_native_*.py",
+    "scripts/audit_paper_evidence_counts.py",
+    "scripts/authorize_and_resume_final_b4_holdout.py",
+    "scripts/b4_full_native_*.py",
+    "scripts/estimate_b4_full_native_cost.py",
+    "scripts/prepare_cheap_judge_recovery.py",
+    "scripts/refreeze_b4_full_native_canary_budgets.py",
+    "scripts/report_b4_full_native_input_budget_fix.py",
+    "scripts/run_b4_full_native_*.py",
+    "scripts/validate_b4_full_native_canary.py",
+    "tests/test_b4_full_native_*.py",
+    "tests/test_b4_validation.py",
+    "tests/test_cheap_judge_recovery.py",
+    "tests/test_final_main_recovery_tools.py",
+    "tests/test_formal_300_validation.py",
+    "tests/test_paper_evidence_audit.py",
+
+    "results/answer_leakage_repair/changed_condition_ids.txt",
+    "results/answer_leakage_repair/changed_conditions.jsonl",
+    "results/answer_leakage_repair/**/mechanism_instance_level.csv",
+    "results/answer_leakage_repair/**/governance_evidence_base_level.csv",
+    "results/answer_leakage_repair/**/matched_fault_instance_level.csv",
+    "results/answer_leakage_repair/**/governance_evidence_spotcheck.jsonl",
+    "results/answer_leakage_repair/source_evidence_provenance.json",
+
+    "results/stochasticity_control/clean_repeat_v1/*.jsonl",
+    "results/stochasticity_control/clean_repeat_v1/judging/**",
+    "results/stochasticity_control/clean_repeat_v1/generation_results.jsonl",
+    "results/stochasticity_control/clean_repeat_v1/generation_diagnostics.jsonl",
+    "results/stochasticity_control/clean_repeat_v1/manifest_replacement_audit.json",
+
+    "results/formal_300_validation_v1/**/*.jsonl",
+    "results/formal_300_validation_v1/recovery_attempt3/attempt3_authorization.json",
+    "results/formal_300_validation_v1/recovery_attempt3/attempt3_authorization_template.json",
+    "results/formal_300_validation_v1/recovery_attempt4/attempt4_authorization.json",
+    "results/formal_300_validation_v1/recovery_attempt4/attempt4_authorization_template.json",
+
+    "results/b4_scoring_validation/b4_validation_summary.json",
+    "results/b4_scoring_validation/*_cohort.jsonl",
+    "results/b4_scoring_validation/*_cohort_manifest.json",
+    "results/b4_scoring_validation/*_judge_requests.jsonl",
+    "results/b4_scoring_validation/memora_native_judge_requests.json",
+    "results/b4_scoring_validation/oaks_native_validation_input.jsonl",
+    "results/b4_scoring_validation/longmemeval_validation.json",
+    "results/b4_scoring_validation/memora_validation.json",
+    "results/b4_scoring_validation/oaks_validation.json",
+    "results/b4_scoring_validation/memora_adjudication_queue.jsonl",
+    "results/b4_scoring_validation/memora_atomic_criteria.jsonl",
+    "results/b4_scoring_validation/final_scorer_validation/scorer_validation_cases.jsonl",
+    "results/b4_scoring_validation/final_scorer_validation/scorer_disagreements.jsonl",
+    "results/b4_scoring_validation/paper_impact_audit/scorer_dependent_claims.jsonl",
+    "results/b4_scoring_validation/paper_impact_audit/scorer_independent_claims.jsonl",
+    "results/b4_scoring_validation/unit_alignment_audit/memora_case_mapping.jsonl",
+    "results/b4_scoring_validation/unit_alignment_audit/longmemeval_disagreement_audit.jsonl",
+    "results/b4_scoring_validation/private/**"
+  ],
+  "sanitize_rules": [
+    {
+      "name": "public_repo_root",
+      "pattern": "<PUBLIC_REPO_ROOT>",
+      "replacement": "<PUBLIC_REPO_ROOT>"
+    },
+    {
+      "name": "private_repo_root",
+      "pattern": "<PRIVATE_REPO_ROOT>",
+      "replacement": "<PRIVATE_REPO_ROOT>"
+    },
+    {
+      "name": "longmemeval_source",
+      "pattern": "$LONGMEMEVAL_SOURCE/longmemeval-cleaned/longmemeval_oracle.json",
+      "replacement": "$LONGMEMEVAL_SOURCE/longmemeval-cleaned/longmemeval_oracle.json"
+    },
+    {
+      "name": "memora_source",
+      "pattern": "$MEMORA_SOURCE",
+      "replacement": "$MEMORA_SOURCE"
+    },
+    {
+      "name": "oaks_novel_source",
+      "pattern": "$OAKS_NOVEL_SOURCE",
+      "replacement": "$OAKS_NOVEL_SOURCE"
+    },
+    {
+      "name": "user_home",
+      "pattern": "$USER_HOME",
+      "replacement": "$USER_HOME"
+    },
+    {
+      "name": "formal_block_fingerprint",
+      "pattern": "<FORMAL_BLOCK_FINGERPRINT>",
+      "replacement": "<FORMAL_BLOCK_FINGERPRINT>"
+    },
+    {
+      "name": "formal_block_fingerprint_abbrev",
+      "pattern": "<FORMAL_BLOCK_FINGERPRINT>",
+      "replacement": "<FORMAL_BLOCK_FINGERPRINT>"
+    }
+  ],
+  "redact_json_fields": {
+    "drop_json_fields": [
+      "frozen_block_fingerprint"
+    ]
+  },
+  "forbidden_patterns": [
+    {
+      "name": "absolute_user_path",
+      "regex": "/Users/[A-Za-z]|/home/[A-Za-z]",
+      "extensions": [".py", ".json", ".jsonl", ".csv", ".md", ".txt", ".tex", ".toml", ".cfg", ".ini", ".yaml", ".yml", ".sh"]
+    },
+    {
+      "name": "openai_secret",
+      "regex": "sk-[A-Za-z0-9]{20,}",
+      "extensions": ["*"]
+    },
+    {
+      "name": "google_secret",
+      "regex": "AIza[0-9A-Za-z_-]{30,}",
+      "extensions": ["*"]
+    },
+    {
+      "name": "github_secret",
+      "regex": "ghp_[A-Za-z0-9]{20,}",
+      "extensions": ["*"]
+    },
+    {
+      "name": "aws_secret",
+      "regex": "AKIA[0-9A-Z]{16}",
+      "extensions": ["*"]
+    },
+    {
+      "name": "private_key_block",
+      "regex": "-----BEGIN [A-Z ]*PRIVATE KEY-----",
+      "extensions": ["*"]
+    },
+    {
+      "name": "benchmark_text_field",
+      "regex": "\"(task_question|task_oracle_answer|task_options|oracle_answer|expected_answer|model_answer|native_abstention_answers|model_visible_context_text|prompt_text|context_text|response_text|parsed_answer|normalized_model_answer|normalized_oracle_answer|source_evidence|memories)\"\\s*:",
+      "extensions": [".json", ".jsonl", ".csv"]
+    },
+    {
+      "name": "benchmark_plain_text_field",
+      "regex": "\"(question|answer)\"\\s*:",
+      "extensions": [".json", ".jsonl", ".csv"]
+    },
+    {
+      "name": "request_identifier_field",
+      "regex": "\"request_id\"\\s*:",
+      "extensions": [".json", ".jsonl", ".csv"]
+    },
+    {
+      "name": "source_derived_identifier",
+      "regex": "(longmemeval::[0-9a-f]{6,}|memora::(?:weekly|monthly|quarterly|yearly|daily)::|memora::judge::[0-9a-f]{16}|oaks_novel::P[0-9]|memconflict::[0-9a-f]{8}-|gatemem::)",
+      "extensions": [".json", ".jsonl", ".csv", ".md", ".txt", ".tex", ".py"]
+    },
+    {
+      "name": "block_or_slot_fingerprint",
+      "regex": "(pilot-block|formal-300-slot|clean-repeat-judge)::[0-9a-f]{16,}",
+      "extensions": [".json", ".jsonl", ".csv", ".md", ".txt", ".tex", ".py"]
+    },
+    {
+      "name": "content_fingerprint_field",
+      "regex": "\"(model_visible_context_sha256|prompt_sha256|source_fingerprint|content_sha256|answer_sha256|generation_prompt_sha256|semantic_prompt_hash|native_message_locators|response_sha256|new_context_sha256|old_context_sha256|new_prompt_sha256|old_prompt_sha256|frozen_block_fingerprint)\"\\s*:",
+      "extensions": [".json", ".jsonl", ".csv"]
+    },
+    {
+      "name": "row_identity_key",
+      "regex": "\"(base_id|condition_id|pair_id)\"\\s*:",
+      "extensions": [".json", ".jsonl", ".csv"]
+    },
+    {
+      "name": "email_address",
+      "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
+      "extensions": ["*"]
+    }
+  ],
+  "audit_exemptions": [
+    {
+      "path": "release/aggregate_only_release_allowlist.json",
+      "rules": [
+        "source_derived_identifier"
+      ],
+      "reason": "The match is the allowlist's own regular-expression definition for forbidden dataset-prefixed identifiers, not a source-derived identifier value."
+    },
+    {
+      "path": "tests/fixtures/memora-mini/**",
+      "rules": ["benchmark_text_field", "benchmark_plain_text_field"],
+      "reason": "Author-created synthetic three-session fixture that only mimics the Memora question/answer schema ('The weekly report is due Friday.'). It contains no benchmark-derived content, no real Memora persona, and no real identifiers, so the benchmark-text key rules do not apply. Reviewed manually on 2026-10-14."
+    },
+    {
+      "path": "scripts/audit_paper_evidence_counts.py",
+      "rules": ["source_derived_identifier"],
+      "reason": "PRODUCTION CONSTANT (documented dependency, fail-closed). M3_BASE_ID names the single Memora base used for the M3 intervention example in the paper evidence audit. The audit only reads the base from the frozen base manifest by that exact key and now raises an explicit error when the key is absent, so the frozen experiment semantics cannot silently change. It cannot be replaced with a synthetic value without changing which frozen example is audited. Flagged as an irreducible residual in FINAL_GITHUB_RELEASE_AUDIT.md."
+    },
+    {
+      "path": "scripts/authorize_and_resume_final_b4_holdout.py",
+      "rules": ["source_derived_identifier"],
+      "reason": "PRODUCTION CONSTANT (documented dependency, fail-closed). TARGET_STARTED_ONLY is the one frozen B4 holdout judge request id classified as started-only eligible; verify_recovery_targets() aborts if that exact row is not the started-only target, so frozen recovery semantics cannot silently change. A synthetic value would break the frozen recovery authorization. Flagged as an irreducible residual in FINAL_GITHUB_RELEASE_AUDIT.md."
+    },
+    {
+      "path": "scripts/run_formal_300_validation.py",
+      "rules": ["block_or_slot_fingerprint"],
+      "reason": "PRODUCTION CONSTANTS (documented dependency, fail-closed). Three formal-300 slot fingerprints are frozen recovery-protocol targets (anthropic attempt-3, openai no-text, attempt-4 smoke). The associated authorization validators compare against the frozen recovery manifests/ledgers and raise on any drift, so frozen experiment semantics cannot silently change. Synthetic values would not match the frozen artifacts. Flagged as irreducible residuals in FINAL_GITHUB_RELEASE_AUDIT.md."
+    }
+  ],
+  "notes": {
+    "excluded_by_construction": [
+      "Every file not matched by an `include` pattern: results/final_main_tier_b/**, all",
+      "data/*.jsonl benchmark manifests and oracle dumps, text-bearing v3 manifests,",
+      "provider rerun manifests, cohort/judge-request files, the manuscript directory",
+      "paper_aiopen_final/ and the paper zip, historical/exploratory result",
+      "directories, .git/, caches, logs, and .env."
+    ],
+    "row_level_exclusions": [
+      "The row-level Tier-B score files (results/final_main_tier_b/*.jsonl) are NOT",
+      "shipped. This release is aggregate-only: it contains no per-example benchmark",
+      "record, no per-example benchmark identifier, and no per-example content",
+      "fingerprint.",
+      "",
+      "Genuinely aggregate artifacts that are retained: overall / by-source /",
+      "by-event / by-fault / by-provider summary tables and JSON summaries,",
+      "protocol + readiness documentation, and the clean-repeat block-level table,",
+      "whose row keys are release-synthetic labels",
+      "(clean-repeat-v1::<provider>::<source>::NN) that do not identify any",
+      "benchmark example and whose mapping to examples is not shipped."
+    ],
+    "sanitize_scope": [
+      "sanitize_rules are applied only to UTF-8-decodable text files and only",
+      "rewrite machine-specific absolute paths. No numeric statistic, hash, row",
+      "count, or frozen manifest is altered by the builder."
+    ],
+    "identifier_pseudonymization": [
+      "Not used for this release: no retained file contains a source-derived",
+      "identifier, so no original->pseudonym mapping is needed and none is shipped."
+    ],
+    "inclusion_review_2026_10_15": [
+      "Added by the 2026-10-15 synchronization pass. Every addition was reviewed",
+      "individually and each is aggregate-only:",
+      "",
+      "B4_FINAL_EVIDENCE_GAP_AUDIT.md - aggregate evidence-gap audit of the frozen",
+      "Formal-300 and B4 scorer-validation artifacts. Contains cohort/coverage",
+      "counts, agreement rates, and artifact SHA-256 prefixes only; no benchmark",
+      "text, no per-example record, no per-example identifier.",
+      "",
+      "results/source_event_fault_distribution_v1/* - the six aggregate outputs",
+      "(three count CSVs, one summary JSON, one report, one LaTeX table) of",
+      "scripts/analyze_source_event_fault_distribution.py. Cell counts are",
+      "source x event x fault aggregates; the only identifier-shaped string is the",
+      "schema note 'pair_id == base_id::fault_operator', which is a field-format",
+      "description, not a value.",
+      "",
+      "results/formal_300_subgroup_v1/* - the six aggregate outputs (three summary",
+      "CSVs, one bootstrap-comparison JSON, one report, one LaTeX table) of",
+      "scripts/analyze_formal_300_subgroups.py. Contains dataset/provider/cell",
+      "effect estimates and bootstrap intervals only. The analysis script reads the",
+      "private block-level Formal-300 file locally and deliberately emits no",
+      "block, base, or observation identifier; the two excluded blocks are",
+      "described by stratum only.",
+      "",
+      "Deliberately NOT included: results/b4_scoring_validation/private/** (raw",
+      "judge payloads, ledgers, adjudication payloads), any *.jsonl cohort,",
+      "judge-request, execution-plan, or observation file, and the private",
+      "block-level Formal-300 CSV that the subgroup script consumes locally.",
+      "",
+      "results/paper_evidence_audit/{event_macro_reconciliation,condition_trace_validation}.{json,md}",
+      "- the four aggregate outputs of scripts/audit_event_macro_reconciliation.py",
+      "(B2) and scripts/validate_condition_traces.py (M3). They contain effect",
+      "estimates, per-event/per-provider tables, pass counts, and rates only. The",
+      "trace validator compares benchmark text in memory and emits counts, never",
+      "text, hashes, locators, or condition identifiers; its field tallies are",
+      "rendered as lists so no manifest field name becomes a JSON object key.",
+      "The other files in that directory (b3_count_reconciliation.*,",
+      "m3_intervention_example.*, current_paper_count_crosscheck.md) are row-level",
+      "developer artifacts and remain excluded."
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "analysis_event_counts": {
+    "deletion": 380,
+    "temporal": 169,
+    "update": 182
+  },
+  "assignment_rule": "non-mixed direct inheritance; mixed transition_count>=4 temporal, ==2 update, ==3 proportional per-document deterministic hash balancing (23 temporal/14 update in that stratum)",
+  "fault_operator_counts": {
+    "conflicting": 618,
+    "flipped": 380,
+    "missing": 731,
+    "stale": 351
+  },
+  "manifest_filename": "final_main_governance_base_manifest_v2.jsonl",
+  "manifest_sha256": "a2601a7ecb46034faf5dcc7ad00b5a851e19ae01561876fa681fd18af168ca79",
+  "parent_manifest_sha256": "f412198651069065bed647d3b8969f24971715d1ec71d52900036d237956af25",
+  "schema_version": "final-main-governance-base-v2",
+  "seed": 42,
+  "source_counts": {
+    "longmemeval": 191,
+    "memora": 380,
+    "oaks_novel": 160
+  },
+  "source_dataset_fingerprints": {
+    "parent_manifest": "f412198651069065bed647d3b8969f24971715d1ec71d52900036d237956af25"
+  },
+  "statement": "No model outputs or performance results were used in dataset selection or analysis-event assignment."
+}

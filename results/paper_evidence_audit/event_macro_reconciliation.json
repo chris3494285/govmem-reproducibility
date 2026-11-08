@@ -1,0 +1,383 @@
+{
+  "bootstrap_replicates": 10000,
+  "estimand": "macro = unweighted mean over the three events of a base-weighted per-event effect; each per-event effect is the mean over bases of that base's mean scored-pair delta",
+  "identity_errors": [],
+  "inputs": {
+    "condition_manifest": {
+      "name": "final_main_governance_condition_manifest_v3.jsonl",
+      "sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    },
+    "scores_dir": "final_main_sanitized"
+  },
+  "per_provider": {
+    "anthropic": {
+      "base_count": 731,
+      "corruption": {
+        "base_minus_pair_weighting_gap": 0.011402129910525083,
+        "event_macro": -0.2818545377249831,
+        "event_macro_ci95": [
+          -0.314080004004093,
+          -0.2497139421532134
+        ],
+        "event_mean_of_base_weighted": -0.2818545377249831,
+        "event_mean_of_pair_weighted": -0.2932566676355082,
+        "event_values_base_weighted": {
+          "deletion": -0.17368421052631577,
+          "temporal": -0.26528599605522685,
+          "update": -0.4065934065934066
+        },
+        "event_values_pair_weighted": {
+          "deletion": -0.1736842105263158,
+          "temporal": -0.29949238578680204,
+          "update": -0.4065934065934066
+        },
+        "macro_event_values_reported": {
+          "deletion": -0.17368421052631577,
+          "temporal": -0.26528599605522685,
+          "update": -0.4065934065934066
+        },
+        "pair_weighted_micro": -0.2586538461538462
+      },
+      "pair_count": 2080,
+      "recovery": {
+        "base_minus_pair_weighting_gap": -0.010793059602118626,
+        "event_macro": 0.28359656537794187,
+        "event_macro_ci95": [
+          0.25512789617040627,
+          0.31214664496547084
+        ],
+        "event_mean_of_base_weighted": 0.28359656537794187,
+        "event_mean_of_pair_weighted": 0.2943896249800605,
+        "event_values_base_weighted": {
+          "deletion": 0.17017543859649123,
+          "temporal": 0.27218934911242604,
+          "update": 0.4084249084249084
+        },
+        "event_values_pair_weighted": {
+          "deletion": 0.17017543859649123,
+          "temporal": 0.30456852791878175,
+          "update": 0.4084249084249084
+        },
+        "macro_event_values_reported": {
+          "deletion": 0.17017543859649123,
+          "temporal": 0.27218934911242604,
+          "update": 0.4084249084249084
+        },
+        "pair_weighted_micro": 0.25817307692307695
+      }
+    },
+    "deepseek": {
+      "base_count": 731,
+      "corruption": {
+        "base_minus_pair_weighting_gap": 0.014263926017147432,
+        "event_macro": -0.28054727548654673,
+        "event_macro_ci95": [
+          -0.31333913556079546,
+          -0.24761558729170066
+        ],
+        "event_mean_of_base_weighted": -0.28054727548654673,
+        "event_mean_of_pair_weighted": -0.29481120150369416,
+        "event_values_base_weighted": {
+          "deletion": -0.2324561403508772,
+          "temporal": -0.24654832347140038,
+          "update": -0.3626373626373626
+        },
+        "event_values_pair_weighted": {
+          "deletion": -0.2324561403508772,
+          "temporal": -0.2893401015228426,
+          "update": -0.3626373626373626
+        },
+        "macro_event_values_reported": {
+          "deletion": -0.2324561403508772,
+          "temporal": -0.24654832347140038,
+          "update": -0.3626373626373626
+        },
+        "pair_weighted_micro": -0.27740384615384617
+      },
+      "pair_count": 2080,
+      "recovery": {
+        "base_minus_pair_weighting_gap": -0.014641049002626527,
+        "event_macro": 0.2810364174736644,
+        "event_macro_ci95": [
+          0.2489356650996327,
+          0.31254176491524666
+        ],
+        "event_mean_of_base_weighted": 0.2810364174736644,
+        "event_mean_of_pair_weighted": 0.29567746647629095,
+        "event_values_base_weighted": {
+          "deletion": 0.2263157894736842,
+          "temporal": 0.2504930966469428,
+          "update": 0.3663003663003663
+        },
+        "event_values_pair_weighted": {
+          "deletion": 0.22631578947368422,
+          "temporal": 0.29441624365482233,
+          "update": 0.3663003663003663
+        },
+        "macro_event_values_reported": {
+          "deletion": 0.2263157894736842,
+          "temporal": 0.2504930966469428,
+          "update": 0.3663003663003663
+        },
+        "pair_weighted_micro": 0.2759615384615385
+      }
+    },
+    "gemini": {
+      "base_count": 731,
+      "corruption": {
+        "base_minus_pair_weighting_gap": 0.011760897352463107,
+        "event_macro": -0.31878315117181516,
+        "event_macro_ci95": [
+          -0.35024511475928477,
+          -0.2873795435333897
+        ],
+        "event_mean_of_base_weighted": -0.31878315117181516,
+        "event_mean_of_pair_weighted": -0.33054404852427827,
+        "event_values_base_weighted": {
+          "deletion": -0.17894736842105263,
+          "temporal": -0.3708086785009862,
+          "update": -0.4065934065934066
+        },
+        "event_values_pair_weighted": {
+          "deletion": -0.17894736842105263,
+          "temporal": -0.40609137055837563,
+          "update": -0.4065934065934066
+        },
+        "macro_event_values_reported": {
+          "deletion": -0.17894736842105263,
+          "temporal": -0.3708086785009862,
+          "update": -0.4065934065934066
+        },
+        "pair_weighted_micro": -0.28173076923076923
+      },
+      "pair_count": 2080,
+      "recovery": {
+        "base_minus_pair_weighting_gap": -0.011944452787873316,
+        "event_macro": 0.31293865828278783,
+        "event_macro_ci95": [
+          0.282299282476408,
+          0.3441511137310732
+        ],
+        "event_mean_of_base_weighted": 0.31293865828278783,
+        "event_mean_of_pair_weighted": 0.32488311107066115,
+        "event_values_base_weighted": {
+          "deletion": 0.17719298245614035,
+          "temporal": 0.35502958579881655,
+          "update": 0.4065934065934066
+        },
+        "event_values_pair_weighted": {
+          "deletion": 0.17719298245614035,
+          "temporal": 0.39086294416243655,
+          "update": 0.4065934065934066
+        },
+        "macro_event_values_reported": {
+          "deletion": 0.17719298245614035,
+          "temporal": 0.35502958579881655,
+          "update": 0.4065934065934066
+        },
+        "pair_weighted_micro": 0.2778846153846154
+      }
+    },
+    "grok": {
+      "base_count": 731,
+      "corruption": {
+        "base_minus_pair_weighting_gap": 0.013122544946051418,
+        "event_macro": -0.18474440539217865,
+        "event_macro_ci95": [
+          -0.21856914846287312,
+          -0.15133753392356633
+        ],
+        "event_mean_of_base_weighted": -0.18474440539217865,
+        "event_mean_of_pair_weighted": -0.19786695033823007,
+        "event_values_base_weighted": {
+          "deletion": -0.13157894736842105,
+          "temporal": -0.1992110453648915,
+          "update": -0.22344322344322343
+        },
+        "event_values_pair_weighted": {
+          "deletion": -0.13157894736842105,
+          "temporal": -0.23857868020304568,
+          "update": -0.22344322344322345
+        },
+        "macro_event_values_reported": {
+          "deletion": -0.13157894736842105,
+          "temporal": -0.1992110453648915,
+          "update": -0.22344322344322343
+        },
+        "pair_weighted_micro": -0.17596153846153847
+      },
+      "pair_count": 2080,
+      "recovery": {
+        "base_minus_pair_weighting_gap": -0.012648638185537825,
+        "event_macro": 0.17578191039729502,
+        "event_macro_ci95": [
+          0.14630956088445968,
+          0.20490449496522373
+        ],
+        "event_mean_of_base_weighted": 0.17578191039729502,
+        "event_mean_of_pair_weighted": 0.18843054858283284,
+        "event_values_base_weighted": {
+          "deletion": 0.11666666666666667,
+          "temporal": 0.1854043392504931,
+          "update": 0.22527472527472528
+        },
+        "event_values_pair_weighted": {
+          "deletion": 0.11666666666666667,
+          "temporal": 0.2233502538071066,
+          "update": 0.22527472527472528
+        },
+        "macro_event_values_reported": {
+          "deletion": 0.11666666666666667,
+          "temporal": 0.1854043392504931,
+          "update": 0.22527472527472528
+        },
+        "pair_weighted_micro": 0.16538461538461538
+      }
+    },
+    "kimi": {
+      "base_count": 731,
+      "corruption": {
+        "base_minus_pair_weighting_gap": 0.014026972636890622,
+        "event_macro": -0.27626363739724064,
+        "event_macro_ci95": [
+          -0.3075719995254408,
+          -0.2452982925756205
+        ],
+        "event_mean_of_base_weighted": -0.27626363739724064,
+        "event_mean_of_pair_weighted": -0.29029061003413126,
+        "event_values_base_weighted": {
+          "deletion": -0.13859649122807016,
+          "temporal": -0.23964497041420119,
+          "update": -0.45054945054945056
+        },
+        "event_values_pair_weighted": {
+          "deletion": -0.13859649122807016,
+          "temporal": -0.2817258883248731,
+          "update": -0.45054945054945056
+        },
+        "macro_event_values_reported": {
+          "deletion": -0.13859649122807016,
+          "temporal": -0.23964497041420119,
+          "update": -0.45054945054945056
+        },
+        "pair_weighted_micro": -0.24759615384615385
+      },
+      "pair_count": 2080,
+      "recovery": {
+        "base_minus_pair_weighting_gap": -0.01440910167969911,
+        "event_macro": 0.28589595290000147,
+        "event_macro_ci95": [
+          0.25815806775320943,
+          0.3142564745196324
+        ],
+        "event_mean_of_base_weighted": 0.28589595290000147,
+        "event_mean_of_pair_weighted": 0.3003050545797006,
+        "event_values_base_weighted": {
+          "deletion": 0.16228070175438597,
+          "temporal": 0.2613412228796844,
+          "update": 0.434065934065934
+        },
+        "event_values_pair_weighted": {
+          "deletion": 0.16228070175438597,
+          "temporal": 0.30456852791878175,
+          "update": 0.4340659340659341
+        },
+        "macro_event_values_reported": {
+          "deletion": 0.16228070175438597,
+          "temporal": 0.2613412228796844,
+          "update": 0.434065934065934
+        },
+        "pair_weighted_micro": 0.2605769230769231
+      }
+    },
+    "openai": {
+      "base_count": 731,
+      "corruption": {
+        "base_minus_pair_weighting_gap": 0.012601914983797091,
+        "event_macro": -0.31104091589921545,
+        "event_macro_ci95": [
+          -0.33956227476976464,
+          -0.2822103088094991
+        ],
+        "event_mean_of_base_weighted": -0.31104091589921545,
+        "event_mean_of_pair_weighted": -0.32364283088301254,
+        "event_values_base_weighted": {
+          "deletion": -0.1368421052631579,
+          "temporal": -0.35305719921104534,
+          "update": -0.4432234432234432
+        },
+        "event_values_pair_weighted": {
+          "deletion": -0.1368421052631579,
+          "temporal": -0.39086294416243655,
+          "update": -0.4432234432234432
+        },
+        "macro_event_values_reported": {
+          "deletion": -0.1368421052631579,
+          "temporal": -0.35305719921104534,
+          "update": -0.4432234432234432
+        },
+        "pair_weighted_micro": -0.2653846153846154
+      },
+      "pair_count": 2080,
+      "recovery": {
+        "base_minus_pair_weighting_gap": -0.012790476476536639,
+        "event_macro": 0.31111358277350176,
+        "event_macro_ci95": [
+          0.28249539652879735,
+          0.3394671466635029
+        ],
+        "event_mean_of_base_weighted": 0.31111358277350176,
+        "event_mean_of_pair_weighted": 0.3239040592500384,
+        "event_values_base_weighted": {
+          "deletion": 0.13508771929824562,
+          "temporal": 0.35502958579881655,
+          "update": 0.4432234432234432
+        },
+        "event_values_pair_weighted": {
+          "deletion": 0.13508771929824562,
+          "temporal": 0.3934010152284264,
+          "update": 0.4432234432234432
+        },
+        "macro_event_values_reported": {
+          "deletion": 0.13508771929824562,
+          "temporal": 0.35502958579881655,
+          "update": 0.4432234432234432
+        },
+        "pair_weighted_micro": 0.26490384615384616
+      }
+    }
+  },
+  "reconciliation_status": "pass",
+  "reused_functions": [
+    "scripts/analyze_final_main_results.py::_authoritative_rows",
+    "scripts/analyze_final_main_results.py::_pair_effects",
+    "scripts/analyze_final_main_results.py::_event_macro",
+    "scripts/analyze_final_main_results.py::_micro_effect",
+    "scripts/analyze_final_main_results.py::_event_effects"
+  ],
+  "schema_version": "govmem-event-macro-reconciliation-v1",
+  "six_provider_mean": {
+    "corruption": {
+      "macro_matches_published": true,
+      "mean_event_macro": -0.27553898717866326,
+      "mean_event_of_base_weighted": -0.27553898717866326,
+      "mean_event_of_pair_weighted": -0.28840205148647574,
+      "mean_pair_weighted_micro": -0.25112179487179487,
+      "method_gap_pp": -1.2863064307812477,
+      "pair_weighted_reproduces_review_value": true,
+      "published_pp": -27.55,
+      "review_pair_weighted_pp": -28.84
+    },
+    "recovery": {
+      "macro_matches_published": true,
+      "mean_event_macro": 0.2750605145341987,
+      "mean_event_of_base_weighted": 0.2750605145341987,
+      "mean_event_of_pair_weighted": 0.2879316441565974,
+      "mean_pair_weighted_micro": 0.25048076923076923,
+      "method_gap_pp": 1.287112962239867,
+      "pair_weighted_reproduces_review_value": true,
+      "published_pp": 27.51,
+      "review_pair_weighted_pp": 28.79
+    }
+  }
+}

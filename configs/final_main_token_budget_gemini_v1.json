@@ -1,0 +1,14 @@
+{
+  "schema_version": "final-main-token-budget-gemini-v1",
+  "provider": "gemini",
+  "purpose": "provider-specific measurement ceilings; not global scientific defaults",
+  "budgets": {
+    "longmemeval": 1024,
+    "memora_email_writeup": 2048,
+    "memora_meeting_notes": 1536,
+    "memora_preference": 1024,
+    "memora_project_proposal": 4096,
+    "memora_todos": 1024,
+    "oaks_novel": 768
+  }
+}

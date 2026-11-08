@@ -1,0 +1,102 @@
+{
+  "datasets": {
+    "LongMemEval": {
+      "exposed_fields": [
+        "source_dataset",
+        "base_id",
+        "condition_id",
+        "source-derived event/fault labels",
+        "source and context SHA-256 fingerprints"
+      ],
+      "files": [
+        "results/final_main_sanitized/openai.jsonl",
+        "results/final_main_sanitized/anthropic.jsonl",
+        "results/final_main_sanitized/deepseek.jsonl",
+        "results/final_main_sanitized/gemini.jsonl",
+        "results/final_main_sanitized/kimi.jsonl",
+        "results/final_main_sanitized/grok.jsonl"
+      ],
+      "raw_text_fields_exposed": [],
+      "recommendation": "Confirm benchmark terms permit derived identifiers/fingerprints and score release; do not add raw benchmark text without permission."
+    },
+    "Memora": {
+      "exposed_fields": [
+        "source_dataset",
+        "base_id",
+        "condition_id",
+        "source-derived event/fault labels",
+        "source and context SHA-256 fingerprints"
+      ],
+      "files": [
+        "results/final_main_sanitized/openai.jsonl",
+        "results/final_main_sanitized/anthropic.jsonl",
+        "results/final_main_sanitized/deepseek.jsonl",
+        "results/final_main_sanitized/gemini.jsonl",
+        "results/final_main_sanitized/kimi.jsonl",
+        "results/final_main_sanitized/grok.jsonl"
+      ],
+      "raw_text_fields_exposed": [],
+      "recommendation": "Confirm benchmark terms permit derived identifiers/fingerprints and score release; do not add raw benchmark text without permission."
+    },
+    "OAKS Novel": {
+      "exposed_fields": [
+        "source_dataset",
+        "base_id",
+        "condition_id",
+        "source-derived event/fault labels",
+        "source and context SHA-256 fingerprints"
+      ],
+      "files": [
+        "results/final_main_sanitized/openai.jsonl",
+        "results/final_main_sanitized/anthropic.jsonl",
+        "results/final_main_sanitized/deepseek.jsonl",
+        "results/final_main_sanitized/gemini.jsonl",
+        "results/final_main_sanitized/kimi.jsonl",
+        "results/final_main_sanitized/grok.jsonl"
+      ],
+      "raw_text_fields_exposed": [],
+      "recommendation": "Confirm benchmark terms permit derived identifiers/fingerprints and score release; do not add raw benchmark text without permission."
+    }
+  },
+  "excluded_private_material": [
+    "merged provider JSONL",
+    "rerun JSONL",
+    "logs",
+    "checkpoints",
+    "raw benchmark downloads",
+    "provider payloads and request metadata"
+  ],
+  "manifest_artifacts": {
+    "exposed_fields": [
+      "model_visible_context_text",
+      "source_evidence nested content",
+      "task_question",
+      "task_oracle_answer",
+      "project_description and other benchmark answer-bearing fields"
+    ],
+    "files": [
+      "data/final_main_governance_condition_manifest_v3.jsonl",
+      "results/answer_leakage_repair/provider_rerun_manifests/*.jsonl"
+    ],
+    "raw_text_counts": {
+      "provider_rerun_manifest_model_visible_context_text_per_file": 231,
+      "v3_condition_manifest_model_visible_context_text": 2893,
+      "v3_condition_manifest_other_long_text_fields": 2370
+    },
+    "recommendation": "Do not redistribute these manifest artifacts until each benchmark license is confirmed; otherwise publish locator/hash-only manifests and deterministic local rebuild instructions."
+  },
+  "provenance_file": {
+    "exposed_fields": [
+      "official source file name",
+      "session/message locators",
+      "content SHA-256 fingerprints",
+      "source example IDs"
+    ],
+    "file": "results/answer_leakage_repair/source_evidence_provenance.json",
+    "raw_text_fields_exposed": [],
+    "recommendation": "Obtain author/license approval for locator and fingerprint redistribution; retain raw source outside the release."
+  },
+  "raw_benchmark_text_detected_in_promoted_sanitized_files": false,
+  "raw_benchmark_text_detected_in_proposed_manifest_artifacts": true,
+  "status": "REVIEW_REQUIRED"
+}

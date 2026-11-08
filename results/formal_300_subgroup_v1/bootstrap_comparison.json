@@ -1,0 +1,196 @@
+{
+  "cluster_bootstrap": {
+    "aggregation": "equal weight per block; each resampled cluster contributes all of its blocks",
+    "by_provider": {
+      "anthropic": {
+        "corruption_effect": [
+          0.36962468671679205,
+          0.6406694781826361
+        ],
+        "recovery_effect": [
+          0.26478967450677976,
+          0.5451807644110274
+        ],
+        "restoration_gap": [
+          -0.18444444444444452,
+          -0.030000000000000027
+        ]
+      },
+      "deepseek": {
+        "corruption_effect": [
+          0.06247062461348174,
+          0.2922848381776953
+        ],
+        "recovery_effect": [
+          0.08873170480313342,
+          0.31678571428571417
+        ],
+        "restoration_gap": [
+          -0.019387755102040827,
+          0.08265306122448979
+        ]
+      },
+      "gemini": {
+        "corruption_effect": [
+          0.2967768526824649,
+          0.5808631419600806
+        ],
+        "recovery_effect": [
+          0.26062473524208224,
+          0.5618777332361515
+        ],
+        "restoration_gap": [
+          -0.09576138147566715,
+          0.04081632653061229
+        ]
+      },
+      "kimi": {
+        "corruption_effect": [
+          0.1878171717887615,
+          0.44366174999335367
+        ],
+        "recovery_effect": [
+          0.1396140336004352,
+          0.38639367020492393
+        ],
+        "restoration_gap": [
+          -0.13565168757795878,
+          0.020635372254863723
+        ]
+      },
+      "openai": {
+        "corruption_effect": [
+          0.3802265901310019,
+          0.6406784108592931
+        ],
+        "recovery_effect": [
+          0.36516377641965875,
+          0.6331860269360268
+        ],
+        "restoration_gap": [
+          -0.03352380952380962,
+          0.008000000000000007
+        ]
+      },
+      "xai": {
+        "corruption_effect": [
+          0.03775112942612943,
+          0.3254920634920635
+        ],
+        "recovery_effect": [
+          0.05344035409035413,
+          0.31048095238095236
+        ],
+        "restoration_gap": [
+          -0.11133333333333328,
+          0.10033333333333333
+        ]
+      }
+    },
+    "by_source": {
+      "longmemeval": {
+        "corruption_effect": [
+          0.30322091886608016,
+          0.5071428571428571
+        ],
+        "recovery_effect": [
+          0.2884615384615385,
+          0.4965986394557823
+        ],
+        "restoration_gap": [
+          -0.05883320433436533,
+          0.03289473684210531
+        ]
+      },
+      "memora": {
+        "corruption_effect": [
+          0.23310872185330486,
+          0.3769226898916654
+        ],
+        "recovery_effect": [
+          0.19092613405728565,
+          0.333383955931469
+        ],
+        "restoration_gap": [
+          -0.08287082483716512,
+          -0.006601353693826325
+        ]
+      }
+    },
+    "clusters_overall": 238,
+    "iterations": 10000,
+    "missing_handling": "blocks with an unresolved component excluded entirely; no imputation",
+    "overall": {
+      "corruption_effect": [
+        0.29402046786267044,
+        0.41896251358049835
+      ],
+      "recovery_effect": [
+        0.26415311705513955,
+        0.39085683576792674
+      ],
+      "restoration_gap": [
+        -0.05882035098711103,
+        0.0008053217345886599
+      ]
+    },
+    "seed": 20261010,
+    "stratification": [
+      "source"
+    ],
+    "unit": "base example (cluster); matched triplets preserved"
+  },
+  "distinct_base_definitions": {
+    "explanation": "239 distinct bases belong to the 300 selected blocks; the 298 resolved blocks contain 238 distinct bases because the two dropped blocks remove one base entirely and one base is retained by its other blocks.",
+    "resolved_298_blocks": 238,
+    "selected_300_blocks": 239
+  },
+  "evaluator": "final-native-evaluation-v2",
+  "frozen_reference_block_bootstrap": {
+    "corruption_effect": [
+      0.2978457785625372,
+      0.41115909458998073
+    ],
+    "iterations": 10000,
+    "recovery_effect": [
+      0.26935454755810795,
+      0.38363827287715324
+    ],
+    "restoration_gap": [
+      -0.059391263336064905,
+      0.0011804059781394282
+    ],
+    "seed": 20261010,
+    "unit": "matched provider/base block"
+  },
+  "inference_caveat": "Deterministic, provider-balanced, non-probability sample with bases reused across providers; intervals describe within-sample sampling variability only and are not population-representative precision.",
+  "note": "The block bootstrap is reproduced bit-for-bit from the frozen analysis; the cluster bootstrap uses the same seed and iteration count with a different resampling scheme.",
+  "protocol": "formal-300-validation-v1",
+  "reference_values_reconciled": {
+    "clean": 0.6902866438957969,
+    "corrupted": 0.3349237434816995,
+    "corruption_effect": 0.35536290041409735,
+    "enforced": 0.6616590656322272,
+    "recovery_effect": 0.3267353221505277,
+    "resolved_blocks": 298,
+    "resolved_distinct_bases": 238,
+    "restoration_gap": -0.028627578263569653,
+    "selected_blocks": 300,
+    "selected_distinct_bases": 239
+  },
+  "reproduced_block_bootstrap": {
+    "corruption_effect": [
+      0.2978457785625372,
+      0.41115909458998073
+    ],
+    "recovery_effect": [
+      0.26935454755810795,
+      0.38363827287715324
+    ],
+    "restoration_gap": [
+      -0.059391263336064905,
+      0.0011804059781394282
+    ]
+  },
+  "schema_version": "formal-300-subgroup-bootstrap-comparison-v1"
+}

@@ -1,0 +1,1 @@
+{"session_id":2,"session_type":"memory_update","operation":"update","operation_details":{"old":"The weekly report is due Friday.","new":"The weekly report is due Monday."},"date":"2025-06-02","persona":"software_engineer","conversation":[{"turn":1,"speaker":"user","message":"The weekly report is now due Monday.","share_memory":true}]}

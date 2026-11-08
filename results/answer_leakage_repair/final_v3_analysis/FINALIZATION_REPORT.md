@@ -1,0 +1,513 @@
+# GovMem v3 finalization report
+
+Status: offline finalization complete; no API calls, inference, staging, commit, push, deletion, or cleanup performed.
+
+Promoted files: six providers × 4,891 rows; public mapping SHA-256 `cb849f43ae476d633e48ada4db9d35f1b8f111321a67e185dd3bf105ef755988`.
+
+## Audits
+
+- v3 leakage audit: PASS; 0 affected rows.
+- Identity audit: all six providers PASS.
+- Governance evidence: PASS; 731/731 fully supported, 0 unsupported.
+- Anthropic: six repair-slice failures retained under the frozen failure policy; no retries or edits.
+- `pytest`: PASS; compileall and `git diff --check`: PASS.
+- Provider API calls: 0.
+
+## Paper values
+
+All old/corrected provider statistics, denominators, CIs, effects, and changed flags are listed in `old_vs_new_statistics.{json,csv,md}` and `paper_update_checklist.md`.
+
+Headline corrected values: event-macro corruption −27.55 pp; recovery +27.51 pp; context-changed corruption −26.04 pp; unchanged-context corruption −1.28 pp; control-plane change 96.25%; restoration 100%; matched instances 3,534; stale/conflicting 238; stale/flipped 0; stale/missing 351.
+
+## RQ dependency decisions
+
+- Final-main cross-provider, RQ1-style effects, source/event/fault breakdowns, enforcement recovery, propagation, and matched-fault outputs were computed from promoted v3 final-main files where supported by the canonical implementation.
+- Existing RQ1–RQ4 paper artifacts use separate frozen pilot manifests/results; their paths and hashes are independent of the repaired 265 final-main conditions and were regenerated offline without being silently replaced.
+- System-validation tables/figure were regenerated from their separate frozen system-validation artifacts and do not consume final-main provider scores.
+
+## Regenerated outputs
+
+- `results/answer_leakage_repair/final_v3_analysis/` provider summaries, cross-provider summary, propagation, matched-fault, governance audit, comparison, checklist, and licensing report.
+- `results/system_validation_analysis/`, `results/system_validation_statistics/`, and `results/system_validation_paper/`.
+- `results/rq1_paper/`, `results/rq2/`, `results/rq3/`, and `results/rq4/` were regenerated offline from their separate frozen inputs.
+
+## Blockers
+
+- Benchmark redistribution terms for LongMemEval, Memora, and OAKS Novel, including derived locators/fingerprints, are not established in this repository.
+- External manuscript/Prism/LaTeX sources are absent; paper text and external figure references require author-side update from the checklist.
+- `submission_ready=true` must remain unset until those decisions and the changed values are reviewed.
+
+## Proposed git-add allowlist
+
+See the exact grouped allowlist in ARTIFACTS.md/README.md: documentation; v3 manifest/freeze; sanitizer and analysis/audit code; six sanitized files and mapping; repair provenance/manifests/audits; and `final_v3_analysis/`. Exclude all raw merged/rerun files, logs, checkpoints, canaries, smoke/preflight/exploratory outputs, caches, and unreviewed machine-specific configs.
+
+
+## Exact proposed git-add allowlist
+
+Tracked:
+
+- `README.md`
+- `ARTIFACTS.md`
+- `eval/final_main_rerun_identity.py`
+- `eval/final_main_result_join.py`
+- `scripts/sanitize_final_results.py`
+- `scripts/analyze_final_main_results.py`
+- `scripts/analyze_control_plane_propagation.py`
+- `scripts/analyze_matched_fault_support.py`
+- `scripts/audit_governance_evidence.py`
+- `scripts/run_final_main_anthropic.py`
+- `scripts/run_final_main_deepseek.py`
+- `scripts/run_final_main_gemini.py`
+- `scripts/run_final_main_grok.py`
+- `scripts/run_final_main_kimi.py`
+- `scripts/run_final_main_openai.py`
+- `data/final_main_governance_condition_manifest_v3.jsonl`
+- `data/final_main_governance_condition_manifest_v3.freeze.json`
+- `results/final_main_sanitized/anthropic.jsonl`
+- `results/final_main_sanitized/deepseek.jsonl`
+- `results/final_main_sanitized/gemini.jsonl`
+- `results/final_main_sanitized/grok.jsonl`
+- `results/final_main_sanitized/kimi.jsonl`
+- `results/final_main_sanitized/openai.jsonl`
+- `results/final_main_sanitized/sha256_mapping.json`
+
+Untracked approved:
+
+- `results/answer_leakage_repair/final_v3_analysis/FINALIZATION_REPORT.md`
+- `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_event.csv`
+- `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_fault.csv`
+- `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_provider.csv`
+- `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_by_source.csv`
+- `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_instance_level.csv`
+- `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/mechanism_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/cross_provider_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_base_level.csv`
+- `results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_by_event.csv`
+- `results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_by_fault.csv`
+- `results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_by_source.csv`
+- `results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_schema_notes.md`
+- `results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_spotcheck.jsonl`
+- `results/answer_leakage_repair/final_v3_analysis/governance_evidence_audit/governance_evidence_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/licensing_blocker_report.json`
+- `results/answer_leakage_repair/final_v3_analysis/licensing_blocker_report.md`
+- `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_event.csv`
+- `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_fault.csv`
+- `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_provider.csv`
+- `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_by_source.csv`
+- `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_instance_level.csv`
+- `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_overlap_counts.csv`
+- `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/matched_fault_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/old_vs_new_statistics.csv`
+- `results/answer_leakage_repair/final_v3_analysis/old_vs_new_statistics.json`
+- `results/answer_leakage_repair/final_v3_analysis/old_vs_new_statistics.md`
+- `results/answer_leakage_repair/final_v3_analysis/paper_update_checklist.md`
+- `results/answer_leakage_repair/final_v3_analysis/provider_summaries.json`
+- `results/answer_leakage_repair/final_v3_analysis/providers/anthropic/analysis_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/providers/anthropic/analysis_table.csv`
+- `results/answer_leakage_repair/final_v3_analysis/providers/deepseek/analysis_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/providers/deepseek/analysis_table.csv`
+- `results/answer_leakage_repair/final_v3_analysis/providers/gemini/analysis_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/providers/gemini/analysis_table.csv`
+- `results/answer_leakage_repair/final_v3_analysis/providers/grok/analysis_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/providers/grok/analysis_table.csv`
+- `results/answer_leakage_repair/final_v3_analysis/providers/kimi/analysis_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/providers/kimi/analysis_table.csv`
+- `results/answer_leakage_repair/final_v3_analysis/providers/openai/analysis_summary.json`
+- `results/answer_leakage_repair/final_v3_analysis/providers/openai/analysis_table.csv`
+
+## Exact untracked paths to keep uncommitted
+
+- `configs/final_main_token_budget_anthropic_repair_v1.json`
+- `configs/final_main_token_budget_gemini_flash_repair_v1.json`
+- `configs/final_main_token_budget_gemini_v1.json`
+- `configs/final_main_token_budget_kimi_v1.json`
+- `configs/final_main_token_budget_kimi_v2.json`
+- `configs/final_main_token_budget_kimi_v3.json`
+- `logs/deepseek_rq1_full.log`
+- `results/answer_leakage_repair/anthropic_checkpoints/full_results_after_resume1.jsonl`
+- `results/answer_leakage_repair/anthropic_checkpoints/run_summary_after_resume1.json`
+- `results/answer_leakage_repair/merged_anthropic.jsonl`
+- `results/answer_leakage_repair/merged_deepseek.jsonl`
+- `results/answer_leakage_repair/merged_gemini.jsonl`
+- `results/answer_leakage_repair/merged_grok.jsonl`
+- `results/answer_leakage_repair/merged_kimi.jsonl`
+- `results/answer_leakage_repair/merged_openai.jsonl`
+- `results/answer_leakage_repair/rerun_anthropic/full_results.jsonl`
+- `results/answer_leakage_repair/rerun_anthropic/run_summary.json`
+- `results/answer_leakage_repair/rerun_deepseek/full_results.jsonl`
+- `results/answer_leakage_repair/rerun_deepseek/run_summary.json`
+- `results/answer_leakage_repair/rerun_gemini/full_results.jsonl`
+- `results/answer_leakage_repair/rerun_gemini/run_summary.json`
+- `results/answer_leakage_repair/rerun_grok/full_results.jsonl`
+- `results/answer_leakage_repair/rerun_grok/run_summary.json`
+- `results/answer_leakage_repair/rerun_kimi/full_results.jsonl`
+- `results/answer_leakage_repair/rerun_kimi/run_summary.json`
+- `results/answer_leakage_repair/rerun_openai/full_results.jsonl`
+- `results/answer_leakage_repair/rerun_openai/run_summary.json`
+- `results/concurrency_validation_w1/full_results.jsonl`
+- `results/concurrency_validation_w1/run_summary.json`
+- `results/concurrency_validation_w4/full_results.jsonl`
+- `results/concurrency_validation_w4/run_summary.json`
+- `results/concurrency_validation_w8/full_results.jsonl`
+- `results/concurrency_validation_w8/run_summary.json`
+- `results/final_main_anthropic_sonnet5/failure_budget_audit.json`
+- `results/final_main_anthropic_sonnet5/full_results.jsonl`
+- `results/final_main_anthropic_sonnet5/nontrunc_failure_condition_ids.txt`
+- `results/final_main_anthropic_sonnet5/run_summary.json`
+- `results/final_main_anthropic_sonnet5/truncated_condition_ids.txt`
+- `results/final_main_anthropic_sonnet5_canary_1/full_results.jsonl`
+- `results/final_main_anthropic_sonnet5_canary_1/run_summary.json`
+- `results/final_main_anthropic_sonnet5_final/full_results_merged.jsonl`
+- `results/final_main_anthropic_sonnet5_final/scored/full_results_scored.jsonl`
+- `results/final_main_anthropic_sonnet5_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_anthropic_sonnet5_preflight/full_dry_run_summary.json`
+- `results/final_main_anthropic_sonnet5_repair/full_results.jsonl`
+- `results/final_main_anthropic_sonnet5_repair/remaining_truncated_condition_ids.txt`
+- `results/final_main_anthropic_sonnet5_repair/run_summary.json`
+- `results/final_main_anthropic_sonnet5_repair_final/full_results.jsonl`
+- `results/final_main_anthropic_sonnet5_repair_final/run_summary.json`
+- `results/final_main_anthropic_sonnet5_repair_final_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_anthropic_sonnet5_repair_final_preflight/full_dry_run_summary.json`
+- `results/final_main_anthropic_sonnet5_repair_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_anthropic_sonnet5_repair_preflight/full_dry_run_summary.json`
+- `results/final_main_cross_provider_summary_v1/cross_provider_summary.csv`
+- `results/final_main_cross_provider_summary_v2/cross_provider_summary.csv`
+- `results/final_main_deepseek_comparison/analysis_summary.json`
+- `results/final_main_deepseek_comparison/analysis_table.csv`
+- `results/final_main_deepseek_comparison_v2/analysis_summary.json`
+- `results/final_main_deepseek_comparison_v2/analysis_table.csv`
+- `results/final_main_deepseek_v4_flash/full_results.jsonl`
+- `results/final_main_deepseek_v4_flash/full_results_raw_frozen.jsonl`
+- `results/final_main_deepseek_v4_flash/run_summary.json`
+- `results/final_main_deepseek_v4_flash/scored_results.jsonl`
+- `results/final_main_deepseek_v4_flash/scored_results_v2.jsonl`
+- `results/final_main_deepseek_v4_flash_concurrent_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_deepseek_v4_flash_concurrent_preflight/full_dry_run_summary.json`
+- `results/final_main_deepseek_v4_flash_concurrent_preflight/run_summary.json`
+- `results/final_main_deepseek_v4_flash_concurrent_replication/full_results.jsonl`
+- `results/final_main_deepseek_v4_flash_concurrent_replication/run_summary.json`
+- `results/final_main_deepseek_v4_flash_concurrent_replication_v2/full_results.jsonl`
+- `results/final_main_deepseek_v4_flash_concurrent_replication_v2/full_results_raw_frozen.jsonl`
+- `results/final_main_deepseek_v4_flash_concurrent_replication_v2/run_summary.json`
+- `results/final_main_deepseek_v4_flash_concurrent_replication_v2/scored_results.jsonl`
+- `results/final_main_deepseek_v4_flash_concurrent_replication_v2/scored_results_v2.jsonl`
+- `results/final_main_deepseek_v4_flash_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_deepseek_v4_flash_preflight/full_dry_run_summary.json`
+- `results/final_main_deepseek_v4_flash_preflight/run_summary.json`
+- `results/final_main_deepseek_v4_pro/full_results.jsonl`
+- `results/final_main_deepseek_v4_pro/full_results_raw_frozen.jsonl`
+- `results/final_main_deepseek_v4_pro/run_summary.json`
+- `results/final_main_deepseek_v4_pro/scored_results.jsonl`
+- `results/final_main_deepseek_v4_pro_analysis/analysis_table.csv`
+- `results/final_main_deepseek_v4_pro_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_deepseek_v4_pro_preflight/full_dry_run_summary.json`
+- `results/final_main_deepseek_v4_pro_preflight/run_summary.json`
+- `results/final_main_deepseek_v4_pro_validation/full_results.jsonl`
+- `results/final_main_deepseek_v4_pro_validation/run_summary.json`
+- `results/final_main_deepseek_v4_pro_vs_anthropic_sonnet5_analysis/analysis_table.csv`
+- `results/final_main_deepseek_v4_pro_vs_gemini_3_flash_analysis/analysis_table.csv`
+- `results/final_main_deepseek_v4_pro_vs_openai_gpt56_sol_analysis/analysis_table.csv`
+- `results/final_main_gemini_25_pro_canary/full_results.jsonl`
+- `results/final_main_gemini_25_pro_canary/run_summary.json`
+- `results/final_main_gemini_25_pro_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_25_pro_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_31_pro_canary/full_results.jsonl`
+- `results/final_main_gemini_31_pro_canary/run_summary.json`
+- `results/final_main_gemini_31_pro_lowthinking_canary/full_results.jsonl`
+- `results/final_main_gemini_31_pro_lowthinking_canary/run_summary.json`
+- `results/final_main_gemini_31_pro_lowthinking_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_31_pro_lowthinking_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_31_pro_measurement_canary/full_results.jsonl`
+- `results/final_main_gemini_31_pro_measurement_canary/run_summary.json`
+- `results/final_main_gemini_31_pro_measurement_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_31_pro_measurement_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_31_pro_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_31_pro_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash/full_results.jsonl`
+- `results/final_main_gemini_3_flash/run_summary.json`
+- `results/final_main_gemini_3_flash_canary/full_results.jsonl`
+- `results/final_main_gemini_3_flash_canary/run_summary.json`
+- `results/final_main_gemini_3_flash_email3072_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_email3072_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_failed_ids.txt`
+- `results/final_main_gemini_3_flash_final/full_results_after_repair_v1.jsonl`
+- `results/final_main_gemini_3_flash_final/full_results_merged.jsonl`
+- `results/final_main_gemini_3_flash_final/scored/full_results_scored.jsonl`
+- `results/final_main_gemini_3_flash_final_canary/full_results.jsonl`
+- `results/final_main_gemini_3_flash_final_canary/run_summary.json`
+- `results/final_main_gemini_3_flash_final_canary_lme1536/full_results.jsonl`
+- `results/final_main_gemini_3_flash_final_canary_lme1536/run_summary.json`
+- `results/final_main_gemini_3_flash_final_canary_todos1536/full_results.jsonl`
+- `results/final_main_gemini_3_flash_final_canary_todos1536/run_summary.json`
+- `results/final_main_gemini_3_flash_final_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_final_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_lme1536_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_lme1536_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_memora_smoke_100/full_results.jsonl`
+- `results/final_main_gemini_3_flash_memora_smoke_100/run_summary.json`
+- `results/final_main_gemini_3_flash_memora_smoke_100_email3072/full_results.jsonl`
+- `results/final_main_gemini_3_flash_memora_smoke_100_email3072/run_summary.json`
+- `results/final_main_gemini_3_flash_memora_smoke_100_pref1536/full_results.jsonl`
+- `results/final_main_gemini_3_flash_memora_smoke_100_pref1536/run_summary.json`
+- `results/final_main_gemini_3_flash_memora_smoke_100_todos3072/full_results.jsonl`
+- `results/final_main_gemini_3_flash_memora_smoke_100_todos3072/run_summary.json`
+- `results/final_main_gemini_3_flash_metadata_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_metadata_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_oaks_smoke_100/full_results.jsonl`
+- `results/final_main_gemini_3_flash_oaks_smoke_100/run_summary.json`
+- `results/final_main_gemini_3_flash_preference1536_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_preference1536_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_repair_v1/full_results.jsonl`
+- `results/final_main_gemini_3_flash_repair_v1/run_summary.json`
+- `results/final_main_gemini_3_flash_repair_v2/full_results.jsonl`
+- `results/final_main_gemini_3_flash_repair_v2/run_summary.json`
+- `results/final_main_gemini_3_flash_repair_v2_failed_id.txt`
+- `results/final_main_gemini_3_flash_repair_v2_one_id.txt`
+- `results/final_main_gemini_3_flash_smoke_100/full_results.jsonl`
+- `results/final_main_gemini_3_flash_smoke_100/run_summary.json`
+- `results/final_main_gemini_3_flash_smoke_100_lme1536/full_results.jsonl`
+- `results/final_main_gemini_3_flash_smoke_100_lme1536/run_summary.json`
+- `results/final_main_gemini_3_flash_todos1536_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_todos1536_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_todos3072_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_gemini_3_flash_todos3072_preflight/full_dry_run_summary.json`
+- `results/final_main_gemini_3_flash_vs_kimi_k2_6_analysis/analysis_table.csv`
+- `results/final_main_gemini_memora_smoke_100_ids.txt`
+- `results/final_main_gemini_oaks_smoke_100_ids.txt`
+- `results/final_main_gemini_stratified_canary_ids.txt`
+- `results/final_main_governance_base_manifest_summary.json`
+- `results/final_main_governance_condition_manifest_v1_summary.json`
+- `results/final_main_governance_smoke_manifest_v1_summary.json`
+- `results/final_main_grok_43_canary_10/full_results.jsonl`
+- `results/final_main_grok_43_canary_10/run_summary.json`
+- `results/final_main_grok_43_full/full_results.jsonl`
+- `results/final_main_grok_43_full/run_summary.json`
+- `results/final_main_grok_43_smoke_1/full_results.jsonl`
+- `results/final_main_grok_43_smoke_1/run_summary.json`
+- `results/final_main_grok_43_smoke_100/full_results.jsonl`
+- `results/final_main_grok_43_smoke_100/run_summary.json`
+- `results/final_main_grok_43_smoke_1_id.txt`
+- `results/final_main_kimi_canary_10_ids.txt`
+- `results/final_main_kimi_canary_10_live/full_results.jsonl`
+- `results/final_main_kimi_canary_10_live/run_summary.json`
+- `results/final_main_kimi_canary_10_v2/full_results.jsonl`
+- `results/final_main_kimi_canary_10_v2/run_summary.json`
+- `results/final_main_kimi_k2_6_full/full_results.jsonl`
+- `results/final_main_kimi_k2_6_nothinking_failed_ids.txt`
+- `results/final_main_kimi_k2_6_nothinking_final/full_results_merged.jsonl`
+- `results/final_main_kimi_k2_6_nothinking_final/scored/full_results_scored.jsonl`
+- `results/final_main_kimi_k2_6_nothinking_full/full_results.jsonl`
+- `results/final_main_kimi_k2_6_nothinking_full/run_summary.json`
+- `results/final_main_kimi_k2_6_nothinking_repair_v1/full_results.jsonl`
+- `results/final_main_kimi_k2_6_nothinking_repair_v1/run_summary.json`
+- `results/final_main_kimi_nothinking_canary_10/full_results.jsonl`
+- `results/final_main_kimi_nothinking_canary_10/run_summary.json`
+- `results/final_main_kimi_nothinking_canary_10_v2/full_results.jsonl`
+- `results/final_main_kimi_nothinking_canary_10_v2/run_summary.json`
+- `results/final_main_kimi_nothinking_smoke_100/full_results.jsonl`
+- `results/final_main_kimi_nothinking_smoke_100/run_summary.json`
+- `results/final_main_kimi_oaks_recheck_1_id.txt`
+- `results/final_main_kimi_oaks_recheck_1_v3/full_results.jsonl`
+- `results/final_main_kimi_oaks_recheck_1_v3/run_summary.json`
+- `results/final_main_kimi_smoke_100/full_results.jsonl`
+- `results/final_main_kimi_smoke_100/run_summary.json`
+- `results/final_main_kimi_smoke_100_failed_9_ids.txt`
+- `results/final_main_kimi_smoke_100_ids.txt`
+- `results/final_main_kimi_smoke_100_repair_v4/full_results.jsonl`
+- `results/final_main_kimi_smoke_100_repair_v4/run_summary.json`
+- `results/final_main_openai_batch_preflight/batch_input.jsonl`
+- `results/final_main_openai_batch_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol/run_summary.json`
+- `results/final_main_openai_gpt56_sol_batch_canary_1/batch_input.jsonl`
+- `results/final_main_openai_gpt56_sol_batch_canary_1/batch_submission.json`
+- `results/final_main_openai_gpt56_sol_batch_canary_1/run_summary.json`
+- `results/final_main_openai_gpt56_sol_canary_1536/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_canary_1536/run_summary.json`
+- `results/final_main_openai_gpt56_sol_canary_1_dryrun/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_canary_1_dryrun/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_canary_1_live/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_canary_1_live/run_summary.json`
+- `results/final_main_openai_gpt56_sol_final_v2/full_results_merged.jsonl`
+- `results/final_main_openai_gpt56_sol_final_v2/scored/full_results_scored.jsonl`
+- `results/final_main_openai_gpt56_sol_long_output_validation/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_long_output_validation/run_summary.json`
+- `results/final_main_openai_gpt56_sol_long_output_validation_v2/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_long_output_validation_v2/run_summary.json`
+- `results/final_main_openai_gpt56_sol_post_schema_fix_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_post_schema_fix_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_postfix_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_postfix_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_proposal_20/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_proposal_20/run_summary.json`
+- `results/final_main_openai_gpt56_sol_proposal_20_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_proposal_20_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_proposal_826_batch/batch_input.jsonl`
+- `results/final_main_openai_gpt56_sol_proposal_826_cost/batch_input.jsonl`
+- `results/final_main_openai_gpt56_sol_proposal_826_cost/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_proposal_budget_v2_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_proposal_budget_v2_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_stage_a_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_stage_a_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_stage_b_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_gpt56_sol_stage_b_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_true_proposal_581_sync/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_true_proposal_581_sync/run_summary.json`
+- `results/final_main_openai_gpt56_sol_true_proposal_preflight/batch_input.jsonl`
+- `results/final_main_openai_gpt56_sol_true_proposal_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_gpt56_sol_validation/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_validation/run_summary.json`
+- `results/final_main_openai_gpt56_sol_validation_v2/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_validation_v2/run_summary.json`
+- `results/final_main_openai_gpt56_sol_validation_v3/full_results.jsonl`
+- `results/final_main_openai_gpt56_sol_validation_v3/run_summary.json`
+- `results/final_main_openai_proposal_batch_preflight/batch_input.jsonl`
+- `results/final_main_openai_proposal_batch_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_true_proposal_batch_preflight/batch_input.jsonl`
+- `results/final_main_openai_true_proposal_batch_preflight/full_dry_run_summary.json`
+- `results/final_main_openai_true_proposal_preflight/full_dry_run_requests.jsonl`
+- `results/final_main_openai_true_proposal_preflight/full_dry_run_summary.json`
+- `results/final_main_proposal_selection_audit.json`
+- `results/final_main_smoke_deepseek_retry_preflight/dry_run_requests.jsonl`
+- `results/final_main_smoke_deepseek_retry_preflight/dry_run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash/dry_run_requests.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash/dry_run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash/metrics_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash/run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash/smoke_results.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2/dry_run_requests.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2/dry_run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final/dry_run_requests.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final/dry_run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final/metrics_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final/run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final/smoke_results.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final/smoke_results_scored.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final2/dry_run_requests.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final2/dry_run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final2/metrics_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final2/run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final2/smoke_results.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2_final2/smoke_results_scored.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2_fixed/metrics_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_fixed/run_summary.json`
+- `results/final_main_smoke_deepseek_v4_flash_v2_fixed/smoke_results.jsonl`
+- `results/final_main_smoke_deepseek_v4_flash_v2_fixed/smoke_results_scored.jsonl`
+- `results/governance_evidence_audit/governance_evidence_base_level.csv`
+- `results/governance_evidence_audit/governance_evidence_by_event.csv`
+- `results/governance_evidence_audit/governance_evidence_by_fault.csv`
+- `results/governance_evidence_audit/governance_evidence_by_source.csv`
+- `results/main_dataset_audit/excluded_examples.jsonl`
+- `results/main_dataset_audit/longmemeval_candidates.jsonl`
+- `results/main_dataset_audit/memora_candidates.jsonl`
+- `results/main_dataset_audit/summary.json`
+- `results/main_dataset_audit_v2/excluded_examples.jsonl`
+- `results/main_dataset_audit_v2/longmemeval_candidates.jsonl`
+- `results/main_dataset_audit_v2/memora_candidates.jsonl`
+- `results/main_dataset_audit_v2/summary.json`
+- `results/main_dataset_audit_v3/excluded_examples.jsonl`
+- `results/main_dataset_audit_v3/longmemeval_candidates.jsonl`
+- `results/main_dataset_audit_v3/memora_candidates.jsonl`
+- `results/main_dataset_audit_v3/summary.json`
+- `results/main_dataset_recovery_audit/longmemeval_recovered.jsonl`
+- `results/main_dataset_recovery_audit/memora_recovered.jsonl`
+- `results/main_dataset_recovery_audit/still_excluded.jsonl`
+- `results/main_dataset_recovery_audit/summary.json`
+- `results/main_dataset_recovery_audit_v2/longmemeval_recovered.jsonl`
+- `results/main_dataset_recovery_audit_v2/memora_recovered.jsonl`
+- `results/main_dataset_recovery_audit_v2/still_excluded.jsonl`
+- `results/main_dataset_recovery_audit_v2/summary.json`
+- `results/main_governance_manifest_summary.json`
+- `results/matched_fault_support/matched_fault_by_event.csv`
+- `results/matched_fault_support/matched_fault_by_fault.csv`
+- `results/matched_fault_support/matched_fault_by_provider.csv`
+- `results/matched_fault_support/matched_fault_by_source.csv`
+- `results/matched_fault_support/matched_fault_instance_level.csv`
+- `results/matched_fault_support/matched_fault_overlap_counts.csv`
+- `results/oaks_novel_main_dataset_audit/oaks_novel_candidates.jsonl`
+- `results/oaks_novel_main_dataset_audit/oaks_novel_excluded.jsonl`
+- `results/oaks_novel_main_dataset_audit/summary.json`
+- `results/rq1/anthropic/rq1a.jsonl`
+- `results/rq1/anthropic/rq1a_scored.jsonl`
+- `results/rq1/anthropic/rq1b_restrictive.jsonl`
+- `results/rq1/anthropic/rq1b_restrictive_scored.jsonl`
+- `results/rq1/deepseek/rq1a.jsonl`
+- `results/rq1/deepseek/rq1a_scored.jsonl`
+- `results/rq1/deepseek/rq1b_restrictive.jsonl`
+- `results/rq1/deepseek/rq1b_restrictive_scored.jsonl`
+- `results/rq1/openai/rq1a.jsonl`
+- `results/rq1/openai/rq1a_scored.jsonl`
+- `results/rq1/openai/rq1b_restrictive.jsonl`
+- `results/rq1/openai/rq1b_restrictive_scored.jsonl`
+- `results/rq1/rq1_cross_provider_table.csv`
+- `results/rq1_paper/rq1_permissive_effects.csv`
+- `results/rq2/rq2_fault_severity.csv`
+- `results/rq2/rq2_matched_comparisons.csv`
+- `results/rq3/rq3_error_propagation.csv`
+- `results/rq3/rq3_propagation_stages.csv`
+- `results/rq4/rq4_policy_evaluation.csv`
+- `results/rq4/rq4_policy_evaluation.json`
+- `results/rq4/rq4_policy_instances.csv`
+- `results/rq4/rq4_policy_tradeoffs.csv`
+- `results/system_validation_analysis/system_validation_by_dimension.csv`
+- `results/system_validation_analysis/system_validation_by_fault.csv`
+- `results/system_validation_analysis/system_validation_by_system.csv`
+- `results/system_validation_analysis/system_validation_paired_effects.csv`
+- `results/system_validation_analysis/system_validation_scored.jsonl`
+- `results/system_validation_analysis/system_validation_scoring_coverage.csv`
+- `results/system_validation_analysis/system_validation_summary.json`
+- `results/system_validation_downstream/amem/system_validation_downstream.jsonl`
+- `results/system_validation_downstream/amem/system_validation_downstream_summary.json`
+- `results/system_validation_downstream/langmem/system_validation_downstream.jsonl`
+- `results/system_validation_downstream/langmem/system_validation_downstream_summary.json`
+- `results/system_validation_downstream/mem0/system_validation_downstream.jsonl`
+- `results/system_validation_downstream/mem0/system_validation_downstream_summary.json`
+- `results/system_validation_formal/amem/system_validation_formal.json`
+- `results/system_validation_formal/amem/system_validation_formal_summary.json`
+- `results/system_validation_formal/langmem/system_validation_formal.json`
+- `results/system_validation_formal/langmem/system_validation_formal_summary.json`
+- `results/system_validation_formal/mem0/system_validation_formal.json`
+- `results/system_validation_formal/mem0/system_validation_formal_summary.json`
+- `results/system_validation_paper/figure_cross_system_effects.pdf`
+- `results/system_validation_paper/figure_cross_system_effects.png`
+- `results/system_validation_paper/methods_external_validation.md`
+- `results/system_validation_paper/paper_artifacts_summary.json`
+- `results/system_validation_paper/results_external_validation.md`
+- `results/system_validation_paper/table_cross_system_effects.csv`
+- `results/system_validation_paper/table_cross_system_effects.tex`
+- `results/system_validation_paper/table_paired_transitions.csv`
+- `results/system_validation_paper/table_scoring_coverage.csv`
+- `results/system_validation_smoke/amem/system_validation_smoke.csv`
+- `results/system_validation_smoke/amem/system_validation_smoke.json`
+- `results/system_validation_smoke/amem/system_validation_smoke_summary.json`
+- `results/system_validation_smoke/amem_k1/system_validation_smoke.csv`
+- `results/system_validation_smoke/amem_k1/system_validation_smoke.json`
+- `results/system_validation_smoke/amem_k1/system_validation_smoke_summary.json`
+- `results/system_validation_smoke/langmem/system_validation_smoke.csv`
+- `results/system_validation_smoke/langmem/system_validation_smoke.json`
+- `results/system_validation_smoke/langmem/system_validation_smoke_summary.json`
+- `results/system_validation_smoke/langmem_k1/system_validation_smoke.csv`
+- `results/system_validation_smoke/langmem_k1/system_validation_smoke.json`
+- `results/system_validation_smoke/langmem_k1/system_validation_smoke_summary.json`
+- `results/system_validation_smoke/mem0/system_validation_smoke.csv`
+- `results/system_validation_smoke/mem0/system_validation_smoke.json`
+- `results/system_validation_smoke/mem0/system_validation_smoke_summary.json`
+- `results/system_validation_smoke/mem0_k1/system_validation_smoke.csv`
+- `results/system_validation_smoke/mem0_k1/system_validation_smoke.json`
+- `results/system_validation_smoke/mem0_k1/system_validation_smoke_summary.json`
+- `results/system_validation_statistics/system_validation_mcnemar.csv`
+- `results/system_validation_statistics/system_validation_sign_consistency.csv`
+- `results/system_validation_statistics/system_validation_statistics_by_system.csv`
+- `results/system_validation_statistics/system_validation_statistics_pooled.csv`
+- `results/system_validation_statistics/system_validation_statistics_summary.json`
+- `scripts/audit_final_main_proposal_selection.py`
+- `scripts/build_failed_condition_ids.py`
+- `scripts/finalize_v3_offline.py`
+- `scripts/merge_final_main_gemini_repair.py`
+- `scripts/select_final_main_gemini_canary.py`
+- `tests/test_final_main_gemini_repair.py`
+- `tests/test_final_main_grok_runner.py`

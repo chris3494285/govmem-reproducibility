@@ -1,0 +1,178 @@
+{
+  "affected_pattern": {
+    "all_three_answer_identities_equal": true,
+    "frozen_scores": {
+      "clean": 1.0,
+      "corrupted": 0.0,
+      "enforced": 0.0
+    },
+    "response_identity_unchanged": true,
+    "score_identity_changed": true,
+    "source": "longmemeval"
+  },
+  "conclusion": {
+    "classification": "confirmed_scoring_inconsistency_with_negligible_empirical_impact",
+    "frozen_results_retained": true,
+    "qualitative_direction_unchanged": true,
+    "recommended_manuscript_action": "Retain frozen judgments and disclose the isolated evaluator-consistency failure; report the common-score sensitivity rather than post-hoc rescoring."
+  },
+  "counts": {
+    "by_source": {
+      "longmemeval": {
+        "resolved_triplets": 148,
+        "response_identity_changed": 102,
+        "response_identity_unchanged": 46,
+        "response_identity_unchanged_score_changed": 1,
+        "response_identity_unchanged_score_unchanged": 45,
+        "score_identity_changed": 68,
+        "score_identity_unchanged": 80
+      },
+      "memora": {
+        "resolved_triplets": 150,
+        "response_identity_changed": 132,
+        "response_identity_unchanged": 18,
+        "response_identity_unchanged_score_changed": 0,
+        "response_identity_unchanged_score_unchanged": 18,
+        "score_identity_changed": 115,
+        "score_identity_unchanged": 35
+      }
+    },
+    "overall": {
+      "resolved_triplets": 298,
+      "response_identity_changed": 234,
+      "response_identity_unchanged": 64,
+      "response_identity_unchanged_score_changed": 1,
+      "response_identity_unchanged_score_unchanged": 63,
+      "score_identity_changed": 183,
+      "score_identity_unchanged": 115
+    }
+  },
+  "deltas": {
+    "longmemeval_corruption_effect_pp": -0.6756756756756688,
+    "longmemeval_recovery_effect_pp": 0.0,
+    "pooled_corruption_effect_pp": -0.3355704697986628,
+    "pooled_recovery_effect_pp": 0.0
+  },
+  "frozen": {
+    "longmemeval": {
+      "base_clusters": 105,
+      "clean": 0.7094594594594594,
+      "cluster_bootstrap_ci95": {
+        "corruption_effect": [
+          0.30322091886608016,
+          0.5071428571428571
+        ],
+        "recovery_effect": [
+          0.2884615384615385,
+          0.4965986394557823
+        ],
+        "restoration_gap": [
+          -0.05883320433436533,
+          0.03289473684210531
+        ]
+      },
+      "corrupted": 0.30405405405405406,
+      "corruption_effect": 0.4054054054054054,
+      "enforced": 0.6959459459459459,
+      "induced_failure_n": 64,
+      "n": 148,
+      "recovery_effect": 0.3918918918918919,
+      "restoration_gap": -0.013513513513513487
+    },
+    "overall": {
+      "base_clusters": 238,
+      "clean": 0.6902866438957969,
+      "cluster_bootstrap_ci95": {
+        "corruption_effect": [
+          0.29402046786267044,
+          0.41896251358049835
+        ],
+        "recovery_effect": [
+          0.26415311705513955,
+          0.39085683576792674
+        ],
+        "restoration_gap": [
+          -0.05882035098711103,
+          0.0008053217345886599
+        ]
+      },
+      "corrupted": 0.3349237434816995,
+      "corruption_effect": 0.35536290041409735,
+      "enforced": 0.6616590656322272,
+      "induced_failure_n": 97,
+      "n": 298,
+      "recovery_effect": 0.3267353221505277,
+      "restoration_gap": -0.028627578263569653
+    }
+  },
+  "reproduction": {
+    "api_calls": 0,
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 20261010,
+    "model_generation": false,
+    "private_inputs_required_to_recompute": true,
+    "public_release_contains_identifiers_or_answer_hashes": false,
+    "rescoring_performed": false
+  },
+  "schema_version": "jss-public-scoring-consistency-sensitivity-v1",
+  "scope": "Final 298-triplet Formal-300 panel. The audit compares response identity with native score identity and computes a frozen-score sensitivity under the explicit common-score treatment described below.",
+  "sensitivity": {
+    "effects": {
+      "longmemeval": {
+        "base_clusters": 105,
+        "clean": 0.7027027027027027,
+        "cluster_bootstrap_ci95": {
+          "corruption_effect": [
+            0.2967686318131257,
+            0.5032679738562091
+          ],
+          "recovery_effect": [
+            0.2884615384615385,
+            0.4965986394557823
+          ],
+          "restoration_gap": [
+            -0.04964539007092206,
+            0.03658984935437586
+          ]
+        },
+        "corrupted": 0.30405405405405406,
+        "corruption_effect": 0.3986486486486487,
+        "enforced": 0.6959459459459459,
+        "induced_failure_n": 63,
+        "n": 148,
+        "recovery_effect": 0.3918918918918919,
+        "restoration_gap": -0.006756756756756799
+      },
+      "overall": {
+        "base_clusters": 238,
+        "clean": 0.6869309391978102,
+        "cluster_bootstrap_ci95": {
+          "corruption_effect": [
+            0.29083004597279544,
+            0.4160384628208507
+          ],
+          "recovery_effect": [
+            0.26415311705513955,
+            0.39085683576792674
+          ],
+          "restoration_gap": [
+            -0.054962711824091896,
+            0.0033319019755445743
+          ]
+        },
+        "corrupted": 0.3349237434816995,
+        "corruption_effect": 0.3520071957161107,
+        "enforced": 0.6616590656322272,
+        "induced_failure_n": 96,
+        "n": 298,
+        "recovery_effect": 0.3267353221505277,
+        "restoration_gap": -0.025271873565583025
+      }
+    },
+    "longmemeval_response_identity_unchanged_score_changed": 0,
+    "longmemeval_score_identity_changed": 67,
+    "longmemeval_score_identity_unchanged": 81,
+    "treatment": "Assign the one affected block's three byte-identical answers a common score of 0.0. A common score of 1.0 produces the same paired effects for this block."
+  },
+  "status": "verified_from_private_frozen_inputs"
+}

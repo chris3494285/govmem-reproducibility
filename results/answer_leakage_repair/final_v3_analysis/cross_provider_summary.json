@@ -1,0 +1,2570 @@
+{
+  "api_calls_made": 0,
+  "control_plane": {
+    "base_count": 731,
+    "by_event": [
+      {
+        "admission_change": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "admission_restoration": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "analysis_event_type": "deletion",
+        "context_change": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "context_restoration": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "mean_corruption_delta": -0.16535087719298244,
+        "mean_recovery_delta": 0.16461988304093567,
+        "pair_count": 6840
+      },
+      {
+        "admission_change": {
+          "denominator": 2364,
+          "n": 2364,
+          "rate": 1.0
+        },
+        "admission_restoration": {
+          "denominator": 2364,
+          "n": 2364,
+          "rate": 1.0
+        },
+        "analysis_event_type": "temporal",
+        "context_change": {
+          "denominator": 2364,
+          "n": 2364,
+          "rate": 1.0
+        },
+        "context_restoration": {
+          "denominator": 2364,
+          "n": 2364,
+          "rate": 1.0
+        },
+        "mean_corruption_delta": -0.3176818950930626,
+        "mean_recovery_delta": 0.31852791878172587,
+        "pair_count": 2364
+      },
+      {
+        "admission_change": {
+          "denominator": 3276,
+          "n": 2808,
+          "rate": 0.8571428571428571
+        },
+        "admission_restoration": {
+          "denominator": 3276,
+          "n": 3276,
+          "rate": 1.0
+        },
+        "analysis_event_type": "update",
+        "context_change": {
+          "denominator": 3276,
+          "n": 2808,
+          "rate": 0.8571428571428571
+        },
+        "context_restoration": {
+          "denominator": 3276,
+          "n": 3276,
+          "rate": 1.0
+        },
+        "mean_corruption_delta": -0.38217338217338215,
+        "mean_recovery_delta": 0.3806471306471306,
+        "pair_count": 3276
+      }
+    ],
+    "by_fault": [
+      {
+        "admission_change": {
+          "denominator": 3708,
+          "n": 3240,
+          "rate": 0.8737864077669902
+        },
+        "admission_restoration": {
+          "denominator": 3708,
+          "n": 3708,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 3708,
+          "n": 3240,
+          "rate": 0.8737864077669902
+        },
+        "context_restoration": {
+          "denominator": 3708,
+          "n": 3708,
+          "rate": 1.0
+        },
+        "fault_operator": "conflicting",
+        "mean_corruption_delta": -0.06121898597626753,
+        "mean_recovery_delta": 0.06014023732470335,
+        "pair_count": 3708
+      },
+      {
+        "admission_change": {
+          "denominator": 2280,
+          "n": 2280,
+          "rate": 1.0
+        },
+        "admission_restoration": {
+          "denominator": 2280,
+          "n": 2280,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2280,
+          "n": 2280,
+          "rate": 1.0
+        },
+        "context_restoration": {
+          "denominator": 2280,
+          "n": 2280,
+          "rate": 1.0
+        },
+        "fault_operator": "flipped",
+        "mean_corruption_delta": -0.2614035087719298,
+        "mean_recovery_delta": 0.2574561403508772,
+        "pair_count": 2280
+      },
+      {
+        "admission_change": {
+          "denominator": 4386,
+          "n": 4386,
+          "rate": 1.0
+        },
+        "admission_restoration": {
+          "denominator": 4386,
+          "n": 4386,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 4386,
+          "n": 4386,
+          "rate": 1.0
+        },
+        "context_restoration": {
+          "denominator": 4386,
+          "n": 4386,
+          "rate": 1.0
+        },
+        "fault_operator": "missing",
+        "mean_corruption_delta": -0.29343365253077974,
+        "mean_recovery_delta": 0.2950296397628819,
+        "pair_count": 4386
+      },
+      {
+        "admission_change": {
+          "denominator": 2106,
+          "n": 2106,
+          "rate": 1.0
+        },
+        "admission_restoration": {
+          "denominator": 2106,
+          "n": 2106,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2106,
+          "n": 2106,
+          "rate": 1.0
+        },
+        "context_restoration": {
+          "denominator": 2106,
+          "n": 2106,
+          "rate": 1.0
+        },
+        "fault_operator": "stale",
+        "mean_corruption_delta": -0.4862298195631529,
+        "mean_recovery_delta": 0.4852801519468186,
+        "pair_count": 2106
+      }
+    ],
+    "by_provider": {
+      "anthropic": {
+        "clean_correct_failure": {
+          "clean_correct_n": 913,
+          "context_changed_n": 855,
+          "corrupted_wrong_given_context_changed": {
+            "denominator": 855,
+            "n": 612,
+            "probability": 0.7157894736842105
+          },
+          "enforced_correct_given_induced_failure": {
+            "denominator": 612,
+            "n": 523,
+            "probability": 0.8545751633986928
+          }
+        },
+        "corruption_effect_by_context_change": {
+          "changed": {
+            "mean_delta": -0.26673326673326675,
+            "n": 2002
+          },
+          "unchanged": {
+            "mean_delta": -0.05128205128205128,
+            "n": 78
+          }
+        },
+        "mechanism": {
+          "admission_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "admission_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          },
+          "context_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "context_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          }
+        },
+        "pair_count": 2080,
+        "propagation_recovery_diagnostic": {
+          "denominator": 2080,
+          "n": 523,
+          "rate": 0.2514423076923077
+        }
+      },
+      "deepseek": {
+        "clean_correct_failure": {
+          "clean_correct_n": 982,
+          "context_changed_n": 939,
+          "corrupted_wrong_given_context_changed": {
+            "denominator": 939,
+            "n": 643,
+            "probability": 0.6847710330138446
+          },
+          "enforced_correct_given_induced_failure": {
+            "denominator": 643,
+            "n": 624,
+            "probability": 0.9704510108864697
+          }
+        },
+        "corruption_effect_by_context_change": {
+          "changed": {
+            "mean_delta": -0.2872127872127872,
+            "n": 2002
+          },
+          "unchanged": {
+            "mean_delta": -0.02564102564102564,
+            "n": 78
+          }
+        },
+        "mechanism": {
+          "admission_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "admission_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          },
+          "context_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "context_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          }
+        },
+        "pair_count": 2080,
+        "propagation_recovery_diagnostic": {
+          "denominator": 2080,
+          "n": 624,
+          "rate": 0.3
+        }
+      },
+      "gemini": {
+        "clean_correct_failure": {
+          "clean_correct_n": 926,
+          "context_changed_n": 877,
+          "corrupted_wrong_given_context_changed": {
+            "denominator": 877,
+            "n": 644,
+            "probability": 0.734321550741163
+          },
+          "enforced_correct_given_induced_failure": {
+            "denominator": 644,
+            "n": 613,
+            "probability": 0.9518633540372671
+          }
+        },
+        "corruption_effect_by_context_change": {
+          "changed": {
+            "mean_delta": -0.2932067932067932,
+            "n": 2002
+          },
+          "unchanged": {
+            "mean_delta": 0.01282051282051282,
+            "n": 78
+          }
+        },
+        "mechanism": {
+          "admission_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "admission_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          },
+          "context_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "context_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          }
+        },
+        "pair_count": 2080,
+        "propagation_recovery_diagnostic": {
+          "denominator": 2080,
+          "n": 613,
+          "rate": 0.29471153846153847
+        }
+      },
+      "grok": {
+        "clean_correct_failure": {
+          "clean_correct_n": 616,
+          "context_changed_n": 606,
+          "corrupted_wrong_given_context_changed": {
+            "denominator": 606,
+            "n": 466,
+            "probability": 0.768976897689769
+          },
+          "enforced_correct_given_induced_failure": {
+            "denominator": 466,
+            "n": 335,
+            "probability": 0.7188841201716738
+          }
+        },
+        "corruption_effect_by_context_change": {
+          "changed": {
+            "mean_delta": -0.1838161838161838,
+            "n": 2002
+          },
+          "unchanged": {
+            "mean_delta": 0.02564102564102564,
+            "n": 78
+          }
+        },
+        "mechanism": {
+          "admission_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "admission_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          },
+          "context_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "context_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          }
+        },
+        "pair_count": 2080,
+        "propagation_recovery_diagnostic": {
+          "denominator": 2080,
+          "n": 335,
+          "rate": 0.16105769230769232
+        }
+      },
+      "kimi": {
+        "clean_correct_failure": {
+          "clean_correct_n": 915,
+          "context_changed_n": 864,
+          "corrupted_wrong_given_context_changed": {
+            "denominator": 864,
+            "n": 604,
+            "probability": 0.6990740740740741
+          },
+          "enforced_correct_given_induced_failure": {
+            "denominator": 604,
+            "n": 538,
+            "probability": 0.890728476821192
+          }
+        },
+        "corruption_effect_by_context_change": {
+          "changed": {
+            "mean_delta": -0.25574425574425574,
+            "n": 2002
+          },
+          "unchanged": {
+            "mean_delta": -0.038461538461538464,
+            "n": 78
+          }
+        },
+        "mechanism": {
+          "admission_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "admission_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          },
+          "context_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "context_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          }
+        },
+        "pair_count": 2080,
+        "propagation_recovery_diagnostic": {
+          "denominator": 2080,
+          "n": 538,
+          "rate": 0.2586538461538462
+        }
+      },
+      "openai": {
+        "clean_correct_failure": {
+          "clean_correct_n": 906,
+          "context_changed_n": 848,
+          "corrupted_wrong_given_context_changed": {
+            "denominator": 848,
+            "n": 590,
+            "probability": 0.6957547169811321
+          },
+          "enforced_correct_given_induced_failure": {
+            "denominator": 590,
+            "n": 579,
+            "probability": 0.9813559322033898
+          }
+        },
+        "corruption_effect_by_context_change": {
+          "changed": {
+            "mean_delta": -0.2757242757242757,
+            "n": 2002
+          },
+          "unchanged": {
+            "mean_delta": 0,
+            "n": 78
+          }
+        },
+        "mechanism": {
+          "admission_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "admission_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          },
+          "context_change": {
+            "denominator": 2080,
+            "n": 2002,
+            "rate": 0.9625
+          },
+          "context_restoration": {
+            "denominator": 2080,
+            "n": 2080,
+            "rate": 1.0
+          }
+        },
+        "pair_count": 2080,
+        "propagation_recovery_diagnostic": {
+          "denominator": 2080,
+          "n": 579,
+          "rate": 0.2783653846153846
+        }
+      }
+    },
+    "by_source": [
+      {
+        "admission_change": {
+          "denominator": 2760,
+          "n": 2292,
+          "rate": 0.8304347826086956
+        },
+        "admission_restoration": {
+          "denominator": 2760,
+          "n": 2760,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2760,
+          "n": 2292,
+          "rate": 0.8304347826086956
+        },
+        "context_restoration": {
+          "denominator": 2760,
+          "n": 2760,
+          "rate": 1.0
+        },
+        "mean_corruption_delta": -0.15471014492753624,
+        "mean_recovery_delta": 0.14891304347826087,
+        "pair_count": 2760,
+        "source_dataset": "longmemeval"
+      },
+      {
+        "admission_change": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "admission_restoration": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "context_restoration": {
+          "denominator": 6840,
+          "n": 6840,
+          "rate": 1.0
+        },
+        "mean_corruption_delta": -0.16535087719298244,
+        "mean_recovery_delta": 0.16461988304093567,
+        "pair_count": 6840,
+        "source_dataset": "memora"
+      },
+      {
+        "admission_change": {
+          "denominator": 2880,
+          "n": 2880,
+          "rate": 1.0
+        },
+        "admission_restoration": {
+          "denominator": 2880,
+          "n": 2880,
+          "rate": 1.0
+        },
+        "context_change": {
+          "denominator": 2880,
+          "n": 2880,
+          "rate": 1.0
+        },
+        "context_restoration": {
+          "denominator": 2880,
+          "n": 2880,
+          "rate": 1.0
+        },
+        "mean_corruption_delta": -0.5472222222222223,
+        "mean_recovery_delta": 0.5517361111111111,
+        "pair_count": 2880,
+        "source_dataset": "oaks_novel"
+      }
+    ],
+    "fault_pair_count": 2080,
+    "full_diagnostic": {
+      "anthropic": {
+        "denominator": 2080,
+        "n": 523,
+        "rate": 0.2514423076923077
+      },
+      "deepseek": {
+        "denominator": 2080,
+        "n": 624,
+        "rate": 0.3
+      },
+      "gemini": {
+        "denominator": 2080,
+        "n": 613,
+        "rate": 0.29471153846153847
+      },
+      "grok": {
+        "denominator": 2080,
+        "n": 335,
+        "rate": 0.16105769230769232
+      },
+      "kimi": {
+        "denominator": 2080,
+        "n": 538,
+        "rate": 0.2586538461538462
+      },
+      "openai": {
+        "denominator": 2080,
+        "n": 579,
+        "rate": 0.2783653846153846
+      }
+    },
+    "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+    "overall": {
+      "admission_change": {
+        "denominator": 12480,
+        "n": 12012,
+        "rate": 0.9625
+      },
+      "admission_restoration": {
+        "denominator": 12480,
+        "n": 12480,
+        "rate": 1.0
+      },
+      "context_change": {
+        "denominator": 12480,
+        "n": 12012,
+        "rate": 0.9625
+      },
+      "context_restoration": {
+        "denominator": 12480,
+        "n": 12480,
+        "rate": 1.0
+      }
+    },
+    "provider_count": 6,
+    "provider_result_paths": {
+      "anthropic": "results/final_main_sanitized/anthropic.jsonl",
+      "deepseek": "results/final_main_sanitized/deepseek.jsonl",
+      "gemini": "results/final_main_sanitized/gemini.jsonl",
+      "grok": "results/final_main_sanitized/grok.jsonl",
+      "kimi": "results/final_main_sanitized/kimi.jsonl",
+      "openai": "results/final_main_sanitized/openai.jsonl"
+    },
+    "provider_rows": 12480,
+    "providers": [
+      "anthropic",
+      "deepseek",
+      "gemini",
+      "grok",
+      "kimi",
+      "openai"
+    ],
+    "representations": {
+      "A": "reconstructed from persisted model_visible_memory_items (ordered admitted-item projection); no separate admission decision field is persisted",
+      "C": "persisted model_visible_memory_items canonicalized by Unicode-preserving whitespace collapse per item; text fallback normalizes whitespace",
+      "Y": "existing scored correctness; final provider/parse failures are scored 0"
+    },
+    "status": "OFFLINE CONTROL-PLANE PROPAGATION DIAGNOSTIC"
+  },
+  "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+  "matched_fault_support": {
+    "api_calls_made": 0,
+    "base_count": 731,
+    "bases_by_supported_fault_count": {
+      "1": 0,
+      "2": 113,
+      "3": 618,
+      "4": 0
+    },
+    "by_event": [
+      {
+        "bootstrap_ci_high_pp": 4.733727810650888,
+        "bootstrap_ci_low_pp": -3.5502958579881656,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.04142011834319527,
+        "comparator_worse_n": 7,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 169,
+        "mean_difference_pp": 0.591715976331361,
+        "median_difference_pp": 0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.03550295857988166,
+        "stale_worse_n": 6,
+        "tied_fraction": 0.9230769230769231,
+        "tied_n": 156
+      },
+      {
+        "bootstrap_ci_high_pp": -18.13186813186813,
+        "bootstrap_ci_low_pp": -32.967032967032964,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.04395604395604396,
+        "comparator_worse_n": 8,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -25.82417582417583,
+        "median_difference_pp": 0.0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.3021978021978022,
+        "stale_worse_n": 55,
+        "tied_fraction": 0.6538461538461539,
+        "tied_n": 119
+      },
+      {
+        "bootstrap_ci_high_pp": -41.07142857142857,
+        "bootstrap_ci_low_pp": -66.07142857142857,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 56,
+        "mean_difference_pp": -53.57142857142857,
+        "median_difference_pp": -100.0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.5357142857142857,
+        "stale_worse_n": 30,
+        "tied_fraction": 0.4642857142857143,
+        "tied_n": 26
+      },
+      {
+        "bootstrap_ci_high_pp": -58.24175824175825,
+        "bootstrap_ci_low_pp": -72.52747252747253,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.005494505494505495,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -65.38461538461539,
+        "median_difference_pp": -100.0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.6593406593406593,
+        "stale_worse_n": 120,
+        "tied_fraction": 0.33516483516483514,
+        "tied_n": 61
+      },
+      {
+        "bootstrap_ci_high_pp": 5.325443786982249,
+        "bootstrap_ci_low_pp": -4.142011834319527,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.047337278106508875,
+        "comparator_worse_n": 8,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 169,
+        "mean_difference_pp": 0.591715976331361,
+        "median_difference_pp": 0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.04142011834319527,
+        "stale_worse_n": 7,
+        "tied_fraction": 0.9112426035502958,
+        "tied_n": 154
+      },
+      {
+        "bootstrap_ci_high_pp": -16.483516483516482,
+        "bootstrap_ci_low_pp": -31.868131868131865,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.054945054945054944,
+        "comparator_worse_n": 10,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -24.175824175824175,
+        "median_difference_pp": 0.0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.2967032967032967,
+        "stale_worse_n": 54,
+        "tied_fraction": 0.6483516483516484,
+        "tied_n": 118
+      },
+      {
+        "bootstrap_ci_high_pp": -26.785714285714285,
+        "bootstrap_ci_low_pp": -55.35714285714286,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.017857142857142856,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 56,
+        "mean_difference_pp": -41.07142857142857,
+        "median_difference_pp": 0.0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.42857142857142855,
+        "stale_worse_n": 24,
+        "tied_fraction": 0.5535714285714286,
+        "tied_n": 31
+      },
+      {
+        "bootstrap_ci_high_pp": -45.604395604395606,
+        "bootstrap_ci_low_pp": -60.98901098901099,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.01098901098901099,
+        "comparator_worse_n": 2,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -53.2967032967033,
+        "median_difference_pp": -100.0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.5439560439560439,
+        "stale_worse_n": 99,
+        "tied_fraction": 0.44505494505494503,
+        "tied_n": 81
+      },
+      {
+        "bootstrap_ci_high_pp": 2.366863905325444,
+        "bootstrap_ci_low_pp": -8.284023668639055,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.04142011834319527,
+        "comparator_worse_n": 7,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 169,
+        "mean_difference_pp": -2.9585798816568047,
+        "median_difference_pp": 0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.07100591715976332,
+        "stale_worse_n": 12,
+        "tied_fraction": 0.8875739644970414,
+        "tied_n": 150
+      },
+      {
+        "bootstrap_ci_high_pp": -15.934065934065933,
+        "bootstrap_ci_low_pp": -31.318681318681318,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.054945054945054944,
+        "comparator_worse_n": 10,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -23.626373626373624,
+        "median_difference_pp": 0.0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.29120879120879123,
+        "stale_worse_n": 53,
+        "tied_fraction": 0.6538461538461539,
+        "tied_n": 119
+      },
+      {
+        "bootstrap_ci_high_pp": -23.214285714285715,
+        "bootstrap_ci_low_pp": -48.214285714285715,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 56,
+        "mean_difference_pp": -35.714285714285715,
+        "median_difference_pp": 0.0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.35714285714285715,
+        "stale_worse_n": 20,
+        "tied_fraction": 0.6428571428571429,
+        "tied_n": 36
+      },
+      {
+        "bootstrap_ci_high_pp": -39.56043956043956,
+        "bootstrap_ci_low_pp": -54.94505494505495,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.01098901098901099,
+        "comparator_worse_n": 2,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -47.25274725274725,
+        "median_difference_pp": 0.0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.4835164835164835,
+        "stale_worse_n": 88,
+        "tied_fraction": 0.5054945054945055,
+        "tied_n": 92
+      },
+      {
+        "bootstrap_ci_high_pp": 6.508875739644971,
+        "bootstrap_ci_low_pp": -1.7751479289940828,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.047337278106508875,
+        "comparator_worse_n": 8,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 169,
+        "mean_difference_pp": 2.366863905325444,
+        "median_difference_pp": 0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.023668639053254437,
+        "stale_worse_n": 4,
+        "tied_fraction": 0.9289940828402367,
+        "tied_n": 157
+      },
+      {
+        "bootstrap_ci_high_pp": -20.32967032967033,
+        "bootstrap_ci_low_pp": -34.61538461538461,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.027472527472527472,
+        "comparator_worse_n": 5,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -27.472527472527474,
+        "median_difference_pp": 0.0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.3021978021978022,
+        "stale_worse_n": 55,
+        "tied_fraction": 0.6703296703296703,
+        "tied_n": 122
+      },
+      {
+        "bootstrap_ci_high_pp": -39.285714285714285,
+        "bootstrap_ci_low_pp": -64.28571428571429,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 56,
+        "mean_difference_pp": -51.78571428571429,
+        "median_difference_pp": -100.0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.5178571428571429,
+        "stale_worse_n": 29,
+        "tied_fraction": 0.48214285714285715,
+        "tied_n": 27
+      },
+      {
+        "bootstrap_ci_high_pp": -51.098901098901095,
+        "bootstrap_ci_low_pp": -65.38461538461539,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.005494505494505495,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -58.24175824175825,
+        "median_difference_pp": -100.0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.5879120879120879,
+        "stale_worse_n": 107,
+        "tied_fraction": 0.4065934065934066,
+        "tied_n": 74
+      },
+      {
+        "bootstrap_ci_high_pp": 5.325443786982249,
+        "bootstrap_ci_low_pp": -4.142011834319527,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.05325443786982249,
+        "comparator_worse_n": 9,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 169,
+        "mean_difference_pp": 0.591715976331361,
+        "median_difference_pp": 0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.047337278106508875,
+        "stale_worse_n": 8,
+        "tied_fraction": 0.8994082840236687,
+        "tied_n": 152
+      },
+      {
+        "bootstrap_ci_high_pp": -18.13186813186813,
+        "bootstrap_ci_low_pp": -32.417582417582416,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.038461538461538464,
+        "comparator_worse_n": 7,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -25.274725274725274,
+        "median_difference_pp": 0.0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.29120879120879123,
+        "stale_worse_n": 53,
+        "tied_fraction": 0.6703296703296703,
+        "tied_n": 122
+      },
+      {
+        "bootstrap_ci_high_pp": -26.785714285714285,
+        "bootstrap_ci_low_pp": -51.78571428571429,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 56,
+        "mean_difference_pp": -39.285714285714285,
+        "median_difference_pp": 0.0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.39285714285714285,
+        "stale_worse_n": 22,
+        "tied_fraction": 0.6071428571428571,
+        "tied_n": 34
+      },
+      {
+        "bootstrap_ci_high_pp": -48.35164835164835,
+        "bootstrap_ci_low_pp": -62.637362637362635,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -55.494505494505496,
+        "median_difference_pp": -100.0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.554945054945055,
+        "stale_worse_n": 101,
+        "tied_fraction": 0.44505494505494503,
+        "tied_n": 81
+      },
+      {
+        "bootstrap_ci_high_pp": 4.733727810650888,
+        "bootstrap_ci_low_pp": -2.366863905325444,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.03550295857988166,
+        "comparator_worse_n": 6,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 169,
+        "mean_difference_pp": 1.183431952662722,
+        "median_difference_pp": 0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.023668639053254437,
+        "stale_worse_n": 4,
+        "tied_fraction": 0.9408284023668639,
+        "tied_n": 159
+      },
+      {
+        "bootstrap_ci_high_pp": -18.13186813186813,
+        "bootstrap_ci_low_pp": -32.417582417582416,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.027472527472527472,
+        "comparator_worse_n": 5,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -25.274725274725274,
+        "median_difference_pp": 0.0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.2802197802197802,
+        "stale_worse_n": 51,
+        "tied_fraction": 0.6923076923076923,
+        "tied_n": 126
+      },
+      {
+        "bootstrap_ci_high_pp": -17.857142857142858,
+        "bootstrap_ci_low_pp": -42.857142857142854,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 56,
+        "mean_difference_pp": -30.357142857142854,
+        "median_difference_pp": 0.0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.30357142857142855,
+        "stale_worse_n": 17,
+        "tied_fraction": 0.6964285714285714,
+        "tied_n": 39
+      },
+      {
+        "bootstrap_ci_high_pp": -24.175824175824175,
+        "bootstrap_ci_low_pp": -39.010989010989015,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "comparator_worse_fraction": 0.02197802197802198,
+        "comparator_worse_n": 4,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 182,
+        "mean_difference_pp": -31.318681318681318,
+        "median_difference_pp": 0.0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.33516483516483514,
+        "stale_worse_n": 61,
+        "tied_fraction": 0.6428571428571429,
+        "tied_n": 117
+      }
+    ],
+    "by_source": [
+      {
+        "bootstrap_ci_high_pp": -13.089005235602095,
+        "bootstrap_ci_low_pp": -28.79581151832461,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.06806282722513089,
+        "comparator_worse_n": 13,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 191,
+        "mean_difference_pp": -20.94240837696335,
+        "median_difference_pp": 0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.2774869109947644,
+        "stale_worse_n": 53,
+        "tied_fraction": 0.6544502617801047,
+        "tied_n": 125
+      },
+      {
+        "bootstrap_ci_high_pp": 0.0,
+        "bootstrap_ci_low_pp": -7.5,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0125,
+        "comparator_worse_n": 2,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -3.75,
+        "median_difference_pp": 0.0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.05,
+        "stale_worse_n": 8,
+        "tied_fraction": 0.9375,
+        "tied_n": 150
+      },
+      {
+        "bootstrap_ci_high_pp": -53.84615384615385,
+        "bootstrap_ci_low_pp": -75.64102564102564,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.01282051282051282,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 78,
+        "mean_difference_pp": -65.38461538461539,
+        "median_difference_pp": -100.0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.6666666666666666,
+        "stale_worse_n": 52,
+        "tied_fraction": 0.32051282051282054,
+        "tied_n": 25
+      },
+      {
+        "bootstrap_ci_high_pp": -53.75,
+        "bootstrap_ci_low_pp": -68.75,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -61.25000000000001,
+        "median_difference_pp": -100.0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.6125,
+        "stale_worse_n": 98,
+        "tied_fraction": 0.3875,
+        "tied_n": 62
+      },
+      {
+        "bootstrap_ci_high_pp": -14.659685863874344,
+        "bootstrap_ci_low_pp": -30.36649214659686,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.06282722513089005,
+        "comparator_worse_n": 12,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 191,
+        "mean_difference_pp": -22.5130890052356,
+        "median_difference_pp": 0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.2879581151832461,
+        "stale_worse_n": 55,
+        "tied_fraction": 0.6492146596858639,
+        "tied_n": 124
+      },
+      {
+        "bootstrap_ci_high_pp": 4.375,
+        "bootstrap_ci_low_pp": -4.375,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0375,
+        "comparator_worse_n": 6,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": 0,
+        "median_difference_pp": 0.0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.0375,
+        "stale_worse_n": 6,
+        "tied_fraction": 0.925,
+        "tied_n": 148
+      },
+      {
+        "bootstrap_ci_high_pp": -50.0,
+        "bootstrap_ci_low_pp": -73.07692307692307,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.01282051282051282,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 78,
+        "mean_difference_pp": -61.53846153846154,
+        "median_difference_pp": -100.0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.6282051282051282,
+        "stale_worse_n": 49,
+        "tied_fraction": 0.358974358974359,
+        "tied_n": 28
+      },
+      {
+        "bootstrap_ci_high_pp": -36.875,
+        "bootstrap_ci_low_pp": -53.125,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0125,
+        "comparator_worse_n": 2,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -45.0,
+        "median_difference_pp": 0.0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.4625,
+        "stale_worse_n": 74,
+        "tied_fraction": 0.525,
+        "tied_n": 84
+      },
+      {
+        "bootstrap_ci_high_pp": -14.136125654450263,
+        "bootstrap_ci_low_pp": -29.31937172774869,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.05759162303664921,
+        "comparator_worse_n": 11,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 191,
+        "mean_difference_pp": -21.465968586387437,
+        "median_difference_pp": 0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.27225130890052357,
+        "stale_worse_n": 52,
+        "tied_fraction": 0.6701570680628273,
+        "tied_n": 128
+      },
+      {
+        "bootstrap_ci_high_pp": 0.625,
+        "bootstrap_ci_low_pp": -10.0,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0375,
+        "comparator_worse_n": 6,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -4.375,
+        "median_difference_pp": 0.0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.08125,
+        "stale_worse_n": 13,
+        "tied_fraction": 0.88125,
+        "tied_n": 141
+      },
+      {
+        "bootstrap_ci_high_pp": -34.61538461538461,
+        "bootstrap_ci_low_pp": -58.97435897435898,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.02564102564102564,
+        "comparator_worse_n": 2,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 78,
+        "mean_difference_pp": -47.43589743589743,
+        "median_difference_pp": -50.0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.5,
+        "stale_worse_n": 39,
+        "tied_fraction": 0.47435897435897434,
+        "tied_n": 37
+      },
+      {
+        "bootstrap_ci_high_pp": -35.625,
+        "bootstrap_ci_low_pp": -50.625,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -43.125,
+        "median_difference_pp": 0.0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.43125,
+        "stale_worse_n": 69,
+        "tied_fraction": 0.56875,
+        "tied_n": 91
+      },
+      {
+        "bootstrap_ci_high_pp": -12.56544502617801,
+        "bootstrap_ci_low_pp": -27.748691099476442,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.06282722513089005,
+        "comparator_worse_n": 12,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 191,
+        "mean_difference_pp": -19.895287958115183,
+        "median_difference_pp": 0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.2617801047120419,
+        "stale_worse_n": 50,
+        "tied_fraction": 0.675392670157068,
+        "tied_n": 129
+      },
+      {
+        "bootstrap_ci_high_pp": -1.25,
+        "bootstrap_ci_low_pp": -8.765624999999986,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.00625,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -5.0,
+        "median_difference_pp": 0.0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.05625,
+        "stale_worse_n": 9,
+        "tied_fraction": 0.9375,
+        "tied_n": 150
+      },
+      {
+        "bootstrap_ci_high_pp": -47.43589743589743,
+        "bootstrap_ci_low_pp": -70.51282051282051,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.01282051282051282,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 78,
+        "mean_difference_pp": -58.97435897435898,
+        "median_difference_pp": -100.0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.6025641025641025,
+        "stale_worse_n": 47,
+        "tied_fraction": 0.38461538461538464,
+        "tied_n": 30
+      },
+      {
+        "bootstrap_ci_high_pp": -48.125,
+        "bootstrap_ci_low_pp": -63.125,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -55.625,
+        "median_difference_pp": -100.0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.55625,
+        "stale_worse_n": 89,
+        "tied_fraction": 0.44375,
+        "tied_n": 71
+      },
+      {
+        "bootstrap_ci_high_pp": -12.041884816753926,
+        "bootstrap_ci_low_pp": -27.748691099476442,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.07329842931937172,
+        "comparator_worse_n": 14,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 191,
+        "mean_difference_pp": -19.895287958115183,
+        "median_difference_pp": 0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.27225130890052357,
+        "stale_worse_n": 52,
+        "tied_fraction": 0.6544502617801047,
+        "tied_n": 125
+      },
+      {
+        "bootstrap_ci_high_pp": -0.625,
+        "bootstrap_ci_low_pp": -8.75,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0125,
+        "comparator_worse_n": 2,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -4.375,
+        "median_difference_pp": 0.0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.05625,
+        "stale_worse_n": 9,
+        "tied_fraction": 0.93125,
+        "tied_n": 149
+      },
+      {
+        "bootstrap_ci_high_pp": -43.58974358974359,
+        "bootstrap_ci_low_pp": -66.66666666666666,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 78,
+        "mean_difference_pp": -55.12820512820513,
+        "median_difference_pp": -100.0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.5512820512820513,
+        "stale_worse_n": 43,
+        "tied_fraction": 0.44871794871794873,
+        "tied_n": 35
+      },
+      {
+        "bootstrap_ci_high_pp": -42.5,
+        "bootstrap_ci_low_pp": -57.49999999999999,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -50.0,
+        "median_difference_pp": -50.0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.5,
+        "stale_worse_n": 80,
+        "tied_fraction": 0.5,
+        "tied_n": 80
+      },
+      {
+        "bootstrap_ci_high_pp": -10.99476439790576,
+        "bootstrap_ci_low_pp": -25.654450261780106,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.05759162303664921,
+        "comparator_worse_n": 11,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 191,
+        "mean_difference_pp": -18.32460732984293,
+        "median_difference_pp": 0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.24083769633507854,
+        "stale_worse_n": 46,
+        "tied_fraction": 0.7015706806282722,
+        "tied_n": 134
+      },
+      {
+        "bootstrap_ci_high_pp": -2.5,
+        "bootstrap_ci_low_pp": -9.375,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -5.625,
+        "median_difference_pp": 0.0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.05625,
+        "stale_worse_n": 9,
+        "tied_fraction": 0.94375,
+        "tied_n": 151
+      },
+      {
+        "bootstrap_ci_high_pp": 0.0,
+        "bootstrap_ci_low_pp": -19.230769230769234,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "comparator_worse_fraction": 0.05128205128205128,
+        "comparator_worse_n": 4,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 78,
+        "mean_difference_pp": -8.974358974358974,
+        "median_difference_pp": 0.0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.14102564102564102,
+        "stale_worse_n": 11,
+        "tied_fraction": 0.8076923076923077,
+        "tied_n": 63
+      },
+      {
+        "bootstrap_ci_high_pp": -34.375,
+        "bootstrap_ci_low_pp": -49.375,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 160,
+        "mean_difference_pp": -41.875,
+        "median_difference_pp": 0.0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.41875,
+        "stale_worse_n": 67,
+        "tied_fraction": 0.58125,
+        "tied_n": 93
+      }
+    ],
+    "comparisons": [
+      {
+        "bootstrap_ci_high_pp": -8.547008547008547,
+        "bootstrap_ci_low_pp": -17.94871794871795,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.042735042735042736,
+        "comparator_worse_n": 15,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 351,
+        "mean_difference_pp": -13.105413105413104,
+        "median_difference_pp": 0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.1737891737891738,
+        "stale_worse_n": 61,
+        "tied_fraction": 0.7834757834757835,
+        "tied_n": 275
+      },
+      {
+        "bootstrap_ci_high_pp": null,
+        "bootstrap_ci_low_pp": null,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": null,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_flipped",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 0,
+        "mean_difference_pp": null,
+        "median_difference_pp": null,
+        "provider": "openai",
+        "stale_worse_fraction": null,
+        "stale_worse_n": 0,
+        "tied_fraction": null,
+        "tied_n": 0
+      },
+      {
+        "bootstrap_ci_high_pp": -56.30252100840336,
+        "bootstrap_ci_low_pp": -68.90756302521008,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.004201680672268907,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 238,
+        "mean_difference_pp": -62.60504201680672,
+        "median_difference_pp": -100.0,
+        "provider": "openai",
+        "stale_worse_fraction": 0.6302521008403361,
+        "stale_worse_n": 150,
+        "tied_fraction": 0.36554621848739494,
+        "tied_n": 87
+      },
+      {
+        "bootstrap_ci_high_pp": -7.4074074074074066,
+        "bootstrap_ci_low_pp": -17.094017094017094,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.05128205128205128,
+        "comparator_worse_n": 18,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 351,
+        "mean_difference_pp": -12.250712250712251,
+        "median_difference_pp": 0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.1737891737891738,
+        "stale_worse_n": 61,
+        "tied_fraction": 0.7749287749287749,
+        "tied_n": 272
+      },
+      {
+        "bootstrap_ci_high_pp": null,
+        "bootstrap_ci_low_pp": null,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": null,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_flipped",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 0,
+        "mean_difference_pp": null,
+        "median_difference_pp": null,
+        "provider": "anthropic",
+        "stale_worse_fraction": null,
+        "stale_worse_n": 0,
+        "tied_fraction": null,
+        "tied_n": 0
+      },
+      {
+        "bootstrap_ci_high_pp": -43.69747899159664,
+        "bootstrap_ci_low_pp": -56.72268907563025,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.012605042016806723,
+        "comparator_worse_n": 3,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 238,
+        "mean_difference_pp": -50.42016806722689,
+        "median_difference_pp": -100.0,
+        "provider": "anthropic",
+        "stale_worse_fraction": 0.5168067226890757,
+        "stale_worse_n": 123,
+        "tied_fraction": 0.47058823529411764,
+        "tied_n": 112
+      },
+      {
+        "bootstrap_ci_high_pp": -8.831908831908832,
+        "bootstrap_ci_low_pp": -18.51851851851852,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.04843304843304843,
+        "comparator_worse_n": 17,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 351,
+        "mean_difference_pp": -13.675213675213676,
+        "median_difference_pp": 0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.18518518518518517,
+        "stale_worse_n": 65,
+        "tied_fraction": 0.7663817663817664,
+        "tied_n": 269
+      },
+      {
+        "bootstrap_ci_high_pp": null,
+        "bootstrap_ci_low_pp": null,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": null,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_flipped",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 0,
+        "mean_difference_pp": null,
+        "median_difference_pp": null,
+        "provider": "deepseek",
+        "stale_worse_fraction": null,
+        "stale_worse_n": 0,
+        "tied_fraction": null,
+        "tied_n": 0
+      },
+      {
+        "bootstrap_ci_high_pp": -37.81512605042017,
+        "bootstrap_ci_low_pp": -51.26050420168067,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.008403361344537815,
+        "comparator_worse_n": 2,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 238,
+        "mean_difference_pp": -44.537815126050425,
+        "median_difference_pp": 0.0,
+        "provider": "deepseek",
+        "stale_worse_fraction": 0.453781512605042,
+        "stale_worse_n": 108,
+        "tied_fraction": 0.5378151260504201,
+        "tied_n": 128
+      },
+      {
+        "bootstrap_ci_high_pp": -8.547008547008547,
+        "bootstrap_ci_low_pp": -17.663817663817664,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.037037037037037035,
+        "comparator_worse_n": 13,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 351,
+        "mean_difference_pp": -13.105413105413104,
+        "median_difference_pp": 0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.16809116809116809,
+        "stale_worse_n": 59,
+        "tied_fraction": 0.7948717948717948,
+        "tied_n": 279
+      },
+      {
+        "bootstrap_ci_high_pp": null,
+        "bootstrap_ci_low_pp": null,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": null,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_flipped",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 0,
+        "mean_difference_pp": null,
+        "median_difference_pp": null,
+        "provider": "gemini",
+        "stale_worse_fraction": null,
+        "stale_worse_n": 0,
+        "tied_fraction": null,
+        "tied_n": 0
+      },
+      {
+        "bootstrap_ci_high_pp": -50.42016806722689,
+        "bootstrap_ci_low_pp": -63.02521008403361,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.004201680672268907,
+        "comparator_worse_n": 1,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 238,
+        "mean_difference_pp": -56.72268907563025,
+        "median_difference_pp": -100.0,
+        "provider": "gemini",
+        "stale_worse_fraction": 0.5714285714285714,
+        "stale_worse_n": 136,
+        "tied_fraction": 0.42436974789915966,
+        "tied_n": 101
+      },
+      {
+        "bootstrap_ci_high_pp": -8.262108262108262,
+        "bootstrap_ci_low_pp": -17.37891737891738,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.045584045584045586,
+        "comparator_worse_n": 16,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 351,
+        "mean_difference_pp": -12.82051282051282,
+        "median_difference_pp": 0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.1737891737891738,
+        "stale_worse_n": 61,
+        "tied_fraction": 0.7806267806267806,
+        "tied_n": 274
+      },
+      {
+        "bootstrap_ci_high_pp": null,
+        "bootstrap_ci_low_pp": null,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": null,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_flipped",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 0,
+        "mean_difference_pp": null,
+        "median_difference_pp": null,
+        "provider": "kimi",
+        "stale_worse_fraction": null,
+        "stale_worse_n": 0,
+        "tied_fraction": null,
+        "tied_n": 0
+      },
+      {
+        "bootstrap_ci_high_pp": -45.378151260504204,
+        "bootstrap_ci_low_pp": -57.98319327731093,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.0,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 238,
+        "mean_difference_pp": -51.68067226890757,
+        "median_difference_pp": -100.0,
+        "provider": "kimi",
+        "stale_worse_fraction": 0.5168067226890757,
+        "stale_worse_n": 123,
+        "tied_fraction": 0.4831932773109244,
+        "tied_n": 115
+      },
+      {
+        "bootstrap_ci_high_pp": -8.262108262108262,
+        "bootstrap_ci_low_pp": -16.80911680911681,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.03133903133903134,
+        "comparator_worse_n": 11,
+        "fault_pair": "stale_vs_missing",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 351,
+        "mean_difference_pp": -12.535612535612536,
+        "median_difference_pp": 0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.15669515669515668,
+        "stale_worse_n": 55,
+        "tied_fraction": 0.811965811965812,
+        "tied_n": 285
+      },
+      {
+        "bootstrap_ci_high_pp": null,
+        "bootstrap_ci_low_pp": null,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": null,
+        "comparator_worse_n": 0,
+        "fault_pair": "stale_vs_flipped",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 0,
+        "mean_difference_pp": null,
+        "median_difference_pp": null,
+        "provider": "grok",
+        "stale_worse_fraction": null,
+        "stale_worse_n": 0,
+        "tied_fraction": null,
+        "tied_n": 0
+      },
+      {
+        "bootstrap_ci_high_pp": -24.789915966386555,
+        "bootstrap_ci_low_pp": -37.39495798319328,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 42,
+        "comparator_worse_fraction": 0.01680672268907563,
+        "comparator_worse_n": 4,
+        "fault_pair": "stale_vs_conflicting",
+        "interpretation": "negative means stale causes greater degradation on the same base",
+        "matched_base_count": 238,
+        "mean_difference_pp": -31.092436974789916,
+        "median_difference_pp": 0.0,
+        "provider": "grok",
+        "stale_worse_fraction": 0.3277310924369748,
+        "stale_worse_n": 78,
+        "tied_fraction": 0.6554621848739496,
+        "tied_n": 156
+      }
+    ],
+    "fault_pair_count": 2080,
+    "manifest_sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+    "matched_instance_count": 3534,
+    "overlap_counts": [
+      {
+        "fault_a": "missing",
+        "fault_b": "stale",
+        "matched_base_count": 351
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "deletion",
+        "fault_a": "missing",
+        "fault_b": "stale",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "fault_a": "missing",
+        "fault_b": "stale",
+        "matched_base_count": 169
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "fault_a": "missing",
+        "fault_b": "stale",
+        "matched_base_count": 182
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "fault_a": "missing",
+        "fault_b": "stale",
+        "matched_base_count": 191
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "memora",
+        "fault_a": "missing",
+        "fault_b": "stale",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "fault_a": "missing",
+        "fault_b": "stale",
+        "matched_base_count": 160
+      },
+      {
+        "fault_a": "missing",
+        "fault_b": "flipped",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "deletion",
+        "fault_a": "missing",
+        "fault_b": "flipped",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "fault_a": "missing",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "fault_a": "missing",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "fault_a": "missing",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "memora",
+        "fault_a": "missing",
+        "fault_b": "flipped",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "fault_a": "missing",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "fault_a": "missing",
+        "fault_b": "conflicting",
+        "matched_base_count": 618
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "deletion",
+        "fault_a": "missing",
+        "fault_b": "conflicting",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "fault_a": "missing",
+        "fault_b": "conflicting",
+        "matched_base_count": 56
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "fault_a": "missing",
+        "fault_b": "conflicting",
+        "matched_base_count": 182
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "fault_a": "missing",
+        "fault_b": "conflicting",
+        "matched_base_count": 78
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "memora",
+        "fault_a": "missing",
+        "fault_b": "conflicting",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "fault_a": "missing",
+        "fault_b": "conflicting",
+        "matched_base_count": 160
+      },
+      {
+        "fault_a": "stale",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "deletion",
+        "fault_a": "stale",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "fault_a": "stale",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "fault_a": "stale",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "fault_a": "stale",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "memora",
+        "fault_a": "stale",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "fault_a": "stale",
+        "fault_b": "flipped",
+        "matched_base_count": 0
+      },
+      {
+        "fault_a": "stale",
+        "fault_b": "conflicting",
+        "matched_base_count": 238
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "deletion",
+        "fault_a": "stale",
+        "fault_b": "conflicting",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "fault_a": "stale",
+        "fault_b": "conflicting",
+        "matched_base_count": 56
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "fault_a": "stale",
+        "fault_b": "conflicting",
+        "matched_base_count": 182
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "fault_a": "stale",
+        "fault_b": "conflicting",
+        "matched_base_count": 78
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "memora",
+        "fault_a": "stale",
+        "fault_b": "conflicting",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "fault_a": "stale",
+        "fault_b": "conflicting",
+        "matched_base_count": 160
+      },
+      {
+        "fault_a": "flipped",
+        "fault_b": "conflicting",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "deletion",
+        "fault_a": "flipped",
+        "fault_b": "conflicting",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "temporal",
+        "fault_a": "flipped",
+        "fault_b": "conflicting",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "event",
+        "breakdown_value": "update",
+        "fault_a": "flipped",
+        "fault_b": "conflicting",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "longmemeval",
+        "fault_a": "flipped",
+        "fault_b": "conflicting",
+        "matched_base_count": 0
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "memora",
+        "fault_a": "flipped",
+        "fault_b": "conflicting",
+        "matched_base_count": 380
+      },
+      {
+        "breakdown": "source",
+        "breakdown_value": "oaks_novel",
+        "fault_a": "flipped",
+        "fault_b": "conflicting",
+        "matched_base_count": 0
+      }
+    ],
+    "providers": [
+      "anthropic",
+      "deepseek",
+      "gemini",
+      "grok",
+      "kimi",
+      "openai"
+    ],
+    "result_paths": {
+      "anthropic": "results/final_main_sanitized/anthropic.jsonl",
+      "deepseek": "results/final_main_sanitized/deepseek.jsonl",
+      "gemini": "results/final_main_sanitized/gemini.jsonl",
+      "grok": "results/final_main_sanitized/grok.jsonl",
+      "kimi": "results/final_main_sanitized/kimi.jsonl",
+      "openai": "results/final_main_sanitized/openai.jsonl"
+    },
+    "status": "OFFLINE MATCHED-SUPPORT FAULT ANALYSIS",
+    "support_counts": {
+      "conflicting": 618,
+      "flipped": 380,
+      "missing": 731,
+      "stale": 351
+    }
+  },
+  "providers": [
+    {
+      "balanced_macro_corruption": -0.3162393162393162,
+      "balanced_macro_recovery": 0.3129520052596976,
+      "clean_accuracy": 0.4322845417236662,
+      "conflicting_corruption": -0.08414239482200647,
+      "conflicting_recovery": 0.08737864077669903,
+      "corrupted_accuracy": 0.1701923076923077,
+      "deletion_corruption": -0.1368421052631579,
+      "deletion_recovery": 0.13508771929824562,
+      "enforced_accuracy": 0.43509615384615385,
+      "event_macro_corruption": -0.31104091589921545,
+      "event_macro_corruption_ci_high": -0.28091311241614886,
+      "event_macro_corruption_ci_low": -0.34106460060407423,
+      "event_macro_recovery": 0.31111358277350176,
+      "event_macro_recovery_ci_high": 0.34067953414107255,
+      "event_macro_recovery_ci_low": 0.28145477722906875,
+      "flipped_corruption": -0.19473684210526315,
+      "flipped_recovery": 0.1868421052631579,
+      "longmemeval_corruption": -0.2391304347826087,
+      "longmemeval_recovery": 0.2391304347826087,
+      "memora_corruption": -0.1368421052631579,
+      "memora_recovery": 0.13508771929824562,
+      "micro_corruption": -0.2653846153846154,
+      "micro_recovery": 0.26490384615384616,
+      "missing_corruption": -0.3023255813953488,
+      "missing_recovery": 0.3023255813953488,
+      "model": "OpenAI GPT-5.6-sol",
+      "oaks_cluster_corruption": -0.5958333333333333,
+      "oaks_cluster_recovery": 0.5979166666666667,
+      "oaks_corruption": -0.5958333333333333,
+      "oaks_recovery": 0.5979166666666667,
+      "provider": "openai",
+      "stale_corruption": -0.584045584045584,
+      "stale_recovery": 0.584045584045584,
+      "temporal_corruption": -0.39086294416243655,
+      "temporal_recovery": 0.3934010152284264,
+      "update_corruption": -0.4432234432234432,
+      "update_recovery": 0.4432234432234432
+    },
+    {
+      "balanced_macro_corruption": -0.2764628533859303,
+      "balanced_macro_recovery": 0.2702169625246548,
+      "clean_accuracy": 0.4322845417236662,
+      "conflicting_corruption": -0.061488673139158574,
+      "conflicting_recovery": 0.05825242718446602,
+      "corrupted_accuracy": 0.18028846153846154,
+      "deletion_corruption": -0.1736842105263158,
+      "deletion_recovery": 0.17017543859649123,
+      "enforced_accuracy": 0.43846153846153846,
+      "event_macro_corruption": -0.2818545377249831,
+      "event_macro_corruption_ci_high": -0.2501607692802025,
+      "event_macro_corruption_ci_low": -0.31304327139347377,
+      "event_macro_recovery": 0.28359656537794187,
+      "event_macro_recovery_ci_high": 0.31232739145694605,
+      "event_macro_recovery_ci_low": 0.255124509992931,
+      "flipped_corruption": -0.2710526315789474,
+      "flipped_recovery": 0.26842105263157895,
+      "longmemeval_corruption": -0.2108695652173913,
+      "longmemeval_recovery": 0.2108695652173913,
+      "memora_corruption": -0.1736842105263158,
+      "memora_recovery": 0.17017543859649123,
+      "micro_corruption": -0.2586538461538462,
+      "micro_recovery": 0.25817307692307695,
+      "missing_corruption": -0.3064295485636115,
+      "missing_recovery": 0.3091655266757866,
+      "model": "Anthropic Claude Sonnet 5",
+      "oaks_cluster_corruption": -0.50625,
+      "oaks_cluster_recovery": 0.5125,
+      "oaks_corruption": -0.50625,
+      "oaks_recovery": 0.5125,
+      "provider": "anthropic",
+      "stale_corruption": -0.4928774928774929,
+      "stale_recovery": 0.4928774928774929,
+      "temporal_corruption": -0.29949238578680204,
+      "temporal_recovery": 0.30456852791878175,
+      "update_corruption": -0.4065934065934066,
+      "update_recovery": 0.4084249084249084
+    },
+    {
+      "balanced_macro_corruption": -0.284681130834977,
+      "balanced_macro_recovery": 0.28270874424720577,
+      "clean_accuracy": 0.45964432284541723,
+      "conflicting_corruption": -0.05501618122977346,
+      "conflicting_recovery": 0.045307443365695796,
+      "corrupted_accuracy": 0.19471153846153846,
+      "deletion_corruption": -0.2324561403508772,
+      "deletion_recovery": 0.22631578947368422,
+      "enforced_accuracy": 0.4706730769230769,
+      "event_macro_corruption": -0.28054727548654673,
+      "event_macro_corruption_ci_high": -0.24819668129890798,
+      "event_macro_corruption_ci_low": -0.3129926702851804,
+      "event_macro_recovery": 0.2810364174736644,
+      "event_macro_recovery_ci_high": 0.31209275654619784,
+      "event_macro_recovery_ci_low": 0.2497487740554542,
+      "flipped_corruption": -0.3736842105263158,
+      "flipped_recovery": 0.3763157894736842,
+      "longmemeval_corruption": -0.13260869565217392,
+      "longmemeval_recovery": 0.11956521739130435,
+      "memora_corruption": -0.2324561403508772,
+      "memora_recovery": 0.22631578947368422,
+      "micro_corruption": -0.27740384615384617,
+      "micro_recovery": 0.2759615384615385,
+      "missing_corruption": -0.33105335157318744,
+      "missing_recovery": 0.3337893296853625,
+      "model": "DeepSeek V4 Pro",
+      "oaks_cluster_corruption": -0.5229166666666667,
+      "oaks_cluster_recovery": 0.54375,
+      "oaks_corruption": -0.5229166666666667,
+      "oaks_recovery": 0.54375,
+      "provider": "deepseek",
+      "stale_corruption": -0.452991452991453,
+      "stale_recovery": 0.452991452991453,
+      "temporal_corruption": -0.2893401015228426,
+      "temporal_recovery": 0.29441624365482233,
+      "update_corruption": -0.3626373626373626,
+      "update_recovery": 0.3663003663003663
+    },
+    {
+      "balanced_macro_corruption": -0.31032215647600264,
+      "balanced_macro_recovery": 0.3076923076923077,
+      "clean_accuracy": 0.4377564979480164,
+      "conflicting_corruption": -0.0825242718446602,
+      "conflicting_recovery": 0.08414239482200647,
+      "corrupted_accuracy": 0.16346153846153846,
+      "deletion_corruption": -0.17894736842105263,
+      "deletion_recovery": 0.17719298245614035,
+      "enforced_accuracy": 0.44134615384615383,
+      "event_macro_corruption": -0.31878315117181516,
+      "event_macro_corruption_ci_high": -0.28746912893674026,
+      "event_macro_corruption_ci_low": -0.3500072296124928,
+      "event_macro_recovery": 0.31293865828278783,
+      "event_macro_recovery_ci_high": 0.34358268081446225,
+      "event_macro_recovery_ci_low": 0.2821384637629577,
+      "flipped_corruption": -0.2657894736842105,
+      "flipped_recovery": 0.2657894736842105,
+      "longmemeval_corruption": -0.21956521739130436,
+      "longmemeval_recovery": 0.20869565217391303,
+      "memora_corruption": -0.17894736842105263,
+      "memora_recovery": 0.17719298245614035,
+      "micro_corruption": -0.28173076923076923,
+      "micro_recovery": 0.2778846153846154,
+      "missing_corruption": -0.32558139534883723,
+      "missing_recovery": 0.3173734610123119,
+      "model": "Gemini 3 Flash",
+      "oaks_cluster_corruption": -0.5854166666666667,
+      "oaks_cluster_recovery": 0.5833333333333334,
+      "oaks_corruption": -0.5854166666666667,
+      "oaks_recovery": 0.5833333333333334,
+      "provider": "gemini",
+      "stale_corruption": -0.5584045584045584,
+      "stale_recovery": 0.5498575498575499,
+      "temporal_corruption": -0.40609137055837563,
+      "temporal_recovery": 0.39086294416243655,
+      "update_corruption": -0.4065934065934066,
+      "update_recovery": 0.4065934065934066
+    },
+    {
+      "balanced_macro_corruption": -0.26265614727153186,
+      "balanced_macro_recovery": 0.267258382642998,
+      "clean_accuracy": 0.42954856361149113,
+      "conflicting_corruption": -0.025889967637540454,
+      "conflicting_recovery": 0.030744336569579287,
+      "corrupted_accuracy": 0.19230769230769232,
+      "deletion_corruption": -0.13859649122807016,
+      "deletion_recovery": 0.16228070175438597,
+      "enforced_accuracy": 0.4528846153846154,
+      "event_macro_corruption": -0.27626363739724064,
+      "event_macro_corruption_ci_high": -0.24461802929414267,
+      "event_macro_corruption_ci_low": -0.3078306095613788,
+      "event_macro_recovery": 0.28589595290000147,
+      "event_macro_recovery_ci_high": 0.3141742917451419,
+      "event_macro_recovery_ci_low": 0.25751154266336457,
+      "flipped_corruption": -0.2657894736842105,
+      "flipped_recovery": 0.29210526315789476,
+      "longmemeval_corruption": -0.16304347826086957,
+      "longmemeval_recovery": 0.15869565217391304,
+      "memora_corruption": -0.13859649122807016,
+      "memora_recovery": 0.16228070175438597,
+      "micro_corruption": -0.24759615384615385,
+      "micro_recovery": 0.2605769230769231,
+      "missing_corruption": -0.3009575923392613,
+      "missing_recovery": 0.31874145006839943,
+      "model": "Kimi K2.6 no-thinking",
+      "oaks_cluster_corruption": -0.5875,
+      "oaks_cluster_recovery": 0.5916666666666667,
+      "oaks_corruption": -0.5875,
+      "oaks_recovery": 0.5916666666666667,
+      "provider": "kimi",
+      "stale_corruption": -0.5071225071225072,
+      "stale_recovery": 0.50997150997151,
+      "temporal_corruption": -0.2817258883248731,
+      "temporal_recovery": 0.30456852791878175,
+      "update_corruption": -0.45054945054945056,
+      "update_recovery": 0.4340659340659341
+    },
+    {
+      "balanced_macro_corruption": -0.18474687705456935,
+      "balanced_macro_recovery": 0.17817225509533202,
+      "clean_accuracy": 0.2859097127222982,
+      "conflicting_corruption": -0.05825242718446602,
+      "conflicting_recovery": 0.05501618122977346,
+      "corrupted_accuracy": 0.1201923076923077,
+      "deletion_corruption": -0.13157894736842105,
+      "deletion_recovery": 0.11666666666666667,
+      "enforced_accuracy": 0.28557692307692306,
+      "event_macro_corruption": -0.18474440539217865,
+      "event_macro_corruption_ci_high": -0.15140586303035697,
+      "event_macro_corruption_ci_low": -0.21822366567305837,
+      "event_macro_recovery": 0.17578191039729502,
+      "event_macro_recovery_ci_high": 0.2053749202888879,
+      "event_macro_recovery_ci_low": 0.14645927565461975,
+      "flipped_corruption": -0.19736842105263158,
+      "flipped_recovery": 0.15526315789473685,
+      "longmemeval_corruption": 0.03695652173913044,
+      "longmemeval_recovery": -0.043478260869565216,
+      "memora_corruption": -0.13157894736842105,
+      "memora_recovery": 0.11666666666666667,
+      "micro_corruption": -0.17596153846153847,
+      "micro_recovery": 0.16538461538461538,
+      "missing_corruption": -0.19425444596443228,
+      "missing_recovery": 0.18878248974008208,
+      "model": "Grok 4.3 no-reasoning",
+      "oaks_cluster_corruption": -0.48541666666666666,
+      "oaks_cluster_recovery": 0.48125,
+      "oaks_corruption": -0.48541666666666666,
+      "oaks_recovery": 0.48125,
+      "provider": "xAI",
+      "stale_corruption": -0.32193732193732194,
+      "stale_recovery": 0.32193732193732194,
+      "temporal_corruption": -0.23857868020304568,
+      "temporal_recovery": 0.2233502538071066,
+      "update_corruption": -0.22344322344322345,
+      "update_recovery": 0.22527472527472528
+    }
+  ],
+  "status": "OFFLINE V3 FINAL-MAIN ANALYSIS",
+  "validation": {
+    "anthropic": {
+      "failures": 17,
+      "provider": "anthropic",
+      "rows": 4891,
+      "sha256": "4e416bbadfb90b4b8c82e1d2b6acc7b9a46e86eaf6f4144fe0c15b79f10f8abf",
+      "unique_ids": 4891
+    },
+    "deepseek": {
+      "failures": 2,
+      "provider": "deepseek",
+      "rows": 4891,
+      "sha256": "9d93ea8f1e33ff879c483463fdcc16df3578fa3d68cf4576e5f8282f47d3d4d3",
+      "unique_ids": 4891
+    },
+    "gemini": {
+      "failures": 0,
+      "provider": "gemini",
+      "rows": 4891,
+      "sha256": "8d237c86ee97f592ca8a4fb12fb153c3bf7afd0ca232ee3201ad3ae13e1e8da8",
+      "unique_ids": 4891
+    },
+    "grok": {
+      "failures": 0,
+      "provider": "grok",
+      "rows": 4891,
+      "sha256": "9f7ac01b77e2788d6ecea888fac1b59d56a16a45fe29f6cb300c70cddda9d336",
+      "unique_ids": 4891
+    },
+    "kimi": {
+      "failures": 0,
+      "provider": "kimi",
+      "rows": 4891,
+      "sha256": "5a48c0e36b661432a62a1fb84ec0cad85a08c467b1cb6adfd8373346e4e8dcd3",
+      "unique_ids": 4891
+    },
+    "openai": {
+      "failures": 2,
+      "provider": "openai",
+      "rows": 4891,
+      "sha256": "c803ff46b4a606eecc8d100222ca35f3743bc70446aff90558a9b2b95eac8adb",
+      "unique_ids": 4891
+    }
+  }
+}

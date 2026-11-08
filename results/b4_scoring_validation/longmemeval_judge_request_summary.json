@@ -1,0 +1,26 @@
+{
+  "condition_distribution": {
+    "clean": 35,
+    "corrupted": 35,
+    "enforced": 30
+  },
+  "execution": "dry_run_only",
+  "original_cohort_rows": 100,
+  "provider_distribution": {
+    "anthropic": 20,
+    "gemini": 20,
+    "kimi": 20,
+    "openai": 20,
+    "xai": 20
+  },
+  "safely_deduplicated_cases": 96,
+  "schema_version": "b4-lme-judge-plan-v2",
+  "supported_decision_categories": [
+    "correct",
+    "incorrect",
+    "abstention_correct",
+    "abstention_incorrect",
+    "adjudication_required"
+  ],
+  "unique_judgment_cases": 96
+}

@@ -1,0 +1,89 @@
+{
+  "api_network_model_judge_calls": 0,
+  "longmemeval": {
+    "agreement_n": 60,
+    "disagreement_n": 36,
+    "valid_same_unit_n": 96
+  },
+  "memora": {
+    "answer_criterion_assignment_n": 511,
+    "atomic_cases_per_answer_distribution": {
+      "5": 1,
+      "6": 7,
+      "7": 3,
+      "8": 2,
+      "9": 2,
+      "10": 1,
+      "11": 3,
+      "12": 3,
+      "13": 5,
+      "14": 3,
+      "15": 3,
+      "17": 1,
+      "18": 1,
+      "19": 4,
+      "20": 1,
+      "21": 1,
+      "23": 1
+    },
+    "atomic_semantic_case_n": 508,
+    "blocker_for_valid_metric": "A predeclared common endpoint and immutable mapping between scorer fields and native criteria are absent; creating either would be new validation design, not analysis of the frozen outputs.",
+    "criteria_per_answer_distribution": {
+      "5": 1,
+      "6": 7,
+      "7": 3,
+      "8": 2,
+      "9": 2,
+      "10": 1,
+      "11": 2,
+      "12": 4,
+      "13": 5,
+      "14": 1,
+      "15": 5,
+      "17": 1,
+      "18": 1,
+      "19": 4,
+      "20": 1,
+      "21": 1,
+      "23": 1
+    },
+    "criterion_type_counts": {
+      "forgetting_absence": 190,
+      "memory_presence": 321
+    },
+    "current_508_comparison_valid": false,
+    "evidence_sources": [
+      "eval/system_validation_scoring.py: structured Memora correctness requires all extracted content_data leaf facts",
+      "Memora evals/README.md: native per-question FAMA combines memory-presence and forgetting-absence accuracies",
+      "frozen scorer scoring_details.fields and memora_atomic_criteria.jsonl"
+    ],
+    "exact_aggregation_or_recovery_rule": null,
+    "independent_semantic_unit": "one native evaluation sub-question/atomic criterion; native benchmark aggregates these as accuracy components and per-question FAMA",
+    "new_judge_or_api_calls_required_for_this_audit": false,
+    "path_1_answer_level_aggregation": {
+      "reason": "The native benchmark defines per-question FAMA from memory-presence and forgetting-absence accuracies, not a frozen Boolean all-criteria-pass label. GovMem's Boolean scorer covers extracted content_data facts and does not encode the native forgetting penalty, so an all-pass or any-pass projection would invent a new target.",
+      "valid": false
+    },
+    "path_2_criterion_level_recovery": {
+      "answers_where_counts_do_not_match": 38,
+      "answers_where_scorer_field_count_equals_memory_presence_criterion_count": 4,
+      "reason": "Frozen scorer details expose content_data field paths and support bits, but B4 criteria expose native evaluation-question IDs/types and hashes without an immutable field-to-criterion mapping. The criteria also include forgetting_absence items absent from scorer field details.",
+      "valid": false
+    },
+    "recommended_valid_comparison_unit": "none available from the current frozen artifacts",
+    "schema_version": "b4-scorer-unit-alignment-audit-v1",
+    "scorer_rerun_required_for_this_audit": false,
+    "scorer_semantic_unit": "one generated answer; Boolean correct only when every extracted content_data leaf fact is deterministically supported",
+    "selected_valid_alignment": "none",
+    "unique_memora_answer_n": 42,
+    "valid_memora_agreement": null,
+    "valid_memora_n": 0
+  },
+  "revised_overall": {
+    "agreement_n": null,
+    "computed": false,
+    "n": null,
+    "reason": "Memora has no defensible same-unit binary comparison in the frozen artifacts; mixing LongMemEval answers with Memora atomic criteria is prohibited."
+  },
+  "schema_version": "b4-scorer-unit-alignment-audit-v1"
+}

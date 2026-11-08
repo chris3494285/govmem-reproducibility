@@ -1,0 +1,38 @@
+{
+  "api_calls_performed": 0,
+  "blocks": 60,
+  "by_generating_provider": {
+    "anthropic": 10,
+    "deepseek": 10,
+    "gemini": 10,
+    "kimi": 10,
+    "openai": 10,
+    "xai": 10
+  },
+  "by_provider_source": {
+    "anthropic::longmemeval": 5,
+    "anthropic::memora": 5,
+    "deepseek::longmemeval": 5,
+    "deepseek::memora": 5,
+    "gemini::longmemeval": 5,
+    "gemini::memora": 5,
+    "kimi::longmemeval": 5,
+    "kimi::memora": 5,
+    "openai::longmemeval": 5,
+    "openai::memora": 5,
+    "xai::longmemeval": 5,
+    "xai::memora": 5
+  },
+  "clean_B_input_blocked_unverifiable": 0,
+  "clean_B_input_verifiable": 60,
+  "clean_observations_deterministic_route": 65,
+  "clean_observations_resolved": 300,
+  "clean_observations_total": 300,
+  "duplicate_formal300_blocks": 0,
+  "eligible_clean_resolved_semantic": 235,
+  "longmemeval": 30,
+  "memora": 30,
+  "seed": 20261013,
+  "selection_conditioned_on_correctness": false,
+  "unique_clean_condition_ids": 56
+}

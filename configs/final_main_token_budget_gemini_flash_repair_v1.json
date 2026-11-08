@@ -1,0 +1,15 @@
+{
+  "schema_version": "final-main-token-budget-gemini-flash-repair-v1",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "purpose": "selective token-limit repair only; provider/model-specific measurement ceilings, not global scientific defaults",
+  "budgets": {
+    "longmemeval": 3072,
+    "memora_email_writeup": 6144,
+    "memora_meeting_notes": 3072,
+    "memora_preference": 3072,
+    "memora_project_proposal": 6144,
+    "memora_todos": 6144,
+    "oaks_novel": 3072
+  }
+}

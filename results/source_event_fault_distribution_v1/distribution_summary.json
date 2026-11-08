@@ -1,0 +1,552 @@
+{
+  "schema_version": "source-event-fault-distribution-v1",
+  "counting_units": {
+    "distinct_base_count": "distinct frozen base examples (base_id) in the cell",
+    "fault_pair_count": "matched (corrupted, enforced) fault pairs sharing a pair_id",
+    "corrupted_condition_count": "corrupted condition rows in the cell",
+    "enforced_condition_count": "enforced condition rows in the cell"
+  },
+  "vocabulary": {
+    "sources": [
+      "longmemeval",
+      "memora",
+      "oaks_novel"
+    ],
+    "events": [
+      "deletion",
+      "temporal",
+      "update"
+    ],
+    "faults": [
+      "missing",
+      "stale",
+      "flipped",
+      "conflicting"
+    ]
+  },
+  "global_totals": {
+    "distinct_bases": 731,
+    "matched_fault_pairs": 2080,
+    "corrupted_conditions": 2080,
+    "enforced_conditions": 2080,
+    "clean_conditions": 731,
+    "total_conditions": 4891
+  },
+  "expected_invariants": {
+    "distinct_bases": 731,
+    "matched_fault_pairs": 2080,
+    "corrupted_conditions": 2080,
+    "enforced_conditions": 2080,
+    "clean_conditions": 731,
+    "total_conditions": 4891
+  },
+  "observed_cell_count": 14,
+  "cells": [
+    {
+      "source": "longmemeval",
+      "event": "temporal",
+      "fault": "missing",
+      "distinct_base_count": 113,
+      "fault_pair_count": 113,
+      "corrupted_condition_count": 113,
+      "enforced_condition_count": 113
+    },
+    {
+      "source": "longmemeval",
+      "event": "temporal",
+      "fault": "stale",
+      "distinct_base_count": 113,
+      "fault_pair_count": 113,
+      "corrupted_condition_count": 113,
+      "enforced_condition_count": 113
+    },
+    {
+      "source": "longmemeval",
+      "event": "update",
+      "fault": "missing",
+      "distinct_base_count": 78,
+      "fault_pair_count": 78,
+      "corrupted_condition_count": 78,
+      "enforced_condition_count": 78
+    },
+    {
+      "source": "longmemeval",
+      "event": "update",
+      "fault": "stale",
+      "distinct_base_count": 78,
+      "fault_pair_count": 78,
+      "corrupted_condition_count": 78,
+      "enforced_condition_count": 78
+    },
+    {
+      "source": "longmemeval",
+      "event": "update",
+      "fault": "conflicting",
+      "distinct_base_count": 78,
+      "fault_pair_count": 78,
+      "corrupted_condition_count": 78,
+      "enforced_condition_count": 78
+    },
+    {
+      "source": "memora",
+      "event": "deletion",
+      "fault": "missing",
+      "distinct_base_count": 380,
+      "fault_pair_count": 380,
+      "corrupted_condition_count": 380,
+      "enforced_condition_count": 380
+    },
+    {
+      "source": "memora",
+      "event": "deletion",
+      "fault": "flipped",
+      "distinct_base_count": 380,
+      "fault_pair_count": 380,
+      "corrupted_condition_count": 380,
+      "enforced_condition_count": 380
+    },
+    {
+      "source": "memora",
+      "event": "deletion",
+      "fault": "conflicting",
+      "distinct_base_count": 380,
+      "fault_pair_count": 380,
+      "corrupted_condition_count": 380,
+      "enforced_condition_count": 380
+    },
+    {
+      "source": "oaks_novel",
+      "event": "temporal",
+      "fault": "missing",
+      "distinct_base_count": 56,
+      "fault_pair_count": 56,
+      "corrupted_condition_count": 56,
+      "enforced_condition_count": 56
+    },
+    {
+      "source": "oaks_novel",
+      "event": "temporal",
+      "fault": "stale",
+      "distinct_base_count": 56,
+      "fault_pair_count": 56,
+      "corrupted_condition_count": 56,
+      "enforced_condition_count": 56
+    },
+    {
+      "source": "oaks_novel",
+      "event": "temporal",
+      "fault": "conflicting",
+      "distinct_base_count": 56,
+      "fault_pair_count": 56,
+      "corrupted_condition_count": 56,
+      "enforced_condition_count": 56
+    },
+    {
+      "source": "oaks_novel",
+      "event": "update",
+      "fault": "missing",
+      "distinct_base_count": 104,
+      "fault_pair_count": 104,
+      "corrupted_condition_count": 104,
+      "enforced_condition_count": 104
+    },
+    {
+      "source": "oaks_novel",
+      "event": "update",
+      "fault": "stale",
+      "distinct_base_count": 104,
+      "fault_pair_count": 104,
+      "corrupted_condition_count": 104,
+      "enforced_condition_count": 104
+    },
+    {
+      "source": "oaks_novel",
+      "event": "update",
+      "fault": "conflicting",
+      "distinct_base_count": 104,
+      "fault_pair_count": 104,
+      "corrupted_condition_count": 104,
+      "enforced_condition_count": 104
+    }
+  ],
+  "per_source_totals": {
+    "longmemeval": {
+      "distinct_base_count": 191,
+      "fault_pair_count": 460,
+      "clean_condition_count": 191
+    },
+    "memora": {
+      "distinct_base_count": 380,
+      "fault_pair_count": 1140,
+      "clean_condition_count": 380
+    },
+    "oaks_novel": {
+      "distinct_base_count": 160,
+      "fault_pair_count": 480,
+      "clean_condition_count": 160
+    }
+  },
+  "per_event_totals": {
+    "deletion": {
+      "distinct_base_count": 380,
+      "fault_pair_count": 1140
+    },
+    "temporal": {
+      "distinct_base_count": 169,
+      "fault_pair_count": 394
+    },
+    "update": {
+      "distinct_base_count": 182,
+      "fault_pair_count": 546
+    }
+  },
+  "per_fault_totals": {
+    "missing": {
+      "distinct_base_count": 731,
+      "fault_pair_count": 731
+    },
+    "stale": {
+      "distinct_base_count": 351,
+      "fault_pair_count": 351
+    },
+    "flipped": {
+      "distinct_base_count": 380,
+      "fault_pair_count": 380
+    },
+    "conflicting": {
+      "distinct_base_count": 618,
+      "fault_pair_count": 618
+    }
+  },
+  "per_source_fault_totals": {
+    "longmemeval": {
+      "missing": {
+        "distinct_base_count": 191,
+        "fault_pair_count": 191
+      },
+      "stale": {
+        "distinct_base_count": 191,
+        "fault_pair_count": 191
+      },
+      "flipped": {
+        "distinct_base_count": 0,
+        "fault_pair_count": 0
+      },
+      "conflicting": {
+        "distinct_base_count": 78,
+        "fault_pair_count": 78
+      }
+    },
+    "memora": {
+      "missing": {
+        "distinct_base_count": 380,
+        "fault_pair_count": 380
+      },
+      "stale": {
+        "distinct_base_count": 0,
+        "fault_pair_count": 0
+      },
+      "flipped": {
+        "distinct_base_count": 380,
+        "fault_pair_count": 380
+      },
+      "conflicting": {
+        "distinct_base_count": 380,
+        "fault_pair_count": 380
+      }
+    },
+    "oaks_novel": {
+      "missing": {
+        "distinct_base_count": 160,
+        "fault_pair_count": 160
+      },
+      "stale": {
+        "distinct_base_count": 160,
+        "fault_pair_count": 160
+      },
+      "flipped": {
+        "distinct_base_count": 0,
+        "fault_pair_count": 0
+      },
+      "conflicting": {
+        "distinct_base_count": 160,
+        "fault_pair_count": 160
+      }
+    }
+  },
+  "source_event_grid_base_counts": {
+    "longmemeval": {
+      "deletion": 0,
+      "temporal": 113,
+      "update": 78
+    },
+    "memora": {
+      "deletion": 380,
+      "temporal": 0,
+      "update": 0
+    },
+    "oaks_novel": {
+      "deletion": 0,
+      "temporal": 56,
+      "update": 104
+    }
+  },
+  "source_event_clean_counts": {
+    "longmemeval": {
+      "deletion": 0,
+      "temporal": 113,
+      "update": 78
+    },
+    "memora": {
+      "deletion": 380,
+      "temporal": 0,
+      "update": 0
+    },
+    "oaks_novel": {
+      "deletion": 0,
+      "temporal": 56,
+      "update": 104
+    }
+  },
+  "source_event_fault_pair_counts": {
+    "longmemeval": {
+      "deletion": 0,
+      "temporal": 226,
+      "update": 234
+    },
+    "memora": {
+      "deletion": 1140,
+      "temporal": 0,
+      "update": 0
+    },
+    "oaks_novel": {
+      "deletion": 0,
+      "temporal": 168,
+      "update": 312
+    }
+  },
+  "supported_fault_operators_by_source_event": {
+    "longmemeval": {
+      "temporal": [
+        "missing",
+        "stale"
+      ],
+      "update": [
+        "missing",
+        "stale",
+        "conflicting"
+      ]
+    },
+    "memora": {
+      "deletion": [
+        "missing",
+        "flipped",
+        "conflicting"
+      ]
+    },
+    "oaks_novel": {
+      "temporal": [
+        "missing",
+        "stale",
+        "conflicting"
+      ],
+      "update": [
+        "missing",
+        "stale",
+        "conflicting"
+      ]
+    }
+  },
+  "structurally_absent_cells": {
+    "unused_source_event_combinations": [
+      {
+        "source": "longmemeval",
+        "event": "deletion"
+      },
+      {
+        "source": "memora",
+        "event": "temporal"
+      },
+      {
+        "source": "memora",
+        "event": "update"
+      },
+      {
+        "source": "oaks_novel",
+        "event": "deletion"
+      }
+    ],
+    "unsupported_fault_cells": [
+      {
+        "source": "longmemeval",
+        "event": "temporal",
+        "fault": "flipped",
+        "reason": "fault operator declared unsupported for this source x event"
+      },
+      {
+        "source": "longmemeval",
+        "event": "temporal",
+        "fault": "conflicting",
+        "reason": "fault operator declared unsupported for this source x event"
+      },
+      {
+        "source": "longmemeval",
+        "event": "update",
+        "fault": "flipped",
+        "reason": "fault operator declared unsupported for this source x event"
+      },
+      {
+        "source": "memora",
+        "event": "deletion",
+        "fault": "stale",
+        "reason": "fault operator declared unsupported for this source x event"
+      },
+      {
+        "source": "oaks_novel",
+        "event": "temporal",
+        "fault": "flipped",
+        "reason": "fault operator declared unsupported for this source x event"
+      },
+      {
+        "source": "oaks_novel",
+        "event": "update",
+        "fault": "flipped",
+        "reason": "fault operator declared unsupported for this source x event"
+      }
+    ]
+  },
+  "observed_zero_cells": [],
+  "bases_by_fault_pair_count": {
+    "2": 113,
+    "3": 618
+  },
+  "proposed_identity": {
+    "claim": "2080 = 618 * 3 + 113 * 2",
+    "supported": true,
+    "bases_with_three_faults": 618,
+    "bases_with_two_faults": 113,
+    "bases_by_fault_pair_count": {
+      "2": 113,
+      "3": 618
+    },
+    "three_fault_contribution": 1854,
+    "two_fault_contribution": 226,
+    "reconstructed_pairs": 2080,
+    "observed_pairs": 2080,
+    "note": "Applicability is a per-base property of the frozen base manifest: bases in every source x event stratum share one fault set, so the multiplicity is constant inside a stratum."
+  },
+  "source_event_confounding": {
+    "contingency_table": [
+      [
+        0,
+        113,
+        78
+      ],
+      [
+        380,
+        0,
+        0
+      ],
+      [
+        0,
+        56,
+        104
+      ]
+    ],
+    "row_labels": [
+      "longmemeval",
+      "memora",
+      "oaks_novel"
+    ],
+    "column_labels": [
+      "deletion",
+      "temporal",
+      "update"
+    ],
+    "deletion_sources": [
+      "memora"
+    ],
+    "memora_events": [
+      "deletion"
+    ],
+    "event_source_composition": {
+      "deletion": {
+        "memora": 380
+      },
+      "temporal": {
+        "longmemeval": 113,
+        "oaks_novel": 56
+      },
+      "update": {
+        "longmemeval": 78,
+        "oaks_novel": 104
+      }
+    },
+    "source_event_composition": {
+      "longmemeval": {
+        "temporal": 113,
+        "update": 78
+      },
+      "memora": {
+        "deletion": 380
+      },
+      "oaks_novel": {
+        "temporal": 56,
+        "update": 104
+      }
+    },
+    "chi_square": 773.4022898567401,
+    "cramers_v": 0.7273258789830982,
+    "dof": 4,
+    "confounded": true
+  },
+  "integrity_checks": {
+    "unique_condition_ids": 4891,
+    "unique_base_ids": 731,
+    "condition_type_counts": {
+      "clean": 731,
+      "corrupted": 2080,
+      "enforced": 2080
+    },
+    "distinct_base_ids_in_conditions": 731,
+    "total_condition_rows": 4891,
+    "orphan_conditions": 0,
+    "source_event_consistent_bases": 731,
+    "one_clean_per_base": true,
+    "fault_applicability_violations": 0,
+    "base_manifest_sha_mismatches": 0,
+    "pair_id_derivation": "pair_id == base_id::fault_operator",
+    "duplicate_fault_pairs": 0,
+    "fault_pairs_with_complete_siblings": 2080,
+    "expected_invariants": {
+      "distinct_bases": 731,
+      "matched_fault_pairs": 2080,
+      "corrupted_conditions": 2080,
+      "enforced_conditions": 2080,
+      "clean_conditions": 731,
+      "total_conditions": 4891
+    },
+    "actual_invariants": {
+      "distinct_bases": 731,
+      "matched_fault_pairs": 2080,
+      "corrupted_conditions": 2080,
+      "enforced_conditions": 2080,
+      "clean_conditions": 731,
+      "total_conditions": 4891
+    }
+  },
+  "inputs": {
+    "condition_manifest": {
+      "filename": "final_main_governance_condition_manifest_v3.jsonl",
+      "sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb"
+    },
+    "base_manifest": {
+      "filename": "final_main_governance_base_manifest_v2.jsonl",
+      "sha256": "a2601a7ecb46034faf5dcc7ad00b5a851e19ae01561876fa681fd18af168ca79"
+    },
+    "freeze_metadata": {
+      "filename": "final_main_governance_condition_manifest_v3.freeze.json",
+      "sha256": "12b9a27585e9e40af8666cfef2573e8492aa7bfa504a10a85b81e798be12b941"
+    }
+  }
+}

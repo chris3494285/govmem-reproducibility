@@ -1,0 +1,4 @@
+source,bases,fully_supported,source_native_evidence_present,clean_state_supported,assigned_faults_supported,oracle_linked,provenance_locator_present,heuristic_only,ambiguous
+longmemeval,191,191,191,191,191,191,191,0,0
+memora,380,380,380,380,380,380,380,0,0
+oaks_novel,160,160,160,160,160,160,160,0,0

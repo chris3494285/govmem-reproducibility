@@ -1,0 +1,25 @@
+base_n,ci_high,ci_low,coverage_rate,effect,event_count,event_values,group,mean,mean_delta,pair_n,paired_coverage_rate,paired_scored_n,paired_unscored_n,run,scope,total_pair_n
+380,-0.09912280701754385,-0.1789473684210526,,corruption,,,deletion,,-0.13859649122807016,,1.0,1140,0,primary,event,1140
+380,0.1982456140350877,0.12719298245614033,,recovery,,,deletion,,0.16228070175438597,,1.0,1140,0,primary,event,1140
+169,-0.17554240631163706,-0.3047337278106509,,corruption,,,temporal,,-0.2817258883248731,,1.0,394,0,primary,event,394
+169,0.31854043392504927,0.2061143984220907,,recovery,,,temporal,,0.30456852791878175,,1.0,394,0,primary,event,394
+182,-0.3956043956043956,-0.5054945054945055,,corruption,,,update,,-0.45054945054945056,,1.0,546,0,primary,event,546
+182,0.4835164835164835,0.38278388278388276,,recovery,,,update,,0.4340659340659341,,1.0,546,0,primary,event,546
+618,,,,corruption,,,conflicting,,-0.025889967637540454,,1.0,618,0,primary,fault,618
+618,,,,recovery,,,conflicting,,0.030744336569579287,,1.0,618,0,primary,fault,618
+380,,,,corruption,,,flipped,,-0.2657894736842105,,1.0,380,0,primary,fault,380
+380,,,,recovery,,,flipped,,0.29210526315789476,,1.0,380,0,primary,fault,380
+731,,,,corruption,,,missing,,-0.3009575923392613,,1.0,731,0,primary,fault,731
+731,,,,recovery,,,missing,,0.31874145006839943,,1.0,731,0,primary,fault,731
+351,,,,corruption,,,stale,,-0.5071225071225072,,1.0,351,0,primary,fault,351
+351,,,,recovery,,,stale,,0.50997150997151,,1.0,351,0,primary,fault,351
+191,,,,corruption,,,longmemeval,,-0.16304347826086957,,1.0,460,0,primary,source,460
+191,,,,recovery,,,longmemeval,,0.15869565217391304,,1.0,460,0,primary,source,460
+380,,,,corruption,,,memora,,-0.13859649122807016,,1.0,1140,0,primary,source,1140
+380,,,,recovery,,,memora,,0.16228070175438597,,1.0,1140,0,primary,source,1140
+160,,,,corruption,,,oaks_novel,,-0.5875,,1.0,480,0,primary,source,480
+160,,,,recovery,,,oaks_novel,,0.5916666666666667,,1.0,480,0,primary,source,480
+,-0.24461802929414267,-0.3078306095613788,,corruption,3,"{'deletion': -0.13859649122807016, 'temporal': -0.23964497041420119, 'update': -0.45054945054945056}",all,-0.27626363739724064,,,,,,primary,event_macro,
+,0.3141742917451419,0.25751154266336457,,recovery,3,"{'deletion': 0.16228070175438597, 'temporal': 0.2613412228796844, 'update': 0.434065934065934}",all,0.28589595290000147,,,,,,primary,event_macro,
+,-0.20907432740538073,-0.2701778385772914,1.0,corruption,,,all,-0.24759615384615385,,2080,,,,primary,micro,2080
+,0.280437756497948,0.22549019607843135,1.0,recovery,,,all,0.2605769230769231,,2080,,,,primary,micro,2080

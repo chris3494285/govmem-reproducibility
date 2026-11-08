@@ -1,0 +1,25 @@
+{
+  "answer_generation_calls": 0,
+  "attempt3_available_total": 51,
+  "attempt3_invalid_argument_available": 45,
+  "attempt3_malformed_json_available": 6,
+  "completed_results_excluded": 399,
+  "evaluator_methodology": "final-native-evaluation-v2",
+  "model_changed": false,
+  "output_budget_evidence": {
+    "framing_allowance": 256,
+    "maximum": 6144,
+    "maximum_source": "repository Gemini Flash repair ceiling",
+    "minimum": 1024,
+    "observed_successful_max_estimated_tokens_per_criterion": 69.67,
+    "per_criterion_allowance": 80
+  },
+  "output_budget_formula": "min(6144, max(1024, 256 + 80 * criterion_count))",
+  "output_budget_policy_version": "formal-memora-attempt3-output-budget-v1",
+  "paid_calls_performed": 0,
+  "protocol_version": "formal-300-validation-v1",
+  "recovery_manifest_hash": "7d47e738693a7fa420baba2c6c1212ba94ebb721a16ea9d32455b424208c7dcf",
+  "recovery_protocol_version": "formal-300-validation-v1-gemini-attempt3-recovery-1",
+  "semantic_methodology_changed": false,
+  "transport_schema_version": "formal-memora-batch-generic-v2"
+}

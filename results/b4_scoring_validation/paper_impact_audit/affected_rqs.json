@@ -1,0 +1,54 @@
+{
+  "affected_rq_n": 2,
+  "rows": [
+    {
+      "action": "Native reevaluation or remove downstream correctness claims.",
+      "affected": true,
+      "b4_impact": "Core downstream-quality answer is unsupported across LongMemEval/Memora; control-plane A/C findings remain valid.",
+      "main_metric": "final-main corruption/recovery and condition accuracy",
+      "rq": "RQ-FM",
+      "uses_deterministic_source_aware_scorer": true
+    },
+    {
+      "action": "Keep provenance separation explicit.",
+      "affected": false,
+      "b4_impact": "No direct B4 impact; separate deterministic evaluator.",
+      "main_metric": "paired governance-violation delta",
+      "rq": "RQ1",
+      "uses_deterministic_source_aware_scorer": false
+    },
+    {
+      "action": "Do not claim B4 validates this evaluator.",
+      "affected": false,
+      "b4_impact": "No direct B4 impact; separate RQ1 scored artifacts.",
+      "main_metric": "matched GVR/task-utility fault severity",
+      "rq": "RQ2",
+      "uses_deterministic_source_aware_scorer": false
+    },
+    {
+      "action": "Keep separate from final-main A\u2192C\u2192Y claims.",
+      "affected": false,
+      "b4_impact": "No direct B4 impact; downstream metric is from a different scorer.",
+      "main_metric": "admission/context/downstream propagation in RQ1 pilot",
+      "rq": "RQ3",
+      "uses_deterministic_source_aware_scorer": false
+    },
+    {
+      "action": "Retain.",
+      "affected": false,
+      "b4_impact": "No direct B4 impact.",
+      "main_metric": "control-plane policy tradeoffs",
+      "rq": "RQ4",
+      "uses_deterministic_source_aware_scorer": false
+    },
+    {
+      "action": "Report source-specific evidence only.",
+      "affected": true,
+      "b4_impact": "LongMemEval is weak and Memora is not unit-aligned; a global scorer-validity claim fails.",
+      "main_metric": "agreement with native/native-style semantic reference",
+      "rq": "RQ-B4",
+      "uses_deterministic_source_aware_scorer": true
+    }
+  ],
+  "schema_version": "b4-paper-scorer-impact-v1"
+}

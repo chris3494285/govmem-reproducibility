@@ -1,0 +1,73 @@
+{
+  "schema_version": "answer-leakage-repair-rerun-cost-v1",
+  "api_calls_made": 0,
+  "manifest": {
+    "path": "data/final_main_governance_condition_manifest_v3.jsonl",
+    "sha256": "4b84068a341d912f43d07c9d92059f75224ea2636abf69e40ba6e71a0a1144cb",
+    "changed_condition_ids": "results/answer_leakage_repair/changed_condition_ids.txt",
+    "changed_condition_count": 265
+  },
+  "per_provider": {
+    "openai": {
+      "model": "gpt-5.6-sol", "request_count": 265, "estimated_input_tokens": 59322, "expected_output_tokens": null, "maximum_output_tokens": 67840,
+      "token_budget": {"longmemeval": 256}, "pricing": {"input_per_million": null, "output_per_million": null, "estimated_cost": null, "status": "unresolved; no local price configured"},
+      "required_environment_variable": "OPENAI_API_KEY",
+      "live_command": "python scripts/run_final_main_openai.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_openai --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_v2.json",
+      "resume_command": "python scripts/run_final_main_openai.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_openai --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_v2.json --resume",
+      "expected_output_path": "results/answer_leakage_repair/rerun_openai/full_results.jsonl",
+      "merge_command": "python scripts/merge_final_main_results.py --results results/final_main_sanitized/openai.jsonl --results results/answer_leakage_repair/rerun_openai/full_results.jsonl --exclude-condition-ids results/answer_leakage_repair/changed_condition_ids.txt --output results/answer_leakage_repair/merged_openai.jsonl --manifest data/final_main_governance_condition_manifest_v3.jsonl",
+      "validation_command": "python scripts/audit_answer_leakage.py"
+    },
+    "anthropic": {
+      "model": "claude-sonnet-5", "request_count": 265, "estimated_input_tokens": 59322, "expected_output_tokens": null, "maximum_output_tokens": 135680,
+      "token_budget": {"longmemeval": 512}, "pricing": {"input_per_million": 2.0, "output_per_million": 10.0, "estimated_cost": 1.475444, "status": "local runner defaults; upper bound, not billing"},
+      "required_environment_variable": "ANTHROPIC_API_KEY",
+      "live_command": "python scripts/run_final_main_anthropic.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_anthropic --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_anthropic_repair_v2.json",
+      "resume_command": "python scripts/run_final_main_anthropic.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_anthropic --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_anthropic_repair_v2.json --resume",
+      "expected_output_path": "results/answer_leakage_repair/rerun_anthropic/full_results.jsonl",
+      "merge_command": "python scripts/merge_final_main_results.py --results results/final_main_sanitized/anthropic.jsonl --results results/answer_leakage_repair/rerun_anthropic/full_results.jsonl --exclude-condition-ids results/answer_leakage_repair/changed_condition_ids.txt --output results/answer_leakage_repair/merged_anthropic.jsonl --manifest data/final_main_governance_condition_manifest_v3.jsonl",
+      "validation_command": "python scripts/audit_answer_leakage.py"
+    },
+    "deepseek": {
+      "model": "deepseek-v4-pro", "request_count": 265, "estimated_input_tokens": 59322, "expected_output_tokens": null, "maximum_output_tokens": 67840,
+      "token_budget": {"longmemeval": 256}, "pricing": {"input_per_million": null, "output_per_million": null, "estimated_cost": null, "status": "unresolved; no local price configured"},
+      "required_environment_variable": "DEEPSEEK_API_KEY",
+      "live_command": "python scripts/run_final_main_deepseek.py --model deepseek-v4-pro --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_deepseek --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_v2.json",
+      "resume_command": "python scripts/run_final_main_deepseek.py --model deepseek-v4-pro --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_deepseek --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_v2.json --resume",
+      "expected_output_path": "results/answer_leakage_repair/rerun_deepseek/full_results.jsonl",
+      "merge_command": "python scripts/merge_final_main_results.py --results results/final_main_sanitized/deepseek.jsonl --results results/answer_leakage_repair/rerun_deepseek/full_results.jsonl --exclude-condition-ids results/answer_leakage_repair/changed_condition_ids.txt --output results/answer_leakage_repair/merged_deepseek.jsonl --manifest data/final_main_governance_condition_manifest_v3.jsonl",
+      "validation_command": "python scripts/audit_answer_leakage.py"
+    },
+    "gemini": {
+      "model": "gemini-3-flash-preview", "request_count": 265, "estimated_input_tokens": 59322, "expected_output_tokens": null, "maximum_output_tokens": 814080,
+      "token_budget": {"longmemeval": 3072}, "pricing": {"input_per_million": 0.5, "output_per_million": 3.0, "estimated_cost": 2.471901, "status": "local runner defaults; upper bound, not billing"},
+      "required_environment_variable": "GEMINI_API_KEY",
+      "live_command": "python scripts/run_final_main_gemini.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_gemini --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_gemini_flash_repair_v2.json",
+      "resume_command": "python scripts/run_final_main_gemini.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_gemini --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_gemini_flash_repair_v2.json --resume",
+      "expected_output_path": "results/answer_leakage_repair/rerun_gemini/full_results.jsonl",
+      "merge_command": "python scripts/merge_final_main_results.py --results results/final_main_sanitized/gemini.jsonl --results results/answer_leakage_repair/rerun_gemini/full_results.jsonl --exclude-condition-ids results/answer_leakage_repair/changed_condition_ids.txt --output results/answer_leakage_repair/merged_gemini.jsonl --manifest data/final_main_governance_condition_manifest_v3.jsonl",
+      "validation_command": "python scripts/audit_answer_leakage.py"
+    },
+    "kimi": {
+      "model": "kimi-k2.6", "request_count": 265, "estimated_input_tokens": 59322, "expected_output_tokens": null, "maximum_output_tokens": 814080,
+      "token_budget": {"longmemeval": 3072}, "pricing": {"input_per_million": null, "output_per_million": null, "estimated_cost": null, "status": "unresolved; local configuration is zero, not a free-price assertion"},
+      "required_environment_variable": "KIMI_API_KEY",
+      "live_command": "python scripts/run_final_main_kimi.py --model kimi-k2.6 --base-url https://api.moonshot.cn/v1 --thinking disabled --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_kimi --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_kimi_repair_v1.json",
+      "resume_command": "python scripts/run_final_main_kimi.py --model kimi-k2.6 --base-url https://api.moonshot.cn/v1 --thinking disabled --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_kimi --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_kimi_repair_v1.json --resume",
+      "expected_output_path": "results/answer_leakage_repair/rerun_kimi/full_results.jsonl",
+      "merge_command": "python scripts/merge_final_main_results.py --results results/final_main_sanitized/kimi.jsonl --results results/answer_leakage_repair/rerun_kimi/full_results.jsonl --exclude-condition-ids results/answer_leakage_repair/changed_condition_ids.txt --output results/answer_leakage_repair/merged_kimi.jsonl --manifest data/final_main_governance_condition_manifest_v3.jsonl",
+      "validation_command": "python scripts/audit_answer_leakage.py"
+    },
+    "grok": {
+      "model": "grok-4.3", "request_count": 265, "estimated_input_tokens": 59322, "expected_output_tokens": null, "maximum_output_tokens": 271360,
+      "token_budget": {"longmemeval": 1024}, "pricing": {"input_per_million": null, "output_per_million": null, "estimated_cost": null, "status": "unresolved; local configuration is zero, not a free-price assertion"},
+      "required_environment_variable": "XAI_API_KEY",
+      "live_command": "python scripts/run_final_main_grok.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_grok --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_grok_v1.json",
+      "resume_command": "python scripts/run_final_main_grok.py --manifest data/final_main_governance_condition_manifest_v3.jsonl --results-dir results/answer_leakage_repair/rerun_grok --condition-ids-file results/answer_leakage_repair/changed_condition_ids.txt --token-budget-config configs/final_main_token_budget_grok_v1.json --resume",
+      "expected_output_path": "results/answer_leakage_repair/rerun_grok/full_results.jsonl",
+      "merge_command": "python scripts/merge_final_main_results.py --results results/final_main_sanitized/grok.jsonl --results results/answer_leakage_repair/rerun_grok/full_results.jsonl --exclude-condition-ids results/answer_leakage_repair/changed_condition_ids.txt --output results/answer_leakage_repair/merged_grok.jsonl --manifest data/final_main_governance_condition_manifest_v3.jsonl",
+      "validation_command": "python scripts/audit_answer_leakage.py"
+    }
+  },
+  "totals": {"providers": 6, "planned_requests": 1590, "max_possible_requests_including_three_attempt_retry_loop": 4770, "estimated_input_tokens": 355932, "maximum_output_tokens": 2170880, "planned_token_upper_bound": 2526812, "maximum_retry_token_upper_bound": 7580436}
+}

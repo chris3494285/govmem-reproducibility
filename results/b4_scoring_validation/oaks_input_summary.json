@@ -1,0 +1,22 @@
+{
+  "agreement_rate": 1.0,
+  "agreements": 6714,
+  "ambiguous_unscored": 6,
+  "condition_counts": {
+    "clean": 960,
+    "corrupted": 2880,
+    "enforced": 2880
+  },
+  "disagreements": 0,
+  "provider_counts": {
+    "anthropic": 1120,
+    "deepseek": 1120,
+    "gemini": 1120,
+    "kimi": 1120,
+    "openai": 1120,
+    "xai": 1120
+  },
+  "schema_version": "oaks-native-input-v1",
+  "source_question_n": 435,
+  "validation_row_n": 6720
+}

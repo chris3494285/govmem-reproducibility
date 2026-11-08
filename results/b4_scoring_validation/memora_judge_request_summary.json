@@ -1,0 +1,27 @@
+{
+  "adjudication_required": 419,
+  "by_subtype": {
+    "activity_todos": {
+      "native_exact": 62
+    },
+    "content_email_writeup": {
+      "judge_required": 79
+    },
+    "content_project_proposal": {
+      "judge_required": 432
+    },
+    "preference_recommendation": {
+      "adjudication_required": 419,
+      "native_exact": 577
+    }
+  },
+  "criterion_n": 1569,
+  "execution": "dry_run_only",
+  "judge_required_after_safe_deduplication": 508,
+  "judge_required_before_deduplication": 511,
+  "native_exact": 639,
+  "planned_judges_per_judge_required_case": 3,
+  "sample_n": 100,
+  "schema_version": "b4-memora-criteria-v2",
+  "total_planned_paid_judge_calls": 1524
+}

@@ -1,0 +1,32 @@
+{
+  "api_calls_performed": 0,
+  "expected_generation_input_tokens": 17345,
+  "expected_generation_output_tokens": 6898,
+  "generation_calls": 60,
+  "generation_calls_by_provider": {
+    "anthropic": 10,
+    "deepseek": 10,
+    "gemini": 10,
+    "kimi": 10,
+    "openai": 10,
+    "xai": 10
+  },
+  "generation_output_token_conservative": 82944,
+  "judge_call_rates_used": {
+    "lme_gemini_escalation": 0.04128440366972477,
+    "memora_anthropic_escalation": 0.0044444444444444444,
+    "memora_openai_secondary": 0.013333333333333334,
+    "source": "frozen formal-300 routing counts"
+  },
+  "judge_calls_base": 90,
+  "judge_calls_expected": 91,
+  "judge_calls_max": 180,
+  "judge_input_token_estimate_method": "ceil(frozen CLEAN-A semantic payload prompt chars / 4) per expected judge call",
+  "judge_input_tokens_expected": 522400,
+  "judge_output_token_estimate_method": "frozen execution-plan planned_output_tokens per expected judge call (LME 160; Memora Gemini primary per plan)",
+  "judge_output_tokens_expected": 27068,
+  "pricing": {
+    "available_locally": false,
+    "note": "configs/deepseek_v4_flash_pricing_v1.json has null price fields; no usable local pricing metadata, so dollar costs are not invented."
+  }
+}

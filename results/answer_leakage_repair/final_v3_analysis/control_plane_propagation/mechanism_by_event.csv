@@ -1,0 +1,4 @@
+analysis_event_type,pair_count,admission_change,admission_restoration,context_change,context_restoration,mean_corruption_delta,mean_recovery_delta
+deletion,6840,"{'n': 6840, 'denominator': 6840, 'rate': 1.0}","{'n': 6840, 'denominator': 6840, 'rate': 1.0}","{'n': 6840, 'denominator': 6840, 'rate': 1.0}","{'n': 6840, 'denominator': 6840, 'rate': 1.0}",-0.16535087719298244,0.16461988304093567
+temporal,2364,"{'n': 2364, 'denominator': 2364, 'rate': 1.0}","{'n': 2364, 'denominator': 2364, 'rate': 1.0}","{'n': 2364, 'denominator': 2364, 'rate': 1.0}","{'n': 2364, 'denominator': 2364, 'rate': 1.0}",-0.3176818950930626,0.31852791878172587
+update,3276,"{'n': 2808, 'denominator': 3276, 'rate': 0.8571428571428571}","{'n': 3276, 'denominator': 3276, 'rate': 1.0}","{'n': 2808, 'denominator': 3276, 'rate': 0.8571428571428571}","{'n': 3276, 'denominator': 3276, 'rate': 1.0}",-0.38217338217338215,0.3806471306471306

@@ -1,0 +1,65 @@
+{
+  "answer_artifacts": [
+    {
+      "path_locator": "<external-answer-root>/final_main_anthropic_sonnet5_final/scored/full_results_scored.jsonl",
+      "provider": "anthropic",
+      "selected_row_n": 3771,
+      "sha256": "d386ad9aad9eeaf629aad53ec21e1986da7fb955d2548052999ff61c2e861123"
+    },
+    {
+      "path_locator": "<external-answer-root>/final_main_deepseek_v4_pro/full_results.jsonl",
+      "provider": "deepseek",
+      "selected_row_n": 3771,
+      "sha256": "e851230a25556ff707af22a727600e5b60372502a60785cd6e91940a0ccc12e8"
+    },
+    {
+      "path_locator": "<external-answer-root>/final_main_gemini_3_flash_final/scored/full_results_scored.jsonl",
+      "provider": "gemini",
+      "selected_row_n": 3771,
+      "sha256": "1f1a7bbbcc752c4ad48aa15d4201a511a89a3c4b1f60a92edaa75492a22e9a29"
+    },
+    {
+      "path_locator": "<external-answer-root>/final_main_kimi_k2_6_nothinking_final/scored/full_results_scored.jsonl",
+      "provider": "kimi",
+      "selected_row_n": 3771,
+      "sha256": "d2e431c82ce4137d0cd3c242059d301d2ea293c1295e2db7480aee4e5ca26acb"
+    },
+    {
+      "path_locator": "<external-answer-root>/final_main_openai_gpt56_sol_final_v2/scored/full_results_scored.jsonl",
+      "provider": "openai",
+      "selected_row_n": 3771,
+      "sha256": "cd69b5e40fc9d8a269a35bc07be553144171705701d029b8b0944a08264edf83"
+    },
+    {
+      "path_locator": "<external-answer-root>/final_main_grok_43_final/scored/full_results_scored.jsonl",
+      "provider": "xai",
+      "selected_row_n": 3771,
+      "sha256": "73c72023453fb60f7baf3b93250dddf6f6d98c7d5363fe45305d226fff7902e1"
+    }
+  ],
+  "answer_generation_calls": 0,
+  "block_n": 300,
+  "by_generating_provider": {
+    "anthropic": 50,
+    "deepseek": 50,
+    "gemini": 50,
+    "kimi": 50,
+    "openai": 50,
+    "xai": 50
+  },
+  "by_source": {
+    "longmemeval": 150,
+    "memora": 150
+  },
+  "complete_matched_triplets": 300,
+  "evaluator_methodology": "final-native-evaluation-v2",
+  "native_source_hashes": {
+    "longmemeval": "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c",
+    "memora": "c55f625e2c5f576f6bbbaeb631f6303fd1741d7ab46a11c5fa0bff530f35cfc8"
+  },
+  "observation_n": 900,
+  "protocol_version": "formal-300-validation-v1",
+  "resampling_performed": false,
+  "source_selected_answers": "results/cheap_judge_pilot_v1/selected_answers.jsonl",
+  "source_selected_blocks": "results/cheap_judge_pilot_v1/selected_blocks.jsonl"
+}

@@ -1,0 +1,55 @@
+{
+  "analysis_script": "scripts/analyze_b4_scorer_validation.py",
+  "api_calls_made": 0,
+  "b4_provenance_summary_sha256": "4197596d24753e81706723f03fa3ad60fda82afbd4fb57c5cf62444286827751",
+  "independent_reference_sha256": "e097d020e99a2b7be13a22b0342c0b13cb8f29e878058da0f761bf8702930526",
+  "joined_cases": 604,
+  "provenance_artifact_sha256": {
+    "longmemeval": "79070524fc2c5f8c9264f5152132abbf71e889871730b50c7d495a6a34e435d3",
+    "memora": "9ef30da68232b70d0933db9cdb4b211e8a2e4e39f590b715fb7167736124daf2",
+    "memora_criteria": "74ce062b75d87ec592797677fdf357a4b7c432cc5a367eae481e77512f4ae831",
+    "memora_requests": "caa530d193271afb6948db066d3b8dc68f10b5ba53c69db1c24ef228de20e1a1"
+  },
+  "schema_version": "b4-scorer-validation-v1",
+  "scorer_source_artifacts": [
+    {
+      "provider": "openai",
+      "row_n": 4891,
+      "sha256": "cd69b5e40fc9d8a269a35bc07be553144171705701d029b8b0944a08264edf83",
+      "source_path_locator": "<external-b4-answer-root>/final_main_openai_gpt56_sol_final_v2/scored/full_results_scored.jsonl"
+    },
+    {
+      "provider": "kimi",
+      "row_n": 4891,
+      "sha256": "d2e431c82ce4137d0cd3c242059d301d2ea293c1295e2db7480aee4e5ca26acb",
+      "source_path_locator": "<external-b4-answer-root>/final_main_kimi_k2_6_nothinking_final/scored/full_results_scored.jsonl"
+    },
+    {
+      "provider": "xai",
+      "row_n": 4891,
+      "sha256": "73c72023453fb60f7baf3b93250dddf6f6d98c7d5363fe45305d226fff7902e1",
+      "source_path_locator": "<external-b4-answer-root>/final_main_grok_43_final/scored/full_results_scored.jsonl"
+    },
+    {
+      "provider": "gemini",
+      "row_n": 4891,
+      "sha256": "1f1a7bbbcc752c4ad48aa15d4201a511a89a3c4b1f60a92edaa75492a22e9a29",
+      "source_path_locator": "<external-b4-answer-root>/final_main_gemini_3_flash_final/scored/full_results_scored.jsonl"
+    },
+    {
+      "provider": "anthropic",
+      "row_n": 4891,
+      "sha256": "d386ad9aad9eeaf629aad53ec21e1986da7fb955d2548052999ff61c2e861123",
+      "source_path_locator": "<external-b4-answer-root>/final_main_anthropic_sonnet5_final/scored/full_results_scored.jsonl"
+    }
+  ],
+  "scorer_versions": [
+    "final-main-source-aware-v1"
+  ],
+  "source_selection_basis": "Exact full_results_scored.jsonl paths frozen in b4_validation_summary.json; no rescoring performed.",
+  "total_cases": 604,
+  "unit_alignment": {
+    "longmemeval": "answer-level deterministic score versus answer-level independent reference",
+    "memora": "answer-level deterministic score versus each deduplicated atomic-criterion independent reference; the frozen answer-level score is repeated for criteria sharing that answer"
+  }
+}

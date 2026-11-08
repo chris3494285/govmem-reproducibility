@@ -1,0 +1,15 @@
+{
+  "schema_version": "final-main-token-budget-anthropic-repair-v1",
+  "status": "VERSIONED_SELECTIVE_REPAIR_ONLY",
+  "scope": "Anthropic selective token-limit repair",
+  "budgets": {
+    "longmemeval": 512,
+    "memora_email_writeup": 1024,
+    "memora_meeting_notes": 1024,
+    "memora_preference": 768,
+    "memora_project_proposal": 1536,
+    "memora_todos": 512,
+    "oaks_novel": 256
+  },
+  "statement": "This provider-specific repair configuration is valid only for explicitly selected Anthropic repair condition IDs; it does not replace the frozen provider-neutral budget configuration."
+}

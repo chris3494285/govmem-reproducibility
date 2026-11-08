@@ -1,0 +1,6 @@
+source,event,unique_base_count,total_fault_pairs
+longmemeval,temporal,113,226
+longmemeval,update,78,234
+memora,deletion,380,1140
+oaks_novel,temporal,56,168
+oaks_novel,update,104,312

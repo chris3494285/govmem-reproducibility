@@ -1,0 +1,7 @@
+provider,pair_count,admission_change,admission_restoration,context_change,context_restoration
+anthropic,2080,"{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}","{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}"
+deepseek,2080,"{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}","{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}"
+gemini,2080,"{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}","{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}"
+grok,2080,"{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}","{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}"
+kimi,2080,"{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}","{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}"
+openai,2080,"{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}","{'n': 2002, 'denominator': 2080, 'rate': 0.9625}","{'n': 2080, 'denominator': 2080, 'rate': 1.0}"

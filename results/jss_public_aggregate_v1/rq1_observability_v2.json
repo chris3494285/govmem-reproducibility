@@ -1,0 +1,778 @@
+{
+  "api_calls_made": 0,
+  "cohort": {
+    "bases": 731,
+    "condition_rows": 4891,
+    "matched_fault_pairs": 2080,
+    "native_resolved_blocks": 298,
+    "provider_replications": 12480
+  },
+  "context_projection_observability": {
+    "classification_reference": "Frozen clean oracle projection, whose source evidence is recorded as fully supported by the governance-evidence audit. Addition/removal counts are relative to this reference and are not, by themselves, absolute policy-violation detections.",
+    "context_added_item_relative_to_clean": {
+      "base_clusters": 731,
+      "bootstrap_iterations": 5000,
+      "bootstrap_seed": 20261101,
+      "bootstrap_unit": "base_id cluster",
+      "ci95": [
+        0.5,
+        0.5378723461878019
+      ],
+      "denominator": 2080,
+      "estimate": 0.5192307692307693,
+      "numerator": 1080
+    },
+    "context_changed": {
+      "base_clusters": 731,
+      "bootstrap_iterations": 5000,
+      "bootstrap_seed": 20261101,
+      "bootstrap_unit": "base_id cluster",
+      "ci95": [
+        0.9543916070300223,
+        0.9698420296792724
+      ],
+      "denominator": 2080,
+      "estimate": 0.9625,
+      "numerator": 2002
+    },
+    "context_removed_item_relative_to_clean": {
+      "base_clusters": 731,
+      "bootstrap_iterations": 5000,
+      "bootstrap_seed": 20261101,
+      "bootstrap_unit": "base_id cluster",
+      "ci95": [
+        0.696522153406384,
+        0.7093643862202814
+      ],
+      "denominator": 2080,
+      "estimate": 0.7028846153846153,
+      "numerator": 1462
+    },
+    "enforced_context_restored": {
+      "base_clusters": 731,
+      "bootstrap_iterations": 5000,
+      "bootstrap_seed": 20261101,
+      "bootstrap_unit": "base_id cluster",
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "denominator": 2080,
+      "estimate": 1.0,
+      "numerator": 2080
+    },
+    "other_context_change": {
+      "base_clusters": 731,
+      "bootstrap_iterations": 5000,
+      "bootstrap_seed": 20261101,
+      "bootstrap_unit": "base_id cluster",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "denominator": 2080,
+      "estimate": 0.0,
+      "numerator": 0
+    }
+  },
+  "downstream_output_observability": {
+    "frozen_proxy_binary": {
+      "output_text_identity_estimable": false,
+      "output_text_identity_reason": "Sanitized frozen provider files expose scored outcomes and context hashes, not raw response text or response hashes.",
+      "providers": {
+        "anthropic": {
+          "clean_correct": {
+            "base_clusters": 727,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.4048497412262476,
+              0.47649062489466243
+            ],
+            "denominator": 2064,
+            "estimate": 0.44089147286821706,
+            "numerator": 910
+          },
+          "correctness_outcome_changed": {
+            "base_clusters": 727,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.3080985119906524,
+              0.36166103331723803
+            ],
+            "denominator": 2064,
+            "estimate": 0.33478682170542634,
+            "numerator": 691
+          },
+          "corruption_induced_failure": {
+            "base_clusters": 727,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.27020417478091524,
+              0.3249039467445378
+            ],
+            "denominator": 2064,
+            "estimate": 0.29748062015503873,
+            "numerator": 614
+          },
+          "induced_failure_given_clean_correct": {
+            "base_clusters": 316,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.6469945355191257,
+              0.701662776774915
+            ],
+            "denominator": 910,
+            "estimate": 0.6747252747252748,
+            "numerator": 614
+          },
+          "provider_pairs": 2080,
+          "scoreable_pairs": 2064,
+          "unresolved_condition_rows": 23,
+          "unresolved_pairs": 16
+        },
+        "deepseek": {
+          "clean_correct": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.4362927862927863,
+              0.5084256138661531
+            ],
+            "denominator": 2078,
+            "estimate": 0.47256977863330124,
+            "numerator": 982
+          },
+          "correctness_outcome_changed": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.3178553463751311,
+              0.36859745550074813
+            ],
+            "denominator": 2078,
+            "estimate": 0.34311838306063525,
+            "numerator": 713
+          },
+          "corruption_induced_failure": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.2844034467225362,
+              0.3364064448305974
+            ],
+            "denominator": 2078,
+            "estimate": 0.3103946102021174,
+            "numerator": 645
+          },
+          "induced_failure_given_clean_correct": {
+            "base_clusters": 336,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.6345153111333961,
+              0.6800010288065844
+            ],
+            "denominator": 982,
+            "estimate": 0.6568228105906314,
+            "numerator": 645
+          },
+          "provider_pairs": 2080,
+          "scoreable_pairs": 2078,
+          "unresolved_condition_rows": 2,
+          "unresolved_pairs": 2
+        },
+        "gemini": {
+          "clean_correct": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.4087863133457428,
+              0.48254626834253805
+            ],
+            "denominator": 2080,
+            "estimate": 0.44519230769230766,
+            "numerator": 926
+          },
+          "correctness_outcome_changed": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.3115622299438283,
+              0.36603020623023663
+            ],
+            "denominator": 2080,
+            "estimate": 0.3384615384615385,
+            "numerator": 704
+          },
+          "corruption_induced_failure": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.28227115834332284,
+              0.338306423517564
+            ],
+            "denominator": 2080,
+            "estimate": 0.31009615384615385,
+            "numerator": 645
+          },
+          "induced_failure_given_clean_correct": {
+            "base_clusters": 320,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.6706263498920086,
+              0.7221636636636636
+            ],
+            "denominator": 926,
+            "estimate": 0.6965442764578834,
+            "numerator": 645
+          },
+          "provider_pairs": 2080,
+          "scoreable_pairs": 2080,
+          "unresolved_condition_rows": 0,
+          "unresolved_pairs": 0
+        },
+        "kimi": {
+          "clean_correct": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.40288444244604316,
+              0.4758025874460949
+            ],
+            "denominator": 2080,
+            "estimate": 0.43990384615384615,
+            "numerator": 915
+          },
+          "correctness_outcome_changed": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.31070998310771897,
+              0.36267067465929603
+            ],
+            "denominator": 2080,
+            "estimate": 0.3370192307692308,
+            "numerator": 701
+          },
+          "corruption_induced_failure": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.2655038759689923,
+              0.31944777671145225
+            ],
+            "denominator": 2080,
+            "estimate": 0.2923076923076923,
+            "numerator": 608
+          },
+          "induced_failure_given_clean_correct": {
+            "base_clusters": 314,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.6373575331772052,
+              0.6911281489594743
+            ],
+            "denominator": 915,
+            "estimate": 0.6644808743169399,
+            "numerator": 608
+          },
+          "provider_pairs": 2080,
+          "scoreable_pairs": 2080,
+          "unresolved_condition_rows": 0,
+          "unresolved_pairs": 0
+        },
+        "openai": {
+          "clean_correct": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.40018955324257627,
+              0.4735583273294908
+            ],
+            "denominator": 2078,
+            "estimate": 0.4359961501443696,
+            "numerator": 906
+          },
+          "correctness_outcome_changed": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.275960292706334,
+              0.3290195222462806
+            ],
+            "denominator": 2078,
+            "estimate": 0.30221366698748797,
+            "numerator": 628
+          },
+          "corruption_induced_failure": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.2572108477011494,
+              0.3113895451581395
+            ],
+            "denominator": 2078,
+            "estimate": 0.28392685274302215,
+            "numerator": 590
+          },
+          "induced_failure_given_clean_correct": {
+            "base_clusters": 316,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.6233301104972375,
+              0.6788079470198676
+            ],
+            "denominator": 906,
+            "estimate": 0.6512141280353201,
+            "numerator": 590
+          },
+          "provider_pairs": 2080,
+          "scoreable_pairs": 2078,
+          "unresolved_condition_rows": 2,
+          "unresolved_pairs": 2
+        },
+        "xai": {
+          "clean_correct": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.2625215229387473,
+              0.3304350963046615
+            ],
+            "denominator": 2080,
+            "estimate": 0.29615384615384616,
+            "numerator": 616
+          },
+          "correctness_outcome_changed": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.24711510617760618,
+              0.3005281481795409
+            ],
+            "denominator": 2080,
+            "estimate": 0.27403846153846156,
+            "numerator": 570
+          },
+          "corruption_induced_failure": {
+            "base_clusters": 731,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.19826735553267816,
+              0.2520365136716077
+            ],
+            "denominator": 2080,
+            "estimate": 0.225,
+            "numerator": 468
+          },
+          "induced_failure_given_clean_correct": {
+            "base_clusters": 209,
+            "bootstrap_iterations": 5000,
+            "bootstrap_seed": 20261101,
+            "bootstrap_unit": "base_id cluster",
+            "ci95": [
+              0.7278549050557229,
+              0.7901659336265493
+            ],
+            "denominator": 616,
+            "estimate": 0.7597402597402597,
+            "numerator": 468
+          },
+          "provider_pairs": 2080,
+          "scoreable_pairs": 2080,
+          "unresolved_condition_rows": 0,
+          "unresolved_pairs": 0
+        }
+      },
+      "score_unit": "binary_correctness"
+    },
+    "native_style": {
+      "longmemeval_binary": {
+        "context_changed_response_identity_unchanged": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.06896551724137931,
+            0.16774193548387098
+          ],
+          "denominator": 148,
+          "estimate": 0.11486486486486487,
+          "numerator": 17
+        },
+        "context_unchanged_response_identity_changed": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.06382978723404255,
+            0.1703832630098451
+          ],
+          "denominator": 148,
+          "estimate": 0.11486486486486487,
+          "numerator": 17
+        },
+        "observed_blocks": 150,
+        "output_observation": "native_longmemeval_induced_failure",
+        "output_observation_rate": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.34,
+            0.5298595111689871
+          ],
+          "denominator": 148,
+          "estimate": 0.43243243243243246,
+          "numerator": 64
+        },
+        "resolved_blocks": 148,
+        "response_identity_changed": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.6083916083916084,
+            0.7655172413793103
+          ],
+          "denominator": 148,
+          "estimate": 0.6891891891891891,
+          "numerator": 102
+        },
+        "response_identity_unavailable": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "denominator": 148,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "response_identity_unchanged": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.23448275862068965,
+            0.3916083916083916
+          ],
+          "denominator": 148,
+          "estimate": 0.3108108108108108,
+          "numerator": 46
+        },
+        "response_identity_unchanged_score_changed": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.0,
+            0.021739130434782608
+          ],
+          "denominator": 148,
+          "estimate": 0.006756756756756757,
+          "numerator": 1
+        },
+        "score_identity_changed": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.36551724137931035,
+            0.5541552373425076
+          ],
+          "denominator": 148,
+          "estimate": 0.4594594594594595,
+          "numerator": 68
+        },
+        "score_identity_unchanged": {
+          "base_clusters": 105,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.44584476265749223,
+            0.6344827586206897
+          ],
+          "denominator": 148,
+          "estimate": 0.5405405405405406,
+          "numerator": 80
+        },
+        "unresolved_blocks": 2
+      },
+      "memora_fama": {
+        "context_changed_response_identity_unchanged": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.07236842105263158,
+            0.17333333333333334
+          ],
+          "denominator": 150,
+          "estimate": 0.12,
+          "numerator": 18
+        },
+        "context_unchanged_response_identity_changed": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "denominator": 150,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "corruption_score_delta": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            -0.3773309065479034,
+            -0.2307792907059247
+          ],
+          "denominator": 150,
+          "estimate": -0.30598762882267344,
+          "numerator": null
+        },
+        "observed_blocks": 150,
+        "output_observation": "native_memora_score_decreased",
+        "output_observation_rate": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.5578231292517006,
+            0.7171086660617059
+          ],
+          "denominator": 150,
+          "estimate": 0.64,
+          "numerator": 96
+        },
+        "resolved_blocks": 150,
+        "response_identity_changed": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.8266666666666667,
+            0.9276315789473685
+          ],
+          "denominator": 150,
+          "estimate": 0.88,
+          "numerator": 132
+        },
+        "response_identity_unavailable": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "denominator": 150,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "response_identity_unchanged": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.07236842105263158,
+            0.17333333333333334
+          ],
+          "denominator": 150,
+          "estimate": 0.12,
+          "numerator": 18
+        },
+        "response_identity_unchanged_score_changed": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "denominator": 150,
+          "estimate": 0.0,
+          "numerator": 0
+        },
+        "score_identity_changed": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.6944302721088436,
+            0.8356164383561644
+          ],
+          "denominator": 150,
+          "estimate": 0.7666666666666667,
+          "numerator": 115
+        },
+        "score_identity_unchanged": {
+          "base_clusters": 133,
+          "bootstrap_iterations": 5000,
+          "bootstrap_seed": 20261101,
+          "bootstrap_unit": "base_id cluster",
+          "ci95": [
+            0.1643835616438356,
+            0.3055697278911563
+          ],
+          "denominator": 150,
+          "estimate": 0.23333333333333334,
+          "numerator": 35
+        },
+        "unresolved_blocks": 0
+      },
+      "observed_blocks": 300,
+      "panel_mode": "paper_final_298",
+      "resolved_blocks": 298,
+      "selected_panel_not_random": true,
+      "unresolved_blocks": 2,
+      "unresolved_observations": 2
+    },
+    "overlap_definitions": {
+      "frozen_proxy": "context state x clean-correct-to-corrupted-incorrect event",
+      "longmemeval": "context state x LongMemEval binary clean-correct-to-corrupted-incorrect event",
+      "memora": "context state x negative continuous FAMA delta"
+    },
+    "score_units_are_separate": true
+  },
+  "estimable_metrics": [
+    "context-projection change count",
+    "context item-addition count relative to the supported clean oracle projection",
+    "context item-removal count relative to the supported clean oracle projection",
+    "frozen binary proxy correctness identity, improvement, induced failure, and recovery",
+    "LongMemEval native binary corruption-induced failure count",
+    "Memora native FAMA decrease count and mean paired score difference",
+    "native clean/corrupted response identity where both hashes exist",
+    "context-versus-selected-output-event overlap within each score-unit family",
+    "source, fault, event, and provider stratified counts with base-cluster uncertainty"
+  ],
+  "limitations": [
+    "The full condition manifest and row-level provider results are not redistributed.",
+    "The Formal-300 panel is a fixed selected panel, not a representative cohort sample.",
+    "LongMemEval binary correctness and Memora FAMA are separate score units.",
+    "The final 298 analysis uses one private human adjudication; the public 297 analysis does not.",
+    "RQ1 V2 uncertainty is separate from the Formal-300 block and base-cluster bootstraps."
+  ],
+  "no_model_generation_performed": true,
+  "no_rescoring_performed": true,
+  "not_estimable": {
+    "causal_generalization": "The deterministic matched interventions support design-specific contrasts, not population or causal claims outside the frozen cohort.",
+    "combined_longmemeval_memora_accuracy": "LongMemEval binary correctness and Memora FAMA are incompatible score units.",
+    "frozen_proxy_output_text_identity": "Raw text/answer hashes are absent from the sanitized provider artifacts.",
+    "native_representative_population_effect": "Formal-300 is a fixed selected validation panel, not a random sample of the full cohort.",
+    "native_response_identity_with_missing_hashes": "Response identity is unavailable whenever either clean or corrupted answer hash is absent.",
+    "provider_detection_accuracy_ranking": "Provider outcomes have different score surfaces and repeated base observations; the analysis reports strata rather than a common detection-accuracy ranking.",
+    "state_detector_precision_recall_fpr_fnr": "No independently faulted internal-state observations and no negative-state detector population.",
+    "state_to_output_detection_overlap": "The state record does not carry the injected anomaly; using labels would be circular."
+  },
+  "public_release_scope": {
+    "bootstrap": {
+      "iterations": 5000,
+      "seed": 20261101,
+      "unit": "base_id cluster"
+    },
+    "identifier_free": true,
+    "private_inputs_required_to_recompute": true,
+    "reporting_units_are_separate": {
+      "LongMemEval": "binary native-style correctness",
+      "Memora": "continuous native FAMA"
+    },
+    "row_level_inputs_included": false
+  },
+  "schema_version": "jss-rq1-observability-v2",
+  "state_observability": {
+    "anomaly_prevalence_estimable": false,
+    "diagnostic_internal_state_unchanged": 2080,
+    "diagnostic_pair_count": 2080,
+    "labels_used_as_independent_detections": false,
+    "precision_recall_fpr_fnr_estimable": false,
+    "reason_not_estimable": "The frozen corruption changes the model-visible projection; internal_governance_state is unchanged and copied from oracle_state, so there is no independent population of faulted state records or state-detector positives.",
+    "state_detector_implemented": false,
+    "state_faulted_record_count": 0,
+    "status": "not_estimable"
+  },
+  "statistical_design": {
+    "base_cluster_field": "base_id",
+    "iterations": 5000,
+    "paired_conditions": [
+      "clean",
+      "corrupted",
+      "enforced"
+    ],
+    "provider_rows_pooled_into_common_accuracy": false,
+    "repeated_observations_accounted_for": true,
+    "seed": 20261101,
+    "uncertainty": "base-cluster bootstrap"
+  },
+  "status": "offline_rq1_observability_analysis"
+}

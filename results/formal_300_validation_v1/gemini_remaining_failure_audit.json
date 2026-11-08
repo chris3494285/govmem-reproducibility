@@ -1,0 +1,188 @@
+{
+  "api_calls_performed": 0,
+  "audit_version": "formal-300-gemini-remaining-failure-audit-v1",
+  "conclusions": {
+    "invalid_argument_root_cause": "response_schema_complexity_tracks criterion count perfectly; criterion-ID enum cardinality and array min/max cardinality are confounded, and Gemini did not expose its exact internal constraint",
+    "malformed_json_root_cause": "probable output truncation: all errors end inside a JSON string near the planned output envelope, but raw output, usage, finish reason, and actual batch-level max_output_tokens were not preserved",
+    "methodology_change_required": false,
+    "output_budget_change_needed": true,
+    "safe_recovery_possible": true,
+    "safe_recovery_qualification": "only after a strict generic batch transport schema and an audited output-budget policy are frozen, with a new explicit authorization because all 51 latest failures consumed attempt 2",
+    "schema_simplification_needed": true
+  },
+  "counts": {
+    "invalid_argument": 45,
+    "malformed_json": 6,
+    "success": 399
+  },
+  "evaluator_methodology": "final-native-evaluation-v2",
+  "group_statistics": {
+    "invalid_argument": {
+      "answer_character_count": {
+        "max": 854,
+        "min": 16,
+        "p50": 195.0,
+        "p90": 580.4000000000001
+      },
+      "criterion_count": {
+        "max": 86,
+        "min": 33,
+        "p50": 54.0,
+        "p90": 69.0
+      },
+      "estimated_prompt_token_count": {
+        "max": 18833,
+        "min": 7647,
+        "p50": 13122.0,
+        "p90": 15089.0
+      },
+      "planned_max_output_tokens": {
+        "max": 3136,
+        "min": 1228,
+        "p50": 1984.0,
+        "p90": 2524.0
+      },
+      "prompt_character_count": {
+        "max": 18833,
+        "min": 7647,
+        "p50": 13120.0,
+        "p90": 15089.0
+      },
+      "response_schema_character_count": {
+        "max": 3978,
+        "min": 1920,
+        "p50": 3201.0,
+        "p90": 3528.0
+      }
+    },
+    "malformed_json": {
+      "answer_character_count": {
+        "max": 1391,
+        "min": 114,
+        "p50": 544.5,
+        "p90": 1057.0
+      },
+      "criterion_count": {
+        "max": 17,
+        "min": 6,
+        "p50": 10.0,
+        "p90": 14.5
+      },
+      "estimated_prompt_token_count": {
+        "max": 7885,
+        "min": 2737,
+        "p50": 3363.0,
+        "p90": 6743.0
+      },
+      "planned_max_output_tokens": {
+        "max": 652,
+        "min": 256,
+        "p50": 400.0,
+        "p90": 562.0
+      },
+      "prompt_character_count": {
+        "max": 7883,
+        "min": 2737,
+        "p50": 3363.0,
+        "p90": 6742.0
+      },
+      "response_schema_character_count": {
+        "max": 1655,
+        "min": 814,
+        "p50": 980.5,
+        "p90": 1488.5
+      }
+    },
+    "success": {
+      "answer_character_count": {
+        "max": 6385,
+        "min": 7,
+        "p50": 303.0,
+        "p90": 1797.3999999999996
+      },
+      "criterion_count": {
+        "max": 21,
+        "min": 2,
+        "p50": 11.0,
+        "p90": 17.0
+      },
+      "estimated_prompt_token_count": {
+        "max": 12970,
+        "min": 1079,
+        "p50": 3685.0,
+        "p90": 7607.0
+      },
+      "planned_max_output_tokens": {
+        "max": 796,
+        "min": 112,
+        "p50": 436.0,
+        "p90": 652.0
+      },
+      "prompt_character_count": {
+        "max": 12958,
+        "min": 1079,
+        "p50": 3685.0,
+        "p90": 7607.0
+      },
+      "response_schema_character_count": {
+        "max": 1807,
+        "min": 543,
+        "p50": 1025.0,
+        "p90": 1519.0
+      }
+    }
+  },
+  "malformed_json_evidence": {
+    "actual_batch_max_output_tokens_preserved": false,
+    "criterion_counts": [
+      6,
+      8,
+      8,
+      12,
+      12,
+      17
+    ],
+    "error_character_positions": [
+      935,
+      1006,
+      1068,
+      1539,
+      1659,
+      2141
+    ],
+    "finish_reason_preserved_n": 0,
+    "planned_output_tokens": [
+      256,
+      328,
+      328,
+      472,
+      472,
+      652
+    ],
+    "provider_usage_preserved_n": 0,
+    "raw_response_preserved_n": 0
+  },
+  "model": "gemini-3-flash-preview",
+  "protocol_version": "formal-300-validation-v1",
+  "provider": "gemini",
+  "schema_structure": {
+    "array_item_object_schema_count": 1,
+    "array_min_max_items_equal_criterion_count": true,
+    "criterion_ids_encoded_as_enum": true,
+    "downstream_parser_validates_exact_cardinality_ids_and_uniqueness": true,
+    "duplicate_criterion_ids": 0,
+    "empty_criterion_ids": 0,
+    "one_property_per_criterion": false,
+    "top_level_keys": [
+      "decisions"
+    ]
+  },
+  "separation": {
+    "invalid_argument_criterion_count_min": 33,
+    "invalid_argument_schema_chars_min": 1920,
+    "perfect_criterion_count_separation": true,
+    "provider_exact_internal_limit_exposed": false,
+    "success_criterion_count_max": 21,
+    "success_schema_chars_max": 1807
+  }
+}

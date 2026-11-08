@@ -1,0 +1,72 @@
+{
+  "affected_rqs": 2,
+  "affected_tables_figures": 6,
+  "api_network_model_judge_calls": 0,
+  "claim_category_counts": {
+    "mixed": 3,
+    "scorer_dependent_primary": 5,
+    "scorer_dependent_secondary": 2,
+    "scorer_independent": 11,
+    "unclear": 1
+  },
+  "paper_verdict": "MAJOR_RERUN_REQUIRED",
+  "scorer_dependent_primary_claims": 5,
+  "scorer_dependent_secondary_claims": 2,
+  "scorer_independent_primary_claims": 9,
+  "smallest_defensible_remediation": "A",
+  "verification": {
+    "affected_native_evaluation_rows": 22626,
+    "manuscript_available": false,
+    "manuscript_tex_files_present": [],
+    "oaks_rows_with_native_parity": 6720,
+    "provider_source_row_counts": {
+      "anthropic": {
+        "longmemeval": 1111,
+        "memora": 2660,
+        "oaks_novel": 1120
+      },
+      "deepseek": {
+        "longmemeval": 1111,
+        "memora": 2660,
+        "oaks_novel": 1120
+      },
+      "gemini": {
+        "longmemeval": 1111,
+        "memora": 2660,
+        "oaks_novel": 1120
+      },
+      "grok": {
+        "longmemeval": 1111,
+        "memora": 2660,
+        "oaks_novel": 1120
+      },
+      "kimi": {
+        "longmemeval": 1111,
+        "memora": 2660,
+        "oaks_novel": 1120
+      },
+      "openai": {
+        "longmemeval": 1111,
+        "memora": 2660,
+        "oaks_novel": 1120
+      }
+    },
+    "verified_control_plane": {
+      "admission_change": 0.9625,
+      "bases": 731,
+      "denominator": 12480,
+      "fault_pairs": 2080,
+      "restoration": 1.0
+    },
+    "verified_governance_evidence": {
+      "fully_supported": 731,
+      "unsupported": 0
+    },
+    "verified_matched_fault": {
+      "instances": 3534,
+      "stale_vs_conflicting": 238,
+      "stale_vs_flipped": 0,
+      "stale_vs_missing": 351
+    }
+  }
+}
