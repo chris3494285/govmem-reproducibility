@@ -33,6 +33,12 @@ audited release at commit
 files updated for the Applied Intelligence submission; it neither covers nor
 replaces the frozen experimental evidence manifest.
 
+The original manifest verifies the historical audited snapshot, not the current
+working tree as a whole. In the current tree, its `data/` and `results/`
+payload entries remain the frozen-payload checks; current-facing metadata and
+the corrected publication test are later documentation/verification changes
+and are not claimed as frozen release payloads.
+
 The historical v2 formal condition manifest contains a documented
 answer-leakage blocker. In 159 rows across 53 LongMemEval bases, the
 model-visible evidence was constructed with a fallback derived directly from
@@ -65,9 +71,9 @@ Final v3 headline values are corruption −27.55 pp, recovery +27.51 pp,
 context-changed corruption −26.04 pp, context-unchanged corruption −1.28 pp,
 control-plane change 96.25%, and restoration 100%.
 
-The final GovMem experimental evidence, including RQ1 Observability V2, the native
-block/base-cluster bootstrap distinction, and the isolated scoring
-inconsistency sensitivity, is summarized in
+The final GovMem experimental evidence, including the RQ1 supplementary
+context–output observability analysis, the native block/base-cluster bootstrap
+distinction, and the isolated scoring inconsistency sensitivity, is summarized in
 `docs/JSS_PUBLIC_RESULTS.md`. Aggregate-only machine-readable versions are under
 `results/jss_public_aggregate_v1/`.
 

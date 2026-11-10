@@ -30,17 +30,30 @@ Fault-pair support reconciles as:
 
 ## Research-question mapping
 
-| Manuscript question | Public implementation | Public result |
-|---|---|---|
-| RQ1: control-plane propagation | `govmem/governance/`, `scripts/run_final_main_*`, `scripts/analyze_control_plane_propagation.py`, `scripts/build_rq1_paper_table.py` | `results/final_main_cross_provider_summary_v3/`, `results/answer_leakage_repair/final_v3_analysis/` |
-| RQ2: downstream sensitivity | `scripts/analyze_formal_300_validation.py`, `scripts/finalize_formal_300_validation.py` | `results/formal_300_subgroup_v1/`, `results/jss_public_aggregate_v1/` |
-| RQ3: recoverability | `scripts/analyze_formal_300_validation.py`, `scripts/analyze_formal_300_subgroups.py` | `results/formal_300_subgroup_v1/`, `results/jss_public_aggregate_v1/` |
-| RQ4: source/provider heterogeneity | `scripts/analyze_formal_300_subgroups.py`, `scripts/analyze_final_main_results.py` | `results/formal_300_subgroup_v1/`, six-provider and source-stratified aggregates |
-| Supplementary RQ1 observability | `scripts/analyze_jss_rq1_observability.py`, `scripts/audit_jss_rq1_observability.py` | `results/jss_rq1_observability_v2/` and `results/jss_public_aggregate_v1/rq1_observability_v2.json` |
+The labels below follow the final Applied Intelligence manuscript, not the
+historical `rq1`–`rq4` prefixes used by earlier pilot artifacts.
 
-The older `scripts/evaluate_rq4_enforcement_policies.py` addresses a separate
-deterministic enforcement-policy tradeoff analysis. It is not the manuscript's
-RQ4 heterogeneity analysis.
+| Applied Intelligence research question | Evidence in the manuscript | Public implementation | Public aggregate evidence |
+|---|---|---|---|
+| **RQ1: Agent sensitivity and observability** | Paired projection changes, selected native-style outcomes, and full-panel deterministic-proxy screening | `govmem/governance/`, `scripts/run_final_main_*`, `scripts/analyze_formal_300_subgroups.py`, `scripts/finalize_formal_300_validation.py`, `scripts/analyze_jss_rq1_observability.py`, `scripts/analyze_control_plane_propagation.py`, `scripts/finalize_v3_offline.py` | `results/formal_300_subgroup_v1/`, `results/jss_public_aggregate_v1/rq1_observability_v2.json`, `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/`, `results/final_main_cross_provider_summary_v3/` |
+| **RQ1 supplementary: Context–output observability** | Separation of operative-context change from selected downstream failure events and answer-identity changes | `scripts/analyze_jss_rq1_observability.py`, `scripts/audit_jss_rq1_observability.py`, `scripts/build_jss_public_aggregate.py` | `results/jss_rq1_observability_v2/`, `results/jss_public_aggregate_v1/rq1_observability_v2.json` |
+| **RQ2: Fault coverage and severity** | Supported fault eligibility, per-fault proxy contrasts, and same-base stale-versus-missing/stale-versus-conflicting comparisons | `scripts/analyze_source_event_fault_distribution.py`, `scripts/analyze_matched_fault_support.py`, `scripts/analyze_final_main_results.py` | `results/source_event_fault_distribution_v1/`, `results/answer_leakage_repair/final_v3_analysis/matched_fault_support/`, `results/final_main_cross_provider_summary_v3/` |
+| **RQ3: Cross-model and cohort dependence** | Benchmark-source, event-category, and provider strata, including source–event confounding and dependence-aware native-panel summaries | `scripts/analyze_formal_300_subgroups.py`, `scripts/analyze_final_main_results.py`, `scripts/analyze_source_event_fault_distribution.py` | `results/formal_300_subgroup_v1/`, `results/source_event_fault_distribution_v1/`, `results/final_main_cross_provider_summary_v3/` |
+| **RQ4: Evaluation and reference-restoration boundaries** | Oracle-restored sibling behavior, native-style versus proxy scorer checks, identical-answer inconsistency, and the clean-repeat control | `scripts/analyze_control_plane_propagation.py`, `scripts/analyze_formal_300_subgroups.py`, `scripts/analyze_jss_scoring_consistency.py`, `scripts/analyze_clean_repeat_stochasticity.py`, `scripts/analyze_b4_scorer_validation.py`, `scripts/validate_oaks_parity.py` | `results/answer_leakage_repair/final_v3_analysis/control_plane_propagation/`, `results/formal_300_subgroup_v1/`, `results/jss_public_aggregate_v1/scoring_consistency_sensitivity.json`, `results/stochasticity_control/clean_repeat_v1/analysis/`, `results/b4_scoring_validation/final_scorer_validation/`, `results/b4_scoring_validation/unit_alignment_audit/`, `results/b4_scoring_validation/oaks_input_summary.json` |
+
+The selected native-style outcome estimates use the manuscript's final
+298-resolved-triplet panel: 148 LongMemEval binary-correctness triplets and
+150 Memora FAMA triplets. The public aggregate files preserve the reported
+counts and summary statistics, but end-to-end recomputation of that selected
+panel requires the separately retained private records.
+
+The older `scripts/build_rq1_paper_table.py`,
+`scripts/analyze_rq2_fault_severity.py`,
+`scripts/analyze_rq3_error_propagation.py`, and
+`scripts/evaluate_rq4_enforcement_policies.py` concern separate historical
+pilot, propagation, or enforcement-policy analyses. Their filenames and output
+paths are preserved as provenance, but their historical RQ numbering does not
+define the Applied Intelligence RQ mapping above.
 
 ## Full-cohort control plane
 
@@ -84,10 +97,10 @@ questions and are not interchangeable.
 The shipped non-adjudicated public analysis resolves 297 triplets. That value
 must not be substituted for the final 298-triplet human-adjudicated result.
 
-## RQ1 Observability V2
+## RQ1 supplementary: Context–output observability (Observability V2)
 
-The supplementary RQ1 analysis separates state, model-visible context, and
-downstream outcomes.
+The Applied Intelligence manuscript's RQ1 supplementary analysis separates
+state, model-visible context, and downstream outcomes.
 
 ### Context projection
 
