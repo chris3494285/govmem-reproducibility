@@ -1,10 +1,17 @@
-# Stress-Testing the Control Plane of Agent Memory
+# GovMem: Long-Term Memory Reliability in LLM Agents
 
-This repository contains the reproducibility pipeline for the paper
-“Stress-Testing the Control Plane of Agent Memory.” The study asks whether
+This repository contains the reproducibility pipeline for the Applied
+Intelligence submission “Evaluating Long-Term Memory Reliability in LLM Agents
+Under Governance-State Faults: A Cross-Model Study.” The study asks whether
 governance faults in long-term agent memory propagate through admission and
 context construction into downstream answer quality, and whether enforcement
 restores the intended state.
+
+The study evaluates source-supported governance-state fault specifications.
+The implemented intervention changes the operative model-visible context
+projection; the archived internal governance-state record is not independently
+corrupted. Oracle-backed restoration is a reference condition, not an
+autonomous repair algorithm.
 
 The final cohort has 731 unique bases: 191 LongMemEval, 380 Memora, and 160
 OAKS Novel. Each base has one clean sibling and one corrupted/enforced sibling
@@ -16,8 +23,15 @@ xAI/Grok.
 
 ## Release status
 
-The public JSS reproducibility release is available at
-https://github.com/chris3494285/govmem-jss-reproducibility.
+The public GovMem reproducibility release is available at
+https://github.com/chris3494285/govmem-reproducibility.
+
+`MANIFEST.sha256` remains the 454-entry integrity manifest for the original
+audited release at commit
+`b0afd0792df6631096756865eb3713923d17c9a3`. The separate
+`MANIFEST_APPLIED_INTELLIGENCE.sha256` verifies only the current-facing metadata
+files updated for the Applied Intelligence submission; it neither covers nor
+replaces the frozen experimental evidence manifest.
 
 The historical v2 formal condition manifest contains a documented
 answer-leakage blocker. In 159 rows across 53 LongMemEval bases, the
@@ -51,7 +65,7 @@ Final v3 headline values are corruption −27.55 pp, recovery +27.51 pp,
 context-changed corruption −26.04 pp, context-unchanged corruption −1.28 pp,
 control-plane change 96.25%, and restoration 100%.
 
-The final JSS evidence, including RQ1 Observability V2, the native
+The final GovMem experimental evidence, including RQ1 Observability V2, the native
 block/base-cluster bootstrap distinction, and the isolated scoring
 inconsistency sensitivity, is summarized in
 `docs/JSS_PUBLIC_RESULTS.md`. Aggregate-only machine-readable versions are under
@@ -63,11 +77,13 @@ python scripts/repair_answer_leakage.py \
 python scripts/audit_answer_leakage.py
 ```
 
-The historical audit remains at `results/answer_leakage_audit.json`; audit it
-explicitly with `python scripts/audit_answer_leakage.py --manifest
-data/final_main_governance_condition_manifest_v2.jsonl --report-only`. The
-default audit targets v3 and passes with zero fallback rows and zero unresolved
-source provenance.
+The historical v2 audit finding and expected hash are recorded in
+`ARTIFACTS.md`, but `results/answer_leakage_audit.json` and its text-bearing v2
+input manifest are not distributed in this aggregate-only release. It can be
+audited locally with `python scripts/audit_answer_leakage.py --manifest
+data/final_main_governance_condition_manifest_v2.jsonl --report-only` after
+rebuilding that manifest from licensed sources. The default audit targets v3 and
+passes with zero fallback rows and zero unresolved source provenance.
 
 ## Repository layout
 
@@ -218,7 +234,7 @@ python scripts/run_final_main_grok.py --manifest results/answer_leakage_repair/p
 These six live commands require the corresponding provider environment
 variable and make API calls; they are intentionally not run here.
 
-The private-input JSS analyses can be regenerated locally when all frozen and
+The private-input GovMem analyses can be regenerated locally when all frozen and
 private inputs are present:
 
 ```bash
@@ -273,6 +289,6 @@ DOI or journal publication date.
 
 `ARTIFACTS.md` maps the 731/2,080/4,891 cohort claims, six-provider summaries,
 RQ1–RQ4 analyses, enforcement recovery, governance evidence audit, control-
-plane diagnostic, matched-fault robustness, JSS Observability V2, bootstrap
+plane diagnostic, matched-fault robustness, RQ1 Observability V2, bootstrap
 provenance, scoring-consistency sensitivity, tables, and figures to their
 inputs, outputs, hashes, and API requirements.

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "govmem-demo"
 version = "0.1.0"
-description = "Stress-testing the control plane of agent memory"
+description = "Reproducibility artifacts for evaluating long-term memory reliability in LLM agents under governance-state faults."
 requires-python = ">=3.10"
 dependencies = [
   "openai>=1.40.0",

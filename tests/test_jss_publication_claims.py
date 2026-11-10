@@ -39,7 +39,10 @@ def test_license_and_citation_metadata_are_scoped():
         approval.lower()
     )
     assert "does not place those\nmaterials under the code-only MIT grant" in materials
-    assert 'title: "Stress-Testing the Control Plane of Agent Memory"' in citation
+    assert (
+        'title: "Evaluating Long-Term Memory Reliability in LLM Agents Under '
+        'Governance-State Faults: A Cross-Model Study"'
+    ) in citation
     for author in ("Liu", "Wang", "Shen", "Shang"):
         assert f"family-names: {author}" in citation
     assert "doi:" not in citation.lower()

@@ -44,14 +44,14 @@ restoration 100%.
 | Row-level aggregate verification | `scripts/verify_tier_b_release.py --mapping <private>` | Tier-B scores + private mapping + frozen manifests | console `PASS` report; developer-tree only | 6 provider primaries + control-plane + matched-fault identical | n/a (verification) | No |
 | Scientific figures | `scripts/build_system_validation_paper_artifacts.py` | separate frozen system-validation outputs | `results/system_validation_paper/figure_cross_system_effects.{png,pdf}` | independent experiment; not included in this clean branch | not applicable | No; no final-main figure generator found |
 
-## JSS final-evidence additions
+## Final-evidence additions
 
 | Evidence | Generating code | Public aggregate | Private dependency |
 |---|---|---|---|
 | RQ1 Observability V2 | `scripts/analyze_jss_rq1_observability.py`, `scripts/audit_jss_rq1_observability.py` | `results/jss_rq1_observability_v2/`, `results/jss_public_aggregate_v1/rq1_observability_v2.json` | full v3 manifest and six row-level provider files |
 | Scoring consistency and sensitivity | `scripts/analyze_jss_scoring_consistency.py` | `results/jss_public_aggregate_v1/scoring_consistency_sensitivity.json` | final block-level Formal-300 data, observations, private human adjudication, and semantic payloads |
 | Native base-cluster bootstrap | `scripts/analyze_formal_300_subgroups.py` | `results/formal_300_subgroup_v1/bootstrap_comparison.json` | private final block-level Formal-300 input and selected-block metadata |
-| JSS interpretation and limitations | `docs/JSS_PUBLIC_RESULTS.md` | identifier-free documentation | none |
+| Public interpretation and limitations | `docs/JSS_PUBLIC_RESULTS.md` | identifier-free documentation | none |
 
 The public RQ1 summary drops private artifact paths, block/observation
 identifiers, and content fingerprints while retaining all aggregate estimates

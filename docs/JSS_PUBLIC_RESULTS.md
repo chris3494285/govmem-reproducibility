@@ -1,6 +1,6 @@
-# JSS public results and reproduction scope
+# Public results and reproduction scope
 
-This document records the aggregate evidence included in the JSS public
+This document records the aggregate evidence included in the public GovMem
 reproducibility package. It contains no benchmark text, per-example
 identifier, answer hash, prompt, model response, judge output, or human
 adjudication record.

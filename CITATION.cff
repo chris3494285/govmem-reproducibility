@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "If you use this software or its aggregate results, please cite it using the metadata below."
-title: "Stress-Testing the Control Plane of Agent Memory"
+message: "If you use this software or its aggregate results, please cite it using the metadata below. The associated manuscript is under preparation/submission to Applied Intelligence."
+title: "Evaluating Long-Term Memory Reliability in LLM Agents Under Governance-State Faults: A Cross-Model Study"
 type: software
 version: 0.1.0
 date-released: 2026-11-08
+repository-code: "https://github.com/chris3494285/govmem-reproducibility"
 authors:
   - family-names: Liu
     given-names: Bowen
@@ -16,7 +17,9 @@ authors:
 abstract: >-
   Reproducibility materials for a study of governance-state corruption,
   context projection, enforcement recovery, and behavioral sensitivity in
-  long-term agent memory.
+  long-term agent memory. The corresponding author is Bowen Liu. The associated
+  manuscript is under preparation/submission to Applied Intelligence; this
+  citation does not claim journal publication or acceptance.
 keywords:
   - agent memory
   - governance
